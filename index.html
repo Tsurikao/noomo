@@ -147,7 +147,7 @@
         <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.workEyebrow }}</span>
         <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
       </div>
-      <h2 data-magnetic style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.16;color:#d8ecf8;position:relative">{{ T.workTitle }}</h2>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.16;color:#d8ecf8">{{ T.workTitle }}</h2>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:32px">
@@ -185,7 +185,7 @@
         <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.svcEyebrow }}</span>
         <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
       </div>
-      <h2 data-magnetic style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.16;color:#d8ecf8;position:relative">{{ T.svcTitle }}</h2>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.16;color:#d8ecf8">{{ T.svcTitle }}</h2>
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
@@ -218,7 +218,7 @@
       <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.teamEyebrow }}</span>
       <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
     </div>
-    <h2 class="om-rev" data-magnetic style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(28px,4vw,42px);line-height:1.18;color:#d8ecf8;max-width:24ch;margin:0 auto;position:relative">{{ T.teamTitle }}</h2>
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(28px,4vw,42px);line-height:1.18;color:#d8ecf8;max-width:24ch;margin:0 auto">{{ T.teamTitle }}</h2>
     <p class="om-rev" style="margin:24px auto 0;max-width:62ch;font-size:17px;line-height:1.55;color:#c7d3ea">{{ T.teamDesc }}</p>
     <p class="om-rev" style="margin:18px auto 0;max-width:62ch;font-size:15px;line-height:1.6;color:#9da7ba">{{ T.teamPhilosophy }}</p>
     <div class="om-rev" data-stats-grid style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;max-width:900px;margin-left:auto;margin-right:auto">
@@ -247,7 +247,7 @@
       <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.processEyebrow }}</span>
       <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
     </div>
-    <h2 class="om-rev" data-magnetic style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(28px,4vw,40px);line-height:1.16;color:#d8ecf8;margin-bottom:48px;position:relative">{{ T.processTitle }}</h2>
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(28px,4vw,40px);line-height:1.16;color:#d8ecf8;margin-bottom:48px">{{ T.processTitle }}</h2>
     <div style="display:flex;align-items:stretch;justify-content:center;gap:14px;flex-wrap:wrap">
       <sc-for list="{{ T.processSteps }}" as="st" hint-placeholder-count="3">
         <div class="om-rev" style="display:flex;align-items:stretch;gap:14px">
@@ -309,8 +309,8 @@
 
   <!-- ===== MODAL ===== -->
   <sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
-    <div onClick="{{ closeModal }}" style="position:fixed;inset:0;z-index:90;background:rgba(5,6,15,0.85);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:flex-start;padding:40px 20px;overflow-y:auto" class="om-modal-scroll">
-      <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:900px;background:rgba(5,6,15,0.97);border-radius:16px;overflow:hidden;animation:rise .5s cubic-bezier(.16,.84,.34,1) both;margin:auto;box-shadow:inset 0 1px 1px rgba(216,236,248,0.2),inset 0 24px 48px rgba(168,216,245,0.06),0 16px 32px rgba(0,0,0,0.3)">
+    <div onClick="{{ closeModal }}" style="position:absolute;left:0;width:100%;height:100vh;top:{{ modalTop }}px;z-index:90;background:rgba(5,6,15,0.85);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:center;padding:40px 20px">
+      <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:900px;max-height:85vh;overflow-y:auto;background:rgba(5,6,15,0.97);border-radius:16px;animation:rise .5s cubic-bezier(.16,.84,.34,1) both;box-shadow:inset 0 1px 1px rgba(216,236,248,0.2),inset 0 24px 48px rgba(168,216,245,0.06),0 16px 32px rgba(0,0,0,0.3)" class="om-modal-scroll">
 
         <div style="position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px 28px;background:rgba(5,6,15,0.9);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(186,215,247,0.1) inset">
           <span style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9da7ba"><span style="width:7px;height:7px;border-radius:50%;background:#663af3"></span>{{ active.kind }} · {{ active.num }}</span>
@@ -728,7 +728,7 @@ class Component extends DCLogic {
 
     // ----- magnetic text: split targeted headings into per-letter spans -----
     this._magLetters = [];
-    document.querySelectorAll('[data-magnetic]').forEach((el) => {
+    Array.from(document.querySelectorAll('[data-magnetic]')).slice(0, 2).forEach((el) => {
       if (el.dataset.magDone) return;
       el.dataset.magDone = '1';
       const words = el.textContent.split(' ');
@@ -753,6 +753,17 @@ class Component extends DCLogic {
       });
     });
     this._magFrame = 0;
+    this._magRectsCache = null;
+    const refreshMagRects = () => {
+      this._magRectsCache = this._magLetters.map((span) => {
+        const r = span.getBoundingClientRect();
+        return { span, cx: r.left + r.width / 2, cy: r.top + r.height / 2 };
+      });
+    };
+    refreshMagRects();
+    this._magRectsOnScroll = () => { this._magRectsCache = null; };
+    window.addEventListener('scroll', this._magRectsOnScroll, { passive: true });
+    window.addEventListener('resize', this._magRectsOnScroll, { passive: true });
 
     const cursorLoop = () => {
       pos.x += (tgt.x - pos.x) * 0.22; pos.y += (tgt.y - pos.y) * 0.22;
@@ -760,14 +771,13 @@ class Component extends DCLogic {
       if (cur) cur.style.transform = `translate(${pos.x}px,${pos.y}px) translate(-50%,-50%)`;
       if (glow) glow.style.transform = `translate(${gpos.x}px,${gpos.y}px)`;
 
-      // update magnetic letters every 2nd frame (perf)
+      // update magnetic letters every 2nd frame (perf) using cached rects
       this._magFrame++;
       if (this._magLetters.length && this._magFrame % 2 === 0) {
+        if (!this._magRectsCache) refreshMagRects();
         const RADIUS = 140;
-        this._magLetters.forEach((span) => {
-          const r = span.getBoundingClientRect();
-          const lx = r.left + r.width / 2, ly = r.top + r.height / 2;
-          const dx = lx - tgt.x, dy = ly - tgt.y;
+        this._magRectsCache.forEach(({ span, cx, cy }) => {
+          const dx = cx - tgt.x, dy = cy - tgt.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < RADIUS) {
             const t = 1 - dist / RADIUS;
@@ -800,11 +810,30 @@ class Component extends DCLogic {
     if (this._statsIo) this._statsIo.disconnect();
     if (this._move) window.removeEventListener('pointermove', this._move);
     if (this._over) window.removeEventListener('pointerover', this._over);
+    if (this._magRectsOnScroll) { window.removeEventListener('scroll', this._magRectsOnScroll); window.removeEventListener('resize', this._magRectsOnScroll); }
     document.body.style.overflow = '';
   }
 
-  openModal = (i) => { this.setState({ open: i }); document.body.style.overflow = 'hidden'; };
-  closeModal = () => { this.setState({ open: -1 }); document.body.style.overflow = ''; };
+  openModal = (i) => {
+    this.setState({ open: i, modalTop: window.scrollY || 0 });
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    this._modalScrollSync = () => this.setState({ modalTop: window.scrollY || 0 });
+    window.addEventListener('scroll', this._modalScrollSync, { passive: true });
+    const track = () => {
+      if (this.state.open < 0) return;
+      this.setState({ modalTop: window.scrollY || 0 });
+      this._modalTrackRaf = requestAnimationFrame(track);
+    };
+    this._modalTrackRaf = requestAnimationFrame(track);
+  };
+  closeModal = () => {
+    this.setState({ open: -1 });
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    if (this._modalScrollSync) window.removeEventListener('scroll', this._modalScrollSync);
+    if (this._modalTrackRaf) cancelAnimationFrame(this._modalTrackRaf);
+  };
 
   renderVals() {
     const data = [
@@ -1012,6 +1041,7 @@ class Component extends DCLogic {
       aboutIconRotate: this.state.aboutOpen ? 'rotate(180deg)' : 'rotate(0deg)',
       aboutToggleLabel: this.state.aboutOpen ? 'Show less' : 'Show more',
       modalOpen: open >= 0,
+      modalTop: this.state.modalTop || 0,
       active: active || {},
       T: { ...T, processSteps }, lang: this.state.lang, setLang: this.setLang, onLangChange: this.onLangChange,
       openStep: this.openStep, closeStep: this.closeStep, toggleStep: this.toggleStep,

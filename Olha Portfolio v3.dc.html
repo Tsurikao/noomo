@@ -7,7 +7,6 @@
 </head>
 <body>
 <x-dc>
-
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +28,37 @@
   .om-card:hover .om-hover-desc{opacity:1;transform:translateY(0)}
   .om-svc-card{transition:box-shadow .3s ease,transform .3s ease}
   .om-svc-card:hover{transform:translateY(-2px)}
+  .om-step:hover{background:rgba(102,58,243,0.08)}
   .om-ghost{transition:background .25s ease}
   .om-ghost:hover{background:rgba(186,214,247,0.12)!important}
   .om-cta:hover{background:#7248f5!important}
+  .om-nav-links{display:flex;gap:8px;align-items:center}
+  .om-hamburger{display:none}
+  .om-mobile-panel{display:none}
+  @media (max-width:820px){
+    .om-nav-links{display:none}
+    .om-hamburger{display:flex!important}
+  }
+  select.om-select{cursor:pointer;transition:box-shadow .25s ease,background .25s ease;background-size:11px 7px!important}
+  .om-select-wrap{position:relative;display:inline-flex}
+  .om-select-arrow{position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:none;transition:transform .25s ease}
+  .om-select-wrap:focus-within .om-select-arrow{transform:translateY(-50%) rotate(180deg)}
+  select.om-select:hover,select.om-select:focus{box-shadow:0 0 0 1px rgba(102,58,243,0.5) inset;outline:none}
+  select.om-select option{background:#0c0e1a;color:#d1e4fa}
+  .om-step{cursor:pointer}
+  .om-step:hover,.om-step.om-step-open{background:rgba(102,58,243,0.08)}
+  .om-cycle-card{transition:transform .3s cubic-bezier(.16,.84,.34,1),box-shadow .3s ease,border-color .3s ease;cursor:pointer}
+  .om-cycle-card:hover{transform:scale(1.04);box-shadow:0 0 0 1px #663af3,0 20px 40px rgba(102,58,243,0.25)}
+  .om-flow-arrow{color:#663af3;font-size:20px;flex-shrink:0}
+  .om-team-card{transition:transform .3s cubic-bezier(.16,.84,.34,1),box-shadow .3s ease;cursor:pointer}
+  .om-team-card:hover{transform:scale(1.05);box-shadow:0 0 0 1px #663af3,0 20px 40px rgba(102,58,243,0.25)}
+  .om-team-card:hover img{transform:scale(1.06)}
+  .om-team-card img{transition:transform .3s ease}
+  @keyframes pulseglow{0%,100%{opacity:0.5}50%{opacity:0.9}}
+  @media (max-width:860px){.om-flow-arrow{transform:rotate(90deg)}}
   .om-modal-scroll::-webkit-scrollbar{width:8px}
   .om-modal-scroll::-webkit-scrollbar-thumb{background:#2f343e;border-radius:8px}
-  .om-link{color:#d1e4fa;text-decoration:none;border-bottom:1px solid rgba(186,215,247,0.2)}
+  .om-link{color:#d1e4fa;text-decoration:none;border-bottom:1px solid rgba(186,215,247,0.2);cursor:pointer}
   .om-link:hover{border-color:#663af3;color:#fff}
 </style>
 </helmet>
@@ -50,16 +74,15 @@
   <div data-glow style="position:fixed;top:0;left:0;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;background:radial-gradient(circle,rgba(102,58,243,0.14),transparent 65%);pointer-events:none;z-index:0;will-change:transform"></div>
 
   <!-- ambient grid + spotlight -->
-  <div style="position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(186,215,247,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(186,215,247,0.06) 1px,transparent 1px);background-size:88px 88px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 40%,transparent 90%)"></div>
-  <div style="position:fixed;top:0;left:0;right:0;height:520px;z-index:0;pointer-events:none;background:conic-gradient(from 180deg at 50% -5%,transparent 45%,rgba(124,145,182,0.30) 49%,rgba(124,145,182,0.5) 50%,rgba(124,145,182,0.30) 51%,transparent 55%)"></div>
+  <div style="position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(186,215,247,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(186,215,247,0.035) 1px,transparent 1px);background-size:88px 88px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 40%,transparent 90%)"></div>
+  <div style="position:fixed;top:0;left:0;right:0;height:520px;z-index:0;pointer-events:none;background:conic-gradient(from 180deg at 50% -5%,transparent 45%,rgba(124,145,182,0.16) 49%,rgba(124,145,182,0.26) 50%,rgba(124,145,182,0.16) 51%,transparent 55%)"></div>
 
   <!-- NAV -->
   <nav style="position:sticky;top:0;z-index:40;background:rgba(5,6,15,0.75);backdrop-filter:blur(16px);transition:box-shadow .4s ease;box-shadow:{{ navShadow }}">
     <div style="max-width:1200px;margin:0 auto;padding:20px 40px;display:flex;justify-content:space-between;align-items:center">
 <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none">
-      <img src="avatar-olga.png" alt="Olha Tsurika" style="width:32px;height:32px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px rgba(186,215,247,0.18) inset">
-      <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:16px;color:#d1e4fa">Olha Tsurika</span>
-      <span style="display:inline-flex;align-items:center;gap:6px;margin-left:6px;padding:4px 9px 4px 6px;border-radius:999px;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset">
+      <img src="logo-noomo.svg" alt="NOOMO" style="height:22px;width:auto;display:block">
+      <span style="display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset">
         <span style="display:flex;flex-direction:column;width:9px;height:9px;border-radius:2px;overflow:hidden">
           <span style="flex:1;background:#0057b7"></span>
           <span style="flex:1;background:#ffd700"></span>
@@ -67,23 +90,37 @@
         <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.04em;color:#9da7ba">{{ T.ukraineBadge }}</span>
       </span>
     </a>
-    <div style="display:flex;gap:8px;align-items:center">
+    <div class="om-nav-links">
       <a href="#work" style="font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#9da7ba;padding:8px 16px;border-radius:999px" class="om-ghost">{{ T.navWork }}</a>
       <a href="#services" style="font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#9da7ba;padding:8px 16px;border-radius:999px" class="om-ghost">{{ T.navServices }}</a>
-      <a href="#about" style="font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#9da7ba;padding:8px 16px;border-radius:999px" class="om-ghost">{{ T.navAbout }}</a>
-      <div style="display:flex;align-items:center;gap:2px;margin-left:4px;padding:2px;border-radius:999px;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset">
-        <button onClick="{{ setLangEn }}" style="{{ langBtnStyleEn }}">EN</button>
-        <button onClick="{{ setLangDk }}" style="{{ langBtnStyleDk }}">DK</button>
-        <button onClick="{{ setLangUa }}" style="{{ langBtnStyleUa }}">UA</button>
+      <a href="#team" style="font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#9da7ba;padding:8px 16px;border-radius:999px" class="om-ghost">{{ T.navAbout }}</a>
+      <div class="om-select-wrap">
+        <select onChange="{{ onLangChange }}" value="{{ lang }}" class="om-select" style="font-family:'Inter',sans-serif;font-weight:500;font-size:13px;color:#d1e4fa;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:8px 32px 8px 14px;border-radius:999px;border:none;appearance:none">
+          <option value="en" style="color:#05060f">EN</option>
+          <option value="dk" style="color:#05060f">DA</option>
+          <option value="ua" style="color:#05060f">UA</option>
+        </select>
+        <svg class="om-select-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1.5 1.5l4.5 4.5 4.5-4.5" stroke="#d1e4fa" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <a href="#contact" style="display:inline-flex;align-items:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#fff;background:#663af3;padding:8px 16px;border-radius:999px;margin-left:8px" class="om-cta">{{ T.navContact }}</a>
     </div>
+    <button onClick="{{ toggleMobileMenu }}" class="om-hamburger" aria-label="Menu" style="align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:none;background:rgba(186,214,247,0.08);cursor:pointer;color:#d1e4fa;font-size:18px">{{ mobileMenuIcon }}</button>
     </div>
-  </nav>
+    <div class="om-mobile-panel" style="display:{{ mobileMenuDisplay }};flex-direction:column;gap:6px;padding:0 20px 20px;background:rgba(5,6,15,0.97)">
+      <a href="#work" onClick="{{ closeMobileMenu }}" style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;text-decoration:none;color:#d1e4fa;padding:12px 6px;border-radius:10px" class="om-ghost">{{ T.navWork }}</a>
+      <a href="#services" onClick="{{ closeMobileMenu }}" style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;text-decoration:none;color:#d1e4fa;padding:12px 6px;border-radius:10px" class="om-ghost">{{ T.navServices }}</a>
+      <a href="#team" onClick="{{ closeMobileMenu }}" style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;text-decoration:none;color:#d1e4fa;padding:12px 6px;border-radius:10px" class="om-ghost">{{ T.navAbout }}</a>
+      <select onChange="{{ onLangChange }}" value="{{ lang }}" class="om-select" style="margin-top:6px;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;color:#d1e4fa;background:rgba(186,214,247,0.06) url('data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%226%22 viewBox=%220 0 10 6%22%3E%3Cpath d=%22M1 1l4 4 4-4%22 stroke=%22%239da7ba%22 stroke-width=%221.4%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E') no-repeat right 14px center;box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:12px 34px 12px 14px;border-radius:10px;border:none;appearance:none">
+        <option value="en" style="color:#05060f">EN</option>
+        <option value="dk" style="color:#05060f">DA</option>
+        <option value="ua" style="color:#05060f">UA</option>
+      </select>
+      <a href="#contact" onClick="{{ closeMobileMenu }}" style="margin-top:6px;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:500;font-size:15px;text-decoration:none;color:#fff;background:#663af3;padding:12px 16px;border-radius:10px" class="om-cta">{{ T.navContact }}</a>
+    </div>
 
   <!-- HERO -->
   <header style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:100px 40px 56px;text-align:center;transform:translateY({{ heroParallax }})">
-    <canvas ref="{{ sphereRef }}" width="1000" height="1000" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:min(980px,110vw);height:min(980px,110vw);z-index:-1;pointer-events:none;opacity:0.7"></canvas>
+    <canvas ref="{{ sphereRef }}" width="1000" height="1000" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:min(980px,110vw);height:min(980px,110vw);z-index:-1;pointer-events:none;opacity:0.45"></canvas>
     <div class="om-rev" style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:32px">
       <span style="width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(186,215,247,0.4))"></span>
       <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.heroEyebrow }}</span>
@@ -106,10 +143,10 @@
     <div class="om-rev" style="text-align:center;margin-bottom:56px">
       <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:20px">
         <span style="width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(186,215,247,0.4))"></span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">Selected Work</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.workEyebrow }}</span>
         <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
       </div>
-      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.16;color:#d8ecf8">Four case studies, one B2B focus.</h2>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.16;color:#d8ecf8">{{ T.workTitle }}</h2>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:32px">
@@ -150,132 +187,129 @@
       <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.16;color:#d8ecf8">{{ T.svcTitle }}</h2>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:stretch">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
       <sc-for list="{{ services }}" as="svc" hint-placeholder-count="3">
-        <div class="om-svc-card om-rev" style="position:relative;display:flex;flex-direction:column;height:100%;border-radius:16px;padding:24px;background:rgba(186,214,247,0.03);box-shadow:inset 0 1px 1px rgba(199,211,234,0.12),inset 0 24px 48px rgba(199,211,234,0.05),0 24px 32px rgba(6,6,14,0.7)">
-          <sc-if value="{{ svc.popular }}" hint-placeholder-val="{{ false }}">
-            <span style="position:absolute;top:-11px;left:24px;font-family:'Inter',sans-serif;font-weight:500;font-size:12px;color:#fff;background:#663af3;padding:5px 12px;border-radius:999px">{{ T.popular }}</span>
-          </sc-if>
-          <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:22px;line-height:1.2;color:#d8ecf8">{{ svc.title }}</h3>
-          <span style="display:inline-block;margin-top:12px;align-self:flex-start;font-size:12px;color:#d1e4fa;background:rgba(199,211,234,0.12);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:4px 8px;border-radius:6px">{{ svc.price }}</span>
-          <p style="margin-top:16px;font-size:15px;line-height:1.5;color:#c7d3ea">{{ svc.tagline }}</p>
-          <div style="margin-top:20px;display:flex;flex-direction:column;gap:8px">
-            <sc-for list="{{ svc.includes }}" as="inc" hint-placeholder-count="5">
-              <div style="display:flex;gap:9px;align-items:flex-start">
-                <span style="flex-shrink:0;margin-top:7px;width:4px;height:4px;border-radius:50%;background:#663af3"></span>
-                <span style="font-size:14px;line-height:1.5;color:#c7d3ea">{{ inc }}</span>
-              </div>
-            </sc-for>
-          </div>
-          <div style="margin-top:20px;box-shadow:0 -1px 0 rgba(186,215,247,0.12) inset;padding-top:16px">
-            <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-bottom:10px">{{ T.bestForLabel }}</div>
-            <div style="display:flex;flex-direction:column;gap:6px">
-              <sc-for list="{{ svc.bestFor }}" as="bf" hint-placeholder-count="3">
-                <span style="font-size:13px;line-height:1.5;color:#9da7ba">{{ bf }}</span>
-              </sc-for>
-            </div>
-          </div>
-          <div style="flex:1"></div>
-          <a href="#contact" class="om-cta" style="margin-top:20px;display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;background:#663af3;color:#fff;padding:12px 20px;border-radius:999px">{{ T.startProject }}</a>
+        <div class="om-svc-card om-rev" style="border-radius:16px;padding:28px;background:rgba(186,214,247,0.03);box-shadow:inset 0 1px 1px rgba(199,211,234,0.12),inset 0 24px 48px rgba(199,211,234,0.05),0 24px 32px rgba(6,6,14,0.7)">
+          <span style="display:inline-block;font-family:'JetBrains Mono',monospace;font-size:12px;color:#d1e4fa;background:rgba(199,211,234,0.12);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:4px 10px;border-radius:999px">{{ svc.time }}</span>
+          <h3 style="margin-top:16px;font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px;line-height:1.25;color:#d8ecf8">{{ svc.title }}</h3>
+          <p style="margin-top:12px;font-size:14px;line-height:1.55;color:#9da7ba">{{ svc.desc }}</p>
         </div>
       </sc-for>
     </div>
 
-    <div class="om-rev" style="margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;border-radius:16px;padding:24px 28px;background:rgba(186,214,247,0.03);box-shadow:inset 0 1px 1px rgba(199,211,234,0.12),0 24px 32px rgba(6,6,14,0.5)">
-      <div>
-        <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:18px;color:#d8ecf8">{{ T.auditTitle }}</h3>
-        <p style="margin-top:8px;font-size:14px;line-height:1.5;color:#9da7ba;max-width:52ch">{{ T.auditDesc }}</p>
+    <div class="om-rev" style="margin-top:24px;border-radius:16px;padding:clamp(24px,4vw,36px);background:rgba(186,214,247,0.03);box-shadow:inset 0 1px 1px rgba(199,211,234,0.12),0 24px 32px rgba(6,6,14,0.5);text-align:center">
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:18px;color:#d8ecf8;text-align:center">{{ T.auditTitle }}</h3>
+      <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:16px;justify-content:center">
+        <span style="font-size:15px;color:#d1e4fa;background:rgba(199,211,234,0.12);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:8px 14px;border-radius:6px">{{ T.auditPrice }}</span>
+        <span style="font-size:15px;color:#d1e4fa;background:rgba(199,211,234,0.12);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:8px 14px;border-radius:6px">{{ T.paymentPrepay }}</span>
       </div>
-      <div style="display:flex;align-items:center;gap:16px;flex-shrink:0">
-        <span style="font-size:14px;color:#d1e4fa;background:rgba(199,211,234,0.12);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:6px 12px;border-radius:6px">{{ T.auditPrice }}</span>
-        <a href="#contact" class="om-cta" style="display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#fff;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:10px 18px;border-radius:999px">{{ T.auditCta }}</a>
+      <p style="margin:18px auto 0;font-size:14px;line-height:1.55;color:#9da7ba;max-width:64ch">{{ T.auditDesc }} <a href="https://factorfly.com" target="_blank" rel="noopener" class="om-link">FactorFly</a>{{ T.auditDescEnd }}</p>
+      <a href="#contact" class="om-cta" style="margin-top:20px;display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;background:#663af3;color:#fff;padding:12px 22px;border-radius:999px">{{ T.auditCta }}</a>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" data-parallax="0.025" style="position:relative;z-index:1;max-width:1200px;margin:120px auto 0;padding:0 40px;text-align:center">
+    <div style="position:absolute;left:8%;top:-40px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(102,58,243,0.16),transparent 65%);pointer-events:none;z-index:0;animation:pulseglow 7s ease-in-out infinite"></div>
+    <div style="position:absolute;right:8%;bottom:-20px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(102,58,243,0.12),transparent 65%);pointer-events:none;z-index:0;animation:pulseglow 8s ease-in-out infinite reverse"></div>
+    <div class="om-rev" style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:20px">
+      <span style="width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(186,215,247,0.4))"></span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.teamEyebrow }}</span>
+      <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
+    </div>
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(28px,4vw,42px);line-height:1.18;color:#d8ecf8;max-width:24ch;margin:0 auto">{{ T.teamTitle }}</h2>
+    <p class="om-rev" style="margin:24px auto 0;max-width:62ch;font-size:17px;line-height:1.55;color:#c7d3ea">{{ T.teamDesc }}</p>
+    <p class="om-rev" style="margin:18px auto 0;max-width:62ch;font-size:15px;line-height:1.6;color:#9da7ba">{{ T.teamPhilosophy }}</p>
+    <div class="om-rev" data-stats-grid style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;max-width:900px;margin-left:auto;margin-right:auto">
+      <sc-for list="{{ stats }}" as="st" hint-placeholder-count="4">
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(32px,5vw,44px);color:#C4FF00">{{ st.display }}</div>
+          <div style="margin-top:8px;font-size:13px;line-height:1.4;color:#9da7ba">{{ st.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <div class="om-rev" style="margin-top:48px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-bottom:16px">{{ T.stackLabel }}</div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:76ch;margin:0 auto">
+        <sc-for list="{{ skills }}" as="s" hint-placeholder-count="12">
+          <span style="font-size:14px;color:#d1e4fa;background:rgba(199,211,234,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:8px 14px;border-radius:999px">{{ s }}</span>
+        </sc-for>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT + EXPERIENCE -->
-  <section id="about" data-parallax="0.025" style="position:relative;z-index:1;max-width:1200px;margin:120px auto 0;padding:0 40px">
-    <button onClick="{{ toggleAbout }}" style="all:unset;cursor:pointer;display:block;width:100%;text-align:center">
-      <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:20px">
-        <span style="width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(186,215,247,0.4))"></span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">ABOUT ME</span>
-        <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
-      </div>
-      <img src="avatar-olga.png" alt="Olha Tsurika" style="width:112px;height:112px;border-radius:50%;object-fit:cover;margin:0 auto 24px;display:block;box-shadow:0 0 0 1px rgba(186,215,247,0.18) inset">
-      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(28px,4vw,42px);line-height:1.18;color:#d8ecf8;max-width:22ch;margin:0 auto">AI Product Engineer &amp; iOS MVP Developer turning ideas into scalable, user-centered products.</h2>
-      <span style="margin-top:24px;display:inline-flex;align-items:center;gap:9px;font-family:'Inter',sans-serif;font-weight:500;font-size:13px;color:#fff;background:#663af3;padding:12px 22px;border-radius:999px" class="om-cta">{{ aboutToggleLabel }}<span style="display:inline-block;font-size:14px;transition:transform .4s cubic-bezier(.16,.84,.34,1);transform:{{ aboutIconRotate }}">⌄</span></span>
-    </button>
-
-    <div style="display:grid;grid-template-rows:{{ aboutRows }};transition:grid-template-rows .5s cubic-bezier(.16,.84,.34,1)">
-      <div style="overflow:hidden">
-        <div style="margin-top:48px;max-width:64ch;margin-left:auto;margin-right:auto;text-align:center">
-          <p style="font-size:17px;line-height:1.55;color:#d1e4fa">I build AI-native products for B2B teams who can't afford wasted budget or slow timelines — every engagement is scoped for velocity: validated MVPs, shipped fast, engineered to convert from the first release.</p>
-          <p style="margin-top:18px;font-size:17px;line-height:1.55;color:#9da7ba">The interfaces I design are hyper-adaptive by default — built to sense shifting user behavior and friction points in real time, so your product anticipates what a customer needs next instead of reacting to what they clicked last.</p>
-        </div>
-
-        <div style="margin-top:44px;text-align:center">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-bottom:16px">Core skills</div>
-          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:76ch;margin:0 auto">
-            <sc-for list="{{ skills }}" as="s" hint-placeholder-count="12">
-              <span style="font-size:14px;color:#d1e4fa;background:rgba(199,211,234,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:8px 14px;border-radius:999px">{{ s }}</span>
-            </sc-for>
-          </div>
-        </div>
-      </div>
+  <!-- PROCESS -->
+  <section id="process" data-parallax="0.02" style="position:relative;z-index:1;max-width:1200px;margin:120px auto 0;padding:0 40px;text-align:center">
+    <div style="position:absolute;left:50%;top:20%;width:600px;height:400px;margin-left:-300px;border-radius:50%;background:radial-gradient(circle,rgba(102,58,243,0.1),transparent 70%);pointer-events:none;z-index:0;animation:pulseglow 9s ease-in-out infinite"></div>
+    <div class="om-rev" style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:20px">
+      <span style="width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(186,215,247,0.4))"></span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.processEyebrow }}</span>
+      <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
     </div>
-
-    <div class="om-rev" style="margin-top:88px">
-      <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:40px">
-        <span style="width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(186,215,247,0.4))"></span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">Experience</span>
-        <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
-      </div>
-      <div style="display:flex;flex-direction:column">
-        <sc-for list="{{ experience }}" as="x" hint-placeholder-count="3">
-          <div class="om-rev" style="display:grid;grid-template-columns:0.42fr 1fr;gap:28px;padding:32px 0;box-shadow:0 -1px 0 rgba(186,215,247,0.1) inset">
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(28px,4vw,40px);line-height:1.16;color:#d8ecf8;margin-bottom:48px">{{ T.processTitle }}</h2>
+    <div style="display:flex;align-items:stretch;justify-content:center;gap:14px;flex-wrap:wrap">
+      <sc-for list="{{ T.processSteps }}" as="st" hint-placeholder-count="3">
+        <div class="om-rev" style="display:flex;align-items:stretch;gap:14px">
+          <div class="om-cycle-card" style="width:250px;min-height:230px;display:flex;flex-direction:column;border-radius:16px;padding:24px 20px;background:rgba(186,214,247,0.03);box-shadow:inset 0 1px 1px rgba(199,211,234,0.12),0 24px 32px rgba(6,6,14,0.7);text-align:left">
             <div>
-              <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#98c0ef">{{ x.period }}</div>
-              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-top:8px">{{ x.dur }}</div>
-              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-top:4px">{{ x.place }}</div>
+              <span style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:28px;color:#663af3">{{ st.num }}</span>
+              <span style="display:inline-block;margin-left:10px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#9da7ba;background:rgba(199,211,234,0.1);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:3px 8px;border-radius:999px;vertical-align:middle">{{ st.timing }}</span>
             </div>
-            <div>
-              <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(20px,2.4vw,24px);color:#d8ecf8">{{ x.role }}</h3>
-              <div style="font-size:15px;color:#98c0ef;margin-top:6px">{{ x.company }}</div>
-              <p style="margin-top:14px;font-size:15px;line-height:1.5;color:#9da7ba;max-width:54ch">{{ x.desc }}</p>
-            </div>
+            <h3 style="margin-top:12px;font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:17px;line-height:1.3;color:#d8ecf8">{{ st.title }}</h3>
+            <p style="margin-top:10px;font-size:13.5px;line-height:1.5;color:#9da7ba;flex:1">{{ st.desc }}</p>
           </div>
-        </sc-for>
+          <sc-if value="{{ st.hasNext }}" hint-placeholder-val="{{ true }}">
+            <span class="om-flow-arrow" style="align-self:center">→</span>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:24px">
+      <div class="om-rev om-cycle-card" style="width:100%;max-width:1120px;border-radius:16px;padding:32px;background:rgba(102,58,243,0.06);box-shadow:0 0 0 1px rgba(102,58,243,0.3) inset,0 24px 32px rgba(6,6,14,0.5);text-align:left">
+        <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:28px;color:#663af3">{{ T.finalStep.num }}</span>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:19px;color:#d8ecf8">{{ T.finalStep.title }}</h3>
+        </div>
+        <p style="margin-top:12px;font-size:14.5px;line-height:1.55;color:#c7d3ea;max-width:60ch">{{ T.finalStep.desc }} <a href="https://factorfly.com" target="_blank" rel="noopener" class="om-link">FactorFly</a>{{ T.finalStep.descEnd }}</p>
+        <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px">
+          <sc-for list="{{ T.finalStep.deliverables }}" as="dl" hint-placeholder-count="4">
+            <span style="font-size:13px;color:#d1e4fa;background:rgba(199,211,234,0.1);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:6px 12px;border-radius:999px">{{ dl }}</span>
+          </sc-for>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" data-parallax="0.02" style="position:relative;z-index:1;margin:120px auto 0;max-width:1200px;padding:0 40px 96px">
+    <div data-glow-2 style="position:absolute;left:50%;top:0;width:640px;height:640px;margin-left:-320px;border-radius:50%;background:radial-gradient(circle,rgba(102,58,243,0.18),transparent 65%);pointer-events:none;z-index:0;animation:pulseglow 6s ease-in-out infinite"></div>
+    <div style="position:absolute;right:5%;bottom:0;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(102,58,243,0.13),transparent 65%);pointer-events:none;z-index:0;animation:pulseglow 7.5s ease-in-out infinite reverse"></div>
     <div class="om-rev" style="text-align:center;border-radius:16px;background:rgba(186,214,247,0.03);box-shadow:inset 0 1px 1px rgba(199,211,234,0.12),inset 0 24px 48px rgba(199,211,234,0.05),0 24px 32px rgba(6,6,14,0.7);padding:clamp(40px,6vw,72px) clamp(24px,5vw,56px)">
       <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:20px">
         <span style="width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(186,215,247,0.4))"></span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">Let's build</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.1em;color:#c7d3ea;text-transform:uppercase">{{ T.contactEyebrow }}</span>
         <span style="width:56px;height:1px;background:linear-gradient(90deg,rgba(186,215,247,0.4),transparent)"></span>
       </div>
-      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(32px,5vw,52px);line-height:1.14;letter-spacing:-0.01em;max-width:16ch;margin:0 auto;background:linear-gradient(0deg,#98c0ef 0%,#d8ecf8 100%);-webkit-background-clip:text;background-clip:text;color:transparent">Have a B2B product worth scaling?</h2>
-      <p style="margin:20px auto 0;max-width:48ch;font-size:17px;line-height:1.55;color:#c7d3ea">Fixed scope, fast turnaround, engineered for ROI — let's talk about what you're building.</p>
+      <h2 data-magnetic style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(32px,5vw,52px);line-height:1.14;letter-spacing:-0.01em;max-width:16ch;margin:0 auto;color:#d8ecf8;position:relative">{{ T.contactTitle }}</h2>
+      <p style="margin:20px auto 0;max-width:48ch;font-size:17px;line-height:1.55;color:#c7d3ea">{{ T.contactSub }}</p>
       <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
         <a href="https://www.linkedin.com/in/olga-tsurika/" target="_blank" rel="noopener" class="om-cta" style="display:inline-flex;align-items:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;background:#663af3;color:#fff;padding:12px 24px;border-radius:999px">LinkedIn</a>
+        <a href="https://www.instagram.com/noomo_labs" target="_blank" rel="noopener" class="om-ghost" style="display:inline-flex;align-items:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#fff;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:12px 24px;border-radius:999px">Instagram</a>
         <a href="https://wa.me/4591927980" target="_blank" rel="noopener" class="om-ghost" style="display:inline-flex;align-items:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#fff;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:12px 24px;border-radius:999px">WhatsApp</a>
         <a href="https://t.me/+4591927980" target="_blank" rel="noopener" class="om-ghost" style="display:inline-flex;align-items:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#fff;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:12px 24px;border-radius:999px">Telegram</a>
         <a href="tel:+4591927980" class="om-ghost" style="display:inline-flex;align-items:center;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;text-decoration:none;color:#fff;background:rgba(186,214,247,0.06);box-shadow:0 0 0 1px rgba(186,215,247,0.12) inset;padding:12px 24px;border-radius:999px">+45 91 92 79 80</a>
       </div>
     </div>
     <div style="display:flex;justify-content:space-between;padding-top:28px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;flex-wrap:wrap;gap:10px">
-      <span>© 2026 Olha Tsurika</span>
-      <span>Designed at the intersection of design + AI</span>
+      <span>© 2026 NOOMO</span>
+      <span>{{ T.footerTag }}</span>
     </div>
   </section>
 
   <!-- ===== MODAL ===== -->
   <sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
-    <div onClick="{{ closeModal }}" style="position:fixed;inset:0;z-index:90;background:rgba(5,6,15,0.85);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:flex-start;padding:40px 20px;overflow-y:auto" class="om-modal-scroll">
-      <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:900px;background:rgba(5,6,15,0.97);border-radius:16px;overflow:hidden;animation:rise .5s cubic-bezier(.16,.84,.34,1) both;margin:auto;box-shadow:inset 0 1px 1px rgba(216,236,248,0.2),inset 0 24px 48px rgba(168,216,245,0.06),0 16px 32px rgba(0,0,0,0.3)">
+    <div onClick="{{ closeModal }}" style="position:absolute;left:0;width:100%;height:100vh;top:{{ modalTop }}px;z-index:90;background:rgba(5,6,15,0.85);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:center;padding:40px 20px">
+      <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:900px;max-height:85vh;overflow-y:auto;background:rgba(5,6,15,0.97);border-radius:16px;animation:rise .5s cubic-bezier(.16,.84,.34,1) both;box-shadow:inset 0 1px 1px rgba(216,236,248,0.2),inset 0 24px 48px rgba(168,216,245,0.06),0 16px 32px rgba(0,0,0,0.3)" class="om-modal-scroll">
 
         <div style="position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px 28px;background:rgba(5,6,15,0.9);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(186,215,247,0.1) inset">
           <span style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9da7ba"><span style="width:7px;height:7px;border-radius:50%;background:#663af3"></span>{{ active.kind }} · {{ active.num }}</span>
@@ -307,7 +341,7 @@
 
           <sc-if value="{{ active.solutionShown }}" hint-placeholder-val="{{ false }}">
             <div style="margin-top:34px">
-              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-bottom:16px">What I designed</div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-bottom:16px">What we designed</div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px 28px">
                 <sc-for list="{{ active.solution }}" as="so" hint-placeholder-count="4">
                   <div>
@@ -360,7 +394,7 @@
 
           <sc-if value="{{ active.roleShown }}" hint-placeholder-val="{{ false }}">
             <div style="margin-top:40px">
-              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-bottom:16px">My role &amp; idea</div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9da7ba;margin-bottom:16px">Our approach</div>
               <div style="display:flex;flex-direction:column;gap:12px">
                 <sc-for list="{{ active.role }}" as="rl" hint-placeholder-count="5">
                   <div style="display:flex;gap:12px;align-items:flex-start">
@@ -393,78 +427,142 @@
   </sc-if>
 
 </div>
-
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:900}}">
-
+<script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { open: -1, aboutOpen: false, scrollY: 0, lang: 'en' };
+  state = { open: -1, aboutOpen: false, scrollY: 0, lang: 'en', openStepIdx: -1, statsProgress: 0, mobileMenuOpen: false };
+  toggleMobileMenu = () => this.setState((s) => ({ mobileMenuOpen: !s.mobileMenuOpen }));
+  closeMobileMenu = () => this.setState({ mobileMenuOpen: false });
+  openStep = (i) => (() => this.setState({ openStepIdx: i }));
+  closeStep = () => this.setState({ openStepIdx: -1 });
+  toggleStep = (i) => (() => this.setState((s) => ({ openStepIdx: s.openStepIdx === i ? -1 : i })));
   sphereRef = React.createRef();
   setLang = (l) => this.setState({ lang: l });
+  onLangChange = (e) => this.setLang(e.target.value);
   langBtnStyle = (l) => this.state.lang === l
-    ? "font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;letter-spacing:0.04em;color:#fff;background:#663af3;padding:6px 10px;border-radius:999px;cursor:pointer;border:none"
+    ? "font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;letter-spacing:0.04em;color:#05060f;background:#C4FF00;padding:6px 10px;border-radius:999px;cursor:pointer;border:none"
     : "font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#9da7ba;background:transparent;padding:6px 10px;border-radius:999px;cursor:pointer;border:none";
 
   translations = {
     en: {
-      navWork: 'Work', navServices: 'Services', navAbout: 'About', navContact: 'Get in touch',
+      navWork: 'Work', navServices: 'Services', navAbout: 'Team', navContact: 'Get in touch',
       ukraineBadge: 'Proudly Ukrainian',
       heroEyebrow: 'AI Product Engineering for B2B & Startups',
       heroTitle: 'High-converting AI interfaces for B2B & startups.',
-      heroSub: "I turn complex B2B logic into dead-simple flows that launch fast and convert from day one — no wasted budget, no slow rollouts. Whether you're an enterprise team or an early-stage startup, every interface is hyper-adaptive: it senses shifting user behavior and friction in real time, so your product is always one step ahead of what the customer needs next.",
+      heroSub: "We turn complex B2B logic into dead-simple flows that launch fast and convert from day one — no wasted budget, no slow rollouts. Whether you're an enterprise team or an early-stage startup, every interface is hyper-adaptive: it senses shifting user behavior and friction in real time, so your product is always one step ahead of what the customer needs next.",
       heroCta1: 'Selected work', heroCta2: 'Get in touch',
       trustLine: 'Trusted by 300+ B2B clients & startups worldwide',
-      svcEyebrow: 'Services', svcTitle: 'Fixed-scope packages, priced for Danish SMBs & startups.',
-      popular: 'Most Popular', bestForLabel: 'Best for', startProject: 'Start Project',
-      fromWord: 'From',
+      workEyebrow: 'Selected Work', workTitle: 'Four case studies, one B2B focus.',
+      contactEyebrow: "Let's build", contactTitle: 'Have a B2B product worth scaling?', contactSub: "Fixed scope, fast turnaround, engineered for ROI — let's talk about what you're building.",
+      footerTag: 'Full-cycle design + AI + engineering, under one roof',
+      svcEyebrow: 'Services', svcTitle: 'Three fixed-scope packages, engineered for speed.',
+      popular: 'Most Popular', bestForLabel: 'Best for', startProject: 'Start Project', fromWord: 'From',
       packages: [
-        { title: 'Express & Startup MVP', price: 'From 8,000 DKK', tagline: 'A high-converting single-page website or a fast frontend layout designed to validate your startup idea or service quickly.', includes: ['High-converting single-page site or landing page','Fast frontend layout for early product validation','Mobile-perfect, ready to pitch to investors','Launch-ready in days, not months'], bestFor: ['Small businesses launching a new service','Early-stage startups pitching investors','Teams testing an application concept'], popular: false },
-        { title: 'Full Business Platform', price: 'From 25,000 DKK', tagline: 'A fully functional multi-page business website or a custom frontend application implementation (React/Vue) with easy CMS integration.', includes: ['Multi-page business website or app frontend','Custom React/Vue implementation','Easy CMS integration for your team','Scalable component system','Responsive, tested desktop to mobile'], bestFor: ['Established SMEs needing a robust digital presence','Startups ready to scale their core application'], popular: true },
-        { title: 'Product Design & UX/UI System', price: 'From 12,000 DKK', tagline: 'Comprehensive user experience research, modern interface design, and a complete scalable design system.', includes: ['UX research and discovery','Modern interface design','Complete scalable design system','Real links and button states in prototype'], bestFor: ['Founders revamping an existing application','Businesses building an intuitive digital product from scratch'], popular: false }
+        { num:'01', title: 'MVP in 14 Days', time: '14 days', desc: 'A working version of your product built end-to-end — from flow to functioning code — ready to put in front of real users and investors.' },
+        { num:'02', title: 'AI Integration in 5 Days', time: '5 days', desc: 'AI features and process automation implemented directly into your existing product or workflow.' },
+        { num:'03', title: 'Web Coding in 48 Hours', time: '48 hours', desc: 'Landing pages and websites built and shipped fast, without cutting corners on quality.' }
       ],
-      auditTitle: 'Expert Consultation & Technical Audit', auditPrice: 'From 1,200 DKK / hour',
-      auditDesc: 'In-depth code review, architecture analysis, or strategic advice on your current tech stack.',
-      auditCta: 'Book a session'
+      auditTitle: 'Rates & Payment', auditPrice: 'From 1,500 DKK / hour',
+      auditDesc: 'All invoicing and payments run through',
+      auditDescEnd: ', the official Danish platform that protects both sides, handles Danish tax compliance, and simplifies contracts for businesses and startups.',
+      auditCta: 'Get in touch', paymentPrepay: '50% upfront, 50% on delivery',
+      teamEyebrow: 'Our Team', teamTitle: 'A small team building AI-native products end-to-end.',
+      teamDesc: 'NOOMO is a full-cycle product studio for B2B companies and startups — design, AI integration and engineering under one roof, from first prototype to shipped code.',
+      teamPhilosophy: '“Noomo” comes from the Ukrainian for “move forward.” It’s the team’s working principle: we don’t stand still — we keep picking up new AI integrations, tools and skills. A tight-knit team of people who have worked together for years, moving forward as one.',
+      statLabels: ['Projects & AI integrations shipped', 'Product companies & startups we’ve worked with', 'Average experience per team specialist', 'Countries our clients are based in'],
+      stackLabel: 'Tech & Tools',
+      processEyebrow: 'How We Work', processTitle: 'A transparent process, four steps.',
+      processSteps: [
+        { num: '1', timing: 'First 24 hours', title: 'Consultation & Brief', desc: 'A fast call to lock in your goals, and we confirm the brief and scope of work.' },
+        { num: '2', timing: 'Same-day setup', title: 'Secure Prepayment (50%)', desc: 'Official, secure 50% payment via FactorFly — covers Danish tax compliance and protects both sides.' },
+        { num: '3', timing: 'MVP in 14 days', title: 'Development, AI Integration & Iterations', desc: 'Design, coding, AI-tool integration and regular check-ins with you throughout.' }
+      ],
+      finalStep: {
+        num: '4', title: 'Final Payment & Handoff',
+        desc: 'The remaining 50% is due once the project is signed off, paid via',
+        descEnd: '. Then we hand everything over directly, no delay — the exact deliverable depends on the product:',
+        deliverables: ['Code repository, deployed & connected to your domain', 'Figma files & design system', 'Cloud platform artifacts', 'Ready-to-use MVP']
+      }
     },
     dk: {
-      navWork: 'Arbejde', navServices: 'Services', navAbout: 'Om mig', navContact: 'Kontakt',
+      navWork: 'Arbejde', navServices: 'Services', navAbout: 'Team', navContact: 'Kontakt',
       ukraineBadge: 'Stolt ukrainer',
       heroEyebrow: 'AI-produktudvikling for B2B & startups',
       heroTitle: 'Konverterende AI-grænseflader for B2B & startups.',
-      heroSub: 'Jeg omsætter kompleks B2B-logik til enkle flows, der lanceres hurtigt og konverterer fra dag ét — uden spildt budget, uden langsomme udrulninger. Uanset om du er en virksomhed eller en tidlig startup, er hver grænseflade hyper-adaptiv: den registrerer skiftende brugeradfærd og friktion i realtid, så dit produkt altid er et skridt foran, hvad kunden har brug for næste gang.',
+      heroSub: 'Vi omsætter kompleks B2B-logik til enkle flows, der lanceres hurtigt og konverterer fra dag ét — uden spildt budget, uden langsomme udrulninger. Uanset om du er en virksomhed eller en tidlig startup, er hver grænseflade hyper-adaptiv: den registrerer skiftende brugeradfærd og friktion i realtid, så dit produkt altid er et skridt foran, hvad kunden har brug for næste gang.',
       heroCta1: 'Se arbejde', heroCta2: 'Kontakt mig',
       trustLine: 'Betroet af 300+ B2B-kunder & startups verden over',
-      svcEyebrow: 'Services', svcTitle: 'Fastprispakker, målrettet danske SMV\'er & startups.',
-      popular: 'Mest populær', bestForLabel: 'Bedst til', startProject: 'Start projekt',
-      fromWord: 'Fra',
+      workEyebrow: 'Udvalgt arbejde', workTitle: 'Fire cases, ét B2B-fokus.',
+      contactEyebrow: 'Lad os bygge', contactTitle: 'Har du et B2B-produkt, der er klar til at skalere?', contactSub: 'Fast omfang, hurtig levering, bygget til ROI — lad os tale om, hvad du bygger.',
+      footerTag: 'Full-cycle design + AI + udvikling, under samme tag',
+      svcEyebrow: 'Services', svcTitle: 'Tre fastprispakker, bygget til fart.',
+      popular: 'Mest populær', bestForLabel: 'Bedst til', startProject: 'Start projekt', fromWord: 'Fra',
       packages: [
-        { title: 'Express & Startup MVP', price: 'Fra 8.000 DKK', tagline: 'En konverterende one-page hjemmeside eller et hurtigt frontend-layout designet til at validere din startup-idé eller service hurtigt.', includes: ['Konverterende one-page site eller landingpage','Hurtigt frontend-layout til tidlig produktvalidering','Mobilvenlig, klar til investorpitch','Klar til lancering på dage, ikke måneder'], bestFor: ['Små virksomheder der lancerer en ny service','Tidlige startups der pitcher til investorer','Teams der tester et applikationskoncept'], popular: false },
-        { title: 'Full Business Platform', price: 'Fra 25.000 DKK', tagline: 'En fuldt funktionel flersidet virksomhedswebsite eller en skræddersyet frontend-applikation (React/Vue) med nem CMS-integration.', includes: ['Flersidet virksomhedswebsite eller app-frontend','Skræddersyet React/Vue-implementering','Nem CMS-integration for dit team','Skalerbart komponentsystem','Responsivt, testet fra desktop til mobil'], bestFor: ['Etablerede SMV\'er med behov for stærk digital tilstedeværelse','Startups klar til at skalere deres kerneapplikation'], popular: true },
-        { title: 'Product Design & UX/UI System', price: 'Fra 12.000 DKK', tagline: 'Grundig brugeroplevelsesresearch, moderne interfacedesign og et komplet skalerbart designsystem.', includes: ['UX-research og discovery','Moderne interfacedesign','Komplet skalerbart designsystem','Rigtige links og knapstatusser i prototype'], bestFor: ['Grundlæggere der opgraderer en eksisterende applikation','Virksomheder der bygger et intuitivt digitalt produkt fra bunden'], popular: false }
+        { num:'01', title: 'MVP på 14 dage', time: '14 dage', desc: 'En fungerende version af dit produkt bygget fra ende til ende — fra flow til kørende kode — klar til at vise til rigtige brugere og investorer.' },
+        { num:'02', title: 'AI-integration på 5 dage', time: '5 dage', desc: 'AI-funktioner og procesautomatisering implementeret direkte i dit eksisterende produkt eller workflow.' },
+        { num:'03', title: 'Web-kodning på 48 timer', time: '48 timer', desc: 'Landingpages og hjemmesider bygget og lanceret hurtigt, uden at gå på kompromis med kvaliteten.' }
       ],
-      auditTitle: 'Ekspertrådgivning & teknisk audit', auditPrice: 'Fra 1.200 DKK / time',
-      auditDesc: 'Dybdegående kodegennemgang, arkitekturanalyse eller strategisk rådgivning om jeres nuværende tech stack.',
-      auditCta: 'Book en session'
+      auditTitle: 'Priser & betaling', auditPrice: 'Fra 1.500 DKK / time',
+      auditDesc: 'Al fakturering og betaling foregår via',
+      auditDescEnd: ', den officielle danske platform, der beskytter begge parter, håndterer dansk skattebetaling og gør kontrakter enkle for virksomheder og startups.',
+      auditCta: 'Kontakt os', paymentPrepay: '50% forud, 50% ved levering',
+      teamEyebrow: 'Vores Team', teamTitle: 'Et lille team, der bygger AI-native produkter fra A til Z.',
+      teamDesc: 'NOOMO er et full-cycle produktstudie for B2B-virksomheder og startups — design, AI-integration og udvikling under samme tag, fra første prototype til leveret kode.',
+      teamPhilosophy: '»Noomo« kommer fra det ukrainske ord for »bevæg dig fremad«. Det er teamets arbejdsprincip: vi står ikke stille — vi tilegner os hele tiden nye AI-integrationer, værktøjer og færdigheder. Et sammentømret team, der har arbejdet sammen i årevis og bevæger sig fremad som en helhed.',
+      statLabels: ['Projekter & AI-integrationer leveret', 'Produktvirksomheder & startups vi har arbejdet med', 'Gennemsnitlig erfaring pr. teammedlem', 'Lande vores kunder kommer fra'],
+      stackLabel: 'Teknologi & værktøjer',
+      processEyebrow: 'Sådan arbejder vi', processTitle: 'En transparent proces i fire trin.',
+      processSteps: [
+        { num: '1', timing: 'Første 24 timer', title: 'Konsultation & brief', desc: 'Et hurtigt opkald hvor vi låser dine mål fast, og bekræfter brief og omfang.' },
+        { num: '2', timing: 'Klar samme dag', title: 'Sikker forudbetaling (50%)', desc: 'Officiel, sikker betaling af 50% via FactorFly — dækker dansk skattebetaling og beskytter begge parter.' },
+        { num: '3', timing: 'MVP på 14 dage', title: 'Udvikling, AI-integration & iterationer', desc: 'Design, kodning, integration af AI-værktøjer og løbende afstemning med dig.' }
+      ],
+      finalStep: {
+        num: '4', title: 'Slutbetaling & overdragelse',
+        desc: 'De resterende 50% forfalder, når projektet er godkendt, betalt via',
+        descEnd: '. Herefter overdrager vi det hele direkte, uden forsinkelse — det konkrete resultat afhænger af produktet:',
+        deliverables: ['Kodearkiv, deployet & tilkoblet dit domæne', 'Figma-filer & designsystem', 'Cloud-platform-artefakter', 'Klar-til-brug MVP']
+      }
     },
     ua: {
-      navWork: 'Роботи', navServices: 'Послуги', navAbout: 'Про мене', navContact: "Зв'язатися",
+      navWork: 'Роботи', navServices: 'Послуги', navAbout: 'Команда', navContact: "Зв'язатися",
       ukraineBadge: 'З гордістю з України',
       heroEyebrow: 'AI-розробка продуктів для B2B і стартапів',
       heroTitle: 'AI-інтерфейси, що конвертують, для B2B і стартапів.',
-      heroSub: 'Я перетворюю складну B2B-логіку на прості флоу, які швидко запускаються і конвертують з першого дня — без витраченого бюджету і повільних релізів. Незалежно від того, чи ви велика компанія, чи ранній стартап, кожен інтерфейс гіпер-адаптивний: він відчуває зміну поведінки користувачів і тертя в реальному часі, тож ваш продукт завжди на крок попереду того, що потрібно клієнту далі.',
+      heroSub: 'Ми перетворюємо складну B2B-логіку на прості флоу, які швидко запускаються і конвертують з першого дня — без витраченого бюджету і повільних релізів. Незалежно від того, чи ви велика компанія, чи ранній стартап, кожен інтерфейс гіпер-адаптивний: він відчуває зміну поведінки користувачів і тертя в реальному часі, тож ваш продукт завжди на крок попереду того, що потрібно клієнту далі.',
       heroCta1: 'Наші роботи', heroCta2: "Зв'язатися",
       trustLine: 'Довіряють 300+ B2B-клієнтів і стартапів по всьому світу',
-      svcEyebrow: 'Послуги', svcTitle: 'Пакети з фіксованим обсягом для данських МСБ і стартапів.',
-      popular: 'Найпопулярніше', bestForLabel: 'Підходить для', startProject: 'Почати проєкт',
-      fromWord: 'Від',
+      workEyebrow: 'Наші роботи', workTitle: 'Чотири кейси, один B2B-фокус.',
+      contactEyebrow: 'Створимо разом', contactTitle: 'Є B2B-продукт, готовий масштабуватись?', contactSub: "Фіксований обсяг, швидкі терміни, орієнтація на ROI — розкажіть, що ви будуєте.",
+      footerTag: 'Full-cycle дизайн + AI + розробка під одним дахом',
+      svcEyebrow: 'Послуги', svcTitle: 'три пакети з фіксованим обсягом, створені для швидкості.',
+      popular: 'Найпопулярніше', bestForLabel: 'Підходить для', startProject: 'Почати проєкт', fromWord: 'Від',
       packages: [
-        { title: 'Express & Startup MVP', price: 'Від 8 000 DKK', tagline: 'Односторінковий сайт або швидкий фронтенд-макет, що конвертує, для швидкої перевірки ідеї стартапу чи сервісу.', includes: ['Односторінковий сайт або лендинг, що конвертує','Швидкий фронтенд-макет для ранньої валідації продукту','Ідеально на мобільних, готово для пітчу інвесторам','Готово до запуску за дні, не місяці'], bestFor: ['Малі бізнеси, що запускають новий сервіс','Ранні стартапи, що пітчать інвесторам','Команди, що тестують концепцію застосунку'], popular: false },
-        { title: 'Full Business Platform', price: 'Від 25 000 DKK', tagline: 'Повністю функціональний багатосторінковий бізнес-сайт або кастомна фронтенд-реалізація застосунку (React/Vue) з простою інтеграцією CMS.', includes: ['Багатосторінковий бізнес-сайт або фронтенд застосунку','Кастомна реалізація на React/Vue','Проста інтеграція CMS для вашої команди','Масштабована система компонентів','Адаптивність, перевірена від десктопу до мобільних'], bestFor: ['Стабільні МСБ, яким потрібна надійна цифрова присутність','Стартапи, готові масштабувати основний застосунок'], popular: true },
-        { title: 'Product Design & UX/UI System', price: 'Від 12 000 DKK', tagline: 'Комплексне дослідження UX, сучасний дизайн інтерфейсу і повна масштабована дизайн-система.', includes: ['UX-дослідження та discovery','Сучасний дизайн інтерфейсу','Повна масштабована дизайн-система','Реальні лінки та стани кнопок у прототипі'], bestFor: ['Засновники, що оновлюють існуючий застосунок','Бізнеси, що будують інтуїтивний цифровий продукт з нуля'], popular: false }
+        { num:'01', title: 'MVP за 14 днів', time: '14 днів', desc: 'Робоча версія вашого продукту, побудована від початку до кінця — від флоу до працюючого коду — готова для реальних користувачів та інвесторів.' },
+        { num:'02', title: 'AI-інтеграція за 5 днів', time: '5 днів', desc: 'AI-функції та автоматизація процесів, впроваджені безпосередньо у ваш існуючий продукт чи робочий процес.' },
+        { num:'03', title: 'Web-кодинг за 48 годин', time: '48 годин', desc: 'Лендинги та сайти, розроблені і запущені швидко, без втрати якості.' }
       ],
-      auditTitle: 'Експертна консультація та технічний аудит', auditPrice: 'Від 1 200 DKK / година',
-      auditDesc: 'Глибокий код-рев\'ю, аналіз архітектури або стратегічні поради щодо вашого поточного технологічного стеку.',
-      auditCta: 'Забронювати сесію'
+      auditTitle: 'Ціни та оплата', auditPrice: 'Від 1 500 DKK / година',
+      auditDesc: 'Усі розрахунки та оплата проходять через',
+      auditDescEnd: ' — офіційну данську платформу, яка захищає обидві сторони, повністю закриває питання сплати податків у Данії та максимально спрощує оформлення договорів.',
+      auditCta: 'Зв\'язатися з нами', paymentPrepay: '50% передоплата, 50% після здачі',
+      teamEyebrow: 'Наша команда', teamTitle: 'Невелика команда, що будує AI-продукти від і до.',
+      teamDesc: 'NOOMO — це full-cycle продуктова студія для B2B-компаній та стартапів: дизайн, AI-інтеграція та розробка під одним дахом, від першого прототипу до готового коду.',
+      teamPhilosophy: '«Ноомо» — від українського «рушайся вперед». Це головний принцип команди: ми не стоїмо на місці — постійно освоюємо нові AI-інтеграції, технології та навички. Сплочена команда однодумців, що роками працює разом і рухається вперед як єдиний живий організм.',
+      statLabels: ['Проєктів та AI-інтеграцій реалізовано', 'Продуктових компаній та стартапів, з якими ми працювали', 'Середній досвід фахівця команди', 'Країн, де розташовані наші клієнти'],
+      stackLabel: 'Технології та інструменти',
+      processEyebrow: 'Як ми працюємо', processTitle: 'Прозорий процес у чотири кроки.',
+      processSteps: [
+        { num: '1', timing: 'Перші 24 години', title: 'Консультація та бриф', desc: 'Швидкий дзвінок, де фіксуємо цілі та затверджуємо бриф і обсяг робіт.' },
+        { num: '2', timing: 'Оформлення в той же день', title: 'Безпечна передоплата (50%)', desc: 'Офіційна, безпечна оплата 50% через FactorFly — покриває сплату податків у Данії та захищає обидві сторони.' },
+        { num: '3', timing: 'MVP за 14 днів', title: 'Розробка, AI-інтеграція та ітерації', desc: 'Проєктування, кодинг, підключення AI-інструментів та регулярні узгодження з вами.' }
+      ],
+      finalStep: {
+        num: '4', title: 'Фінальна оплата та передача',
+        desc: 'Решта 50% сплачується після фінального затвердження проєкту, через',
+        descEnd: '. Після цього ми одразу передаємо все з рук в руки, без затримок — конкретний результат залежить від продукту:',
+        deliverables: ['Репозиторій з кодом, розгорнутий і підключений до домену', 'Файли Figma та дизайн-система', 'Артефакти хмарних систем', 'Готовий до використання MVP']
+      }
     }
   };
 
@@ -498,7 +596,7 @@ class Component extends DCLogic {
       const dy = sy - lastScrollY;
       lastScrollY = sy;
       scrollVel += (dy - scrollVel) * 0.15;
-      canvas.style.opacity = Math.max(0.3, 1 - sy / 700);
+      canvas.style.opacity = Math.max(0.18, 0.6 - sy / 900);
       mouse.x += (mouseT.x - mouse.x) * 0.05;
       mouse.y += (mouseT.y - mouse.y) * 0.05;
       const cosA = Math.cos(angle), sinA = Math.sin(angle);
@@ -559,6 +657,28 @@ class Component extends DCLogic {
 
     this._parallaxEls = null;
     this._parallaxRaf = null;
+    this._statsAnimated = false;
+    const statsEl = document.querySelector('[data-stats-grid]');
+    if (statsEl) {
+      const statsIo = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting && !this._statsAnimated) {
+            this._statsAnimated = true;
+            const start = performance.now();
+            const dur = 1600;
+            const tick = (now) => {
+              const p = Math.min(1, (now - start) / dur);
+              this.setState({ statsProgress: 1 - Math.pow(1 - p, 3) });
+              if (p < 1) this._statsRaf = requestAnimationFrame(tick);
+            };
+            this._statsRaf = requestAnimationFrame(tick);
+            statsIo.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+      statsIo.observe(statsEl);
+      this._statsIo = statsIo;
+    }
     this._onScrollParallax = () => {
       if (this._parallaxRaf) return;
       this._parallaxRaf = requestAnimationFrame(() => {
@@ -597,15 +717,15 @@ class Component extends DCLogic {
       if (ring) {
         ring.style.width = hit ? '64px' : '40px';
         ring.style.height = hit ? '64px' : '40px';
-        ring.style.background = hit ? 'rgba(102,58,243,0.22)' : 'transparent';
-        ring.style.borderColor = hit ? '#663af3' : '#ffffff';
+        ring.style.background = hit ? 'rgba(196,255,0,0.22)' : 'transparent';
+        ring.style.borderColor = hit ? '#C4FF00' : '#ffffff';
       }
     };
     window.addEventListener('pointerover', this._over, { passive: true });
 
     // ----- magnetic text: split targeted headings into per-letter spans -----
     this._magLetters = [];
-    document.querySelectorAll('[data-magnetic]').forEach((el) => {
+    Array.from(document.querySelectorAll('[data-magnetic]')).slice(0, 2).forEach((el) => {
       if (el.dataset.magDone) return;
       el.dataset.magDone = '1';
       const words = el.textContent.split(' ');
@@ -630,6 +750,17 @@ class Component extends DCLogic {
       });
     });
     this._magFrame = 0;
+    this._magRectsCache = null;
+    const refreshMagRects = () => {
+      this._magRectsCache = this._magLetters.map((span) => {
+        const r = span.getBoundingClientRect();
+        return { span, cx: r.left + r.width / 2, cy: r.top + r.height / 2 };
+      });
+    };
+    refreshMagRects();
+    this._magRectsOnScroll = () => { this._magRectsCache = null; };
+    window.addEventListener('scroll', this._magRectsOnScroll, { passive: true });
+    window.addEventListener('resize', this._magRectsOnScroll, { passive: true });
 
     const cursorLoop = () => {
       pos.x += (tgt.x - pos.x) * 0.22; pos.y += (tgt.y - pos.y) * 0.22;
@@ -637,14 +768,13 @@ class Component extends DCLogic {
       if (cur) cur.style.transform = `translate(${pos.x}px,${pos.y}px) translate(-50%,-50%)`;
       if (glow) glow.style.transform = `translate(${gpos.x}px,${gpos.y}px)`;
 
-      // update magnetic letters every 2nd frame (perf)
+      // update magnetic letters every 2nd frame (perf) using cached rects
       this._magFrame++;
       if (this._magLetters.length && this._magFrame % 2 === 0) {
+        if (!this._magRectsCache) refreshMagRects();
         const RADIUS = 140;
-        this._magLetters.forEach((span) => {
-          const r = span.getBoundingClientRect();
-          const lx = r.left + r.width / 2, ly = r.top + r.height / 2;
-          const dx = lx - tgt.x, dy = ly - tgt.y;
+        this._magRectsCache.forEach(({ span, cx, cy }) => {
+          const dx = cx - tgt.x, dy = cy - tgt.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < RADIUS) {
             const t = 1 - dist / RADIUS;
@@ -673,14 +803,31 @@ class Component extends DCLogic {
     if (this._parallaxRaf) cancelAnimationFrame(this._parallaxRaf);
     if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
     if (this._cursorRaf) cancelAnimationFrame(this._cursorRaf);
+    if (this._statsRaf) cancelAnimationFrame(this._statsRaf);
+    if (this._statsIo) this._statsIo.disconnect();
     if (this._move) window.removeEventListener('pointermove', this._move);
     if (this._over) window.removeEventListener('pointerover', this._over);
+    if (this._magRectsOnScroll) { window.removeEventListener('scroll', this._magRectsOnScroll); window.removeEventListener('resize', this._magRectsOnScroll); }
     document.body.style.overflow = '';
   }
 
-  openModal = (i) => { this.setState({ open: i }); document.body.style.overflow = 'hidden'; };
-  closeModal = () => { this.setState({ open: -1 }); document.body.style.overflow = ''; };
-  toggleAbout = () => { this.setState((s) => ({ aboutOpen: !s.aboutOpen })); };
+  openModal = (i) => {
+    this.setState({ open: i, modalTop: window.scrollY || 0 });
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    const track = () => {
+      if (this.state.open < 0) return;
+      this.setState({ modalTop: window.scrollY || 0 });
+      this._modalTrackRaf = requestAnimationFrame(track);
+    };
+    this._modalTrackRaf = requestAnimationFrame(track);
+  };
+  closeModal = () => {
+    this.setState({ open: -1 });
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    if (this._modalTrackRaf) cancelAnimationFrame(this._modalTrackRaf);
+  };
 
   renderVals() {
     const data = [
@@ -688,7 +835,7 @@ class Component extends DCLogic {
         kind: 'iOS · Mental Health', cover: 'mintra-hero.png',
         title: 'Mintra — Fast Psychological Relief & Daily Mental Recovery',
         badges: ['Mental Health','iOS'],
-        meta: [{k:'Role',v:'Sole Product & UX/UI Designer'},{k:'Year',v:'2026'},{k:'Scope',v:'20+ screen prototype'},{k:'Platform',v:'iOS'},{k:'Status',v:'Prototype — scaling to MVP'}],
+        meta: [{k:'Team',v:'NOOMO — Product & UX/UI Design'},{k:'Year',v:'2026'},{k:'Scope',v:'20+ screen prototype'},{k:'Platform',v:'iOS'},{k:'Status',v:'Prototype — scaling to MVP'}],
         challenge: 'Most mental health apps ask for 20–30 minutes a day, front-load long assessments, and treat anxiety and racing thoughts as something to journal about at length. People in acute stress do not have that time or focus — they need relief in minutes, and a way to offload the mental clutter (tasks, worries, half-finished thoughts) that is actually causing the overwhelm.',
         overview: 'Mintra is a 5–10 minute daily app for mental recovery — anxiety relief, sleep tracking, affirmations and breathing exercises, built around a signature feature called Brain Dump: unload everything on your mind, categorize it, then pick just one task that matters today. Reducing cognitive load, not adding another to-do list, is the core mechanic.',
         solutionShown: true,
@@ -727,7 +874,7 @@ class Component extends DCLogic {
         kind: 'iOS · Humanitarian Tech', cover: 'poshuk-hero.png',
         title: 'Poshuk — Fast, Remote Search Support for Missing Persons in Ukraine',
         badges: ['Humanitarian Tech','iOS'],
-        meta: [{k:'Role',v:'Founder, Product & UX Designer'},{k:'Year',v:'2026'},{k:'Scope',v:'15+ screen prototype'},{k:'Platform',v:'iOS'},{k:'Status',v:'Concept — seeking collaborators'}],
+        meta: [{k:'Team',v:'NOOMO — Product & UX Design'},{k:'Year',v:'2026'},{k:'Scope',v:'15+ screen prototype'},{k:'Platform',v:'iOS'},{k:'Status',v:'Concept — seeking collaborators'}],
         challenge: 'Searching for a missing person in Ukraine means navigating disconnected channels — Facebook groups, Telegram chats, the official registry, police, Red Cross — each with its own format and no shared record. The same facts have to be retyped for every channel, at a moment of severe emotional strain, and incomplete information (no unit number, no exact date) is treated as a blocker instead of the norm.',
         overview: 'Poshuk (Ukrainian for "search") is a mobile concept that replaces repeated manual submissions with one guided intake. A short 3-step onboarding — photo, location and date, status and details — generates a ready-to-send request plus a shareable search card with a unique QR code, so anyone, anywhere can scan it and respond in seconds. Poshuk is not a government platform; it aggregates publicly available resources — hotlines, registries, service contacts — into a single low-friction experience.',
         solutionShown: true,
@@ -768,7 +915,7 @@ class Component extends DCLogic {
         kind: 'iOS · AI Onboarding', cover: 'gymapp-hero.png',
         title: 'Gym App — AI Fitness Coach & Personalised Training Platform',
         badges: ['AI Onboarding','iOS'],
-        meta: [{k:'Role',v:'Sole UX/UI Designer'},{k:'Year',v:'2025'},{k:'Scope',v:'22-screen system'},{k:'Platform',v:'iOS'},{k:'Client',v:'Fitness startup'}],
+        meta: [{k:'Team',v:'NOOMO — UX/UI Design'},{k:'Year',v:'2025'},{k:'Scope',v:'22-screen system'},{k:'Platform',v:'iOS'},{k:'Client',v:'Fitness startup'}],
         challenge: 'Intermediate gym-goers were frustrated with generic apps — one-size-fits-all programs, no real-time feedback during sets, and no sense of progression. The startup needed a product that felt premium, motivating and genuinely personalised, not another calorie counter.',
         overview: 'Gym App is a dark-aesthetic iOS fitness platform built from scratch. It uses AI to generate personalised 14-day workout plans, adapts sessions to the user\u2019s goal and fitness level, and delivers a premium coaching experience through a coach feedback loop, rest timers and progress analytics — 22 screens across onboarding, dashboard, workout execution and progress, built on a bold black system.',
         solutionShown: true,
@@ -797,10 +944,10 @@ class Component extends DCLogic {
         tools: ['Claude Artifacts','Figma','HTML/CSS/JS','Midjourney']
       },
       {
-        kind: 'FinTech · Enterprise', cover: 'opt-swiss.jpg',
+        kind: 'FinTech · Enterprise', cover: 'swiss-hero.png',
         title: 'Swiss Insurance',
         badges: ['FinTech','Enterprise','AI Architecture'],
-        meta: [{k:'Client',v:'Swiss B2B Insurance Ecosystem'},{k:'Role',v:'Sole UX/UI Designer'},{k:'Year',v:'2025'},{k:'Focus',v:'Enterprise onboarding + activation'},{k:'Platform',v:'iOS'}],
+        meta: [{k:'Client',v:'Swiss B2B Insurance Ecosystem'},{k:'Team',v:'NOOMO — UX/UI Design'},{k:'Year',v:'2025'},{k:'Focus',v:'Enterprise onboarding + activation'},{k:'Platform',v:'iOS'}],
         challenge: 'Complex legacy insurance logic, slow multi-step onboarding, and low conversion in enterprise sales were costing real revenue — every extra form field meant another dropped applicant.',
         overview: 'Engineered a high-velocity, intuitive AI-driven interface that collapsed complex legacy logic and multi-step forms into a flawless, guided 2-minute workflow — without losing compliance coverage or account depth.',
         solutionShown: true,
@@ -824,10 +971,10 @@ class Component extends DCLogic {
         tools: ['Figma','Component Library','Prototyping']
       },
       {
-        kind: 'Web3 · SocialTech', cover: 'opt-social.jpg',
+        kind: 'Web3 · SocialTech', cover: 'social-hero.png',
         title: 'Interactive Social Game Up',
         badges: ['Web3','SocialTech','Gamification Ecosystem'],
-        meta: [{k:'Client',v:'Interactive Social Game Platform / Web3 Gamified App'},{k:'Role',v:'Sole UX/UI Designer'},{k:'Year',v:'2025'},{k:'Deliverable',v:'Design system + handoff'},{k:'Platform',v:'iOS'}],
+        meta: [{k:'Client',v:'Interactive Social Game Platform / Web3 Gamified App'},{k:'Team',v:'NOOMO — UX/UI Design'},{k:'Year',v:'2025'},{k:'Deliverable',v:'Design system + handoff'},{k:'Platform',v:'iOS'}],
         challenge: 'Low user engagement, high churn, and complex mechanics confused first-time users before they ever reached a real game session.',
         overview: 'Designed a frictionless, high-velocity onboarding flow and intuitive social loop interfaces that turn passive users into active players instantly — replacing confusing mechanics with guided, game-ready moments.',
         solutionShown: true,
@@ -858,35 +1005,44 @@ class Component extends DCLogic {
     const projects = data.map((p, i) => ({ ...p, num: '0' + (i + 1), badgeList: p.badges || [p.kind], open: () => this.openModal(i) }));
     const open = this.state.open;
     const active = open >= 0 ? projects[open] : null;
+    const processSteps = T.processSteps.map((st, i) => ({ ...st, hasNext: i < T.processSteps.length - 1 }));
+    const teamMembers = [
+      { name: 'Olha Tsurika', role: 'CEO', photo: 'avatar-olga.png' },
+      { name: 'Team Member', role: 'Product Design', photo: 'avatar-olga.png' },
+      { name: 'Team Member', role: 'AI Engineering', photo: 'avatar-olga.png' },
+      { name: 'Team Member', role: 'Web Development', photo: 'avatar-olga.png' }
+    ];
+    const statsRaw = [
+      { value: 283, suffix: '+', label: T.statLabels[0] },
+      { value: 47, suffix: '', label: T.statLabels[1] },
+      { value: 15, suffix: '+', label: T.statLabels[2] },
+      { value: 10, suffix: '+', label: T.statLabels[3] }
+    ];
+    const stats = statsRaw.map((s) => ({ ...s, display: Math.round(s.value * this.state.statsProgress) + s.suffix }));
 
     return {
       sphereRef: this.sphereRef,
       navShadow: this.state.scrollY > 8 ? '0 1px 0 rgba(186,215,247,0.1)' : 'none',
+      mobileMenuOpen: this.state.mobileMenuOpen,
+      mobileMenuIcon: this.state.mobileMenuOpen ? '✕' : '☰',
+      mobileMenuDisplay: this.state.mobileMenuOpen ? 'flex' : 'none',
+      toggleMobileMenu: this.toggleMobileMenu, closeMobileMenu: this.closeMobileMenu,
       heroParallax: Math.min(this.state.scrollY * 0.12, 40) + 'px',
       projects,
       services,
-      toggleAbout: this.toggleAbout,
-      aboutRows: this.state.aboutOpen ? '1fr' : '0fr',
-      aboutIconRotate: this.state.aboutOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-      aboutToggleLabel: this.state.aboutOpen ? 'Show less' : 'Show more',
       modalOpen: open >= 0,
+      modalTop: this.state.modalTop || 0,
       active: active || {},
-      T, lang: this.state.lang, setLang: this.setLang,
-      langBtnStyleEn: this.langBtnStyle('en'), langBtnStyleDk: this.langBtnStyle('dk'), langBtnStyleUa: this.langBtnStyle('ua'),
-      setLangEn: () => this.setLang('en'), setLangDk: () => this.setLang('dk'), setLangUa: () => this.setLang('ua'),
-      services,
+      T: { ...T, processSteps }, lang: this.state.lang, setLang: this.setLang, onLangChange: this.onLangChange,
+      openStep: this.openStep, closeStep: this.closeStep, toggleStep: this.toggleStep,
       closeModal: this.closeModal,
       stop: (e) => e.stopPropagation(),
-      skills: ['AI Product Development','iOS Development','MVP Development','Claude','ChatGPT','Cursor','GitHub Copilot','VS Code','Vercel','OpenAI APIs','Prompt Engineering','AI Agents','Automation','Swift','React','Next.js','API Integration','Cloud Deployment','Product Strategy','UI/UX','Agile'],
-      experience: [
-        { period: 'Mar 2025 — Present', dur: '1 yr 4 mos · Part-time', place: 'Aarhus, Denmark · Remote', role: 'Lead UI/UX Designer', company: 'Unifood Import A/S', desc: 'Leading end-to-end product design for e-commerce and B2B platforms — UX research, scalable design systems and AI-integrated design workflows.' },
-        { period: 'Jul 2014 — Aug 2023', dur: '9 yrs 2 mos · Full-time', place: 'Kyiv, Ukraine · Hybrid', role: 'Lead UX/UI Designer & Art Director', company: 'WAMP', desc: 'Grew from designer into a leadership role over 9 years, owning end-to-end product and creative direction for SaaS, e-commerce and B2B clients across the EU and US.' },
-        { period: 'Feb 2011 — Nov 2013', dur: '2 yrs 10 mos · Full-time', place: 'Mykolaiv, Ukraine · On-site', role: 'Graphic Designer', company: 'GeeksForLess Inc.', desc: 'First professional design role at an international IT outsourcing company serving US and EU clients — branding, print and digital across Photoshop and InDesign.' }
-      ]
+      teamMembers,
+      stats,
+      skills: ['AI Product Development','iOS Development','MVP Development','Claude','ChatGPT','Cursor','GitHub Copilot','VS Code','Vercel','OpenAI APIs','Prompt Engineering','AI Agents','Automation','Swift','React','Next.js','API Integration','Cloud Deployment','Product Strategy','UI/UX','Agile']
     };
   }
 }
-
 </script>
 </body>
 </html>
