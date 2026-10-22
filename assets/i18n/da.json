@@ -1,0 +1,628 @@
+{
+  "mc_eb": "Skriv til os",
+  "mc_hint": "Åbner med emne og besked udfyldt",
+  "mc_app": "Mail-app",
+  "mc_copy": "Kopiér e-mail",
+  "mc_subj": "Emne",
+  "su_p": "Projektforespørgsel: noget i stil med {name}",
+  "bo_p": "Hej NOOMO, jeg vil gerne have et projekt i stil med {name}. Om min virksomhed: ",
+  "su_y": "Ny projektforespørgsel ({cat})",
+  "bo_y": "Hej NOOMO, jeg vil gerne drøfte et nyt projekt inden for {cat}. Om min virksomhed: ",
+  "su_g": "Forespørgsel fra noomo.dk",
+  "your_project": "Dit projekt",
+  "your_sub": "Lad os bygge det sammen",
+  "nav_work": "Cases",
+  "nav_services": "Ydelser",
+  "pkg": "Abonnement",
+  "nav_about": "Om os",
+  "nav_contact": "Kontakt",
+  "nav_book": "Gratis rådgivning",
+  "cursor_more": "Se mere",
+  "hero_eb": "Digitalt studie for B2B · Danmark",
+  "hero_eb2": "Shopify · Virksomhedssites · MVP-apps",
+  "hero_1": "Webshops.",
+  "hero_2": "Hjemmesider og landingssider.",
+  "hero_3": "Apps.",
+  "hero_tag": "Leveret til tiden, til fast pris.",
+  "cta_free": "Book gratis rådgivning",
+  "why1_h": "Pakker til fast pris",
+  "why1_t": "Du kender den samlede pris, før vi går i gang. Ingen ekstraregninger.",
+  "why2_h": "Dit eget webstudie som abonnement",
+  "why2_t": "Ét fast månedligt beløb til opdateringer og mindre opgaver.",
+  "why3_h": "Betal i rater",
+  "why3_t": "Del projektprisen op i 3 månedlige betalinger.",
+  "why4_h": "Online på uger, ikke måneder",
+  "why4_t": "Klare tidsplaner, så dit nye site hurtigt går live.",
+  "work_h": "Udvalgte cases",
+  "work_eb": "Live sites, apps og cases",
+  "live_website": "Live site",
+  "case_study": "Case",
+  "view_proto": "Se prototype ↗",
+  "want_like": "Jeg vil have noget lignende",
+  "live_projects": "Live projekter",
+  "svc_h": "Det laver vi",
+  "svc_eb": "Tre ydelser og en gratis audit. Fast omfang, fast pris og support efter lancering.",
+  "excl_vat": "ekskl. moms",
+  "view_details_arrow": "Se detaljer ↗",
+  "audit_badge": "Bonus · Gratis",
+  "audit_h": "Gratis rådgivning og website-audit",
+  "audit_t": "30 minutter med en senior designer. Vi gennemgår dit nuværende website eller din webshop og giver dig en kort skriftlig audit: hurtige gevinster inden for UX, hastighed og SEO, et anbefalet næste skridt og et overslag til fast pris.",
+  "free": "0 kr.",
+  "min30": "30 minutter",
+  "audit_cta": "Få en gratis audit",
+  "pkg_eb": "Priser i kr. ekskl. moms. Alle projekter starter med gratis rådgivning og et tilbud til fast pris.",
+  "most_popular": "Mest populær",
+  "sub_title": "Dit webstudie",
+  "total": "I alt",
+  "timeline": "Tidsplan",
+  "get_quote": "Få et tilbud",
+  "view_details": "Se detaljer",
+  "sub_q": "Hvad er Dit webstudie?",
+  "sub_t": "Ét månedligt abonnement til alle slags opgaver: opdateringer, nye sider og landingssider, bannere og kampagnegrafik, designændringer, SEO, oprettelse af produkter og prioriteret hjælp. Minimum 3 måneder.",
+  "about_h": "Om NOOMO",
+  "about_eb": "Studiet",
+  "stat1": "Specialister",
+  "stat2": "År med digitalt design",
+  "stat3": "Fast omfang, fast pris",
+  "mission_eb": "Vores mission",
+  "contact_h": "Lad os tale om dit projekt",
+  "selected": "Valgt",
+  "f_service": "Ydelse",
+  "f_sub": "Abonnement",
+  "f_budget": "Budget (kr. ekskl. moms)",
+  "f_message": "Besked",
+  "sent_eb": "Forespørgsel sendt",
+  "sent_msg": "Tak, vi svarer inden for 24 timer.",
+  "send_another": "Send en ny forespørgsel",
+  "f_time": "Foretrukket tidspunkt",
+  "slot_err": "Vælg et tidsrum.",
+  "f_topic": "Emne (valgfrit)",
+  "call_eb": "Opkald bestilt",
+  "call_another": "Bestil et nyt opkald",
+  "footer_copy": "© 2026 NOOMO",
+  "close_x": "Luk ✕",
+  "who": "Til hvem",
+  "included": "Det får du",
+  "how": "Sådan foregår det",
+  "addons": "Tilvalg",
+  "related": "Relaterede cases",
+  "min3": "Minimum 3 måneder",
+  "popup_quote": "Få et tilbud på denne ydelse",
+  "close_esc": "Luk · Esc",
+  "like_eb": "Jeg vil have noget i stil med",
+  "send_req": "Send en forespørgsel",
+  "back_work": "← Tilbage til cases",
+  "about_body": "NOOMO er et designdrevet digitalt studie med hovedkontor i Aarhus. Vi kombinerer mere end 15 års erfaring med UI/UX og webdesign med et AI-understøttet workflow, så du får design og udvikling i seniorkvalitet, hurtigere og til fast pris. Vi arbejder med detailhandlere, servicevirksomheder og startups i hele Europa.",
+  "mission": "Vi gør professionelle digitale produkter tilgængelige for virksomheder i vækst: klare, hurtige og bygget til at sælge.",
+  "mission_acc": 6,
+  "mission2": "Ingen oppustet bureauproces. Ingen skabeloner solgt som skræddersyet arbejde. Bare et fokuseret team, der leverer.",
+  "contact_body": "Fortæl os, hvad du har brug for. Den første rådgivning er gratis, og du får et klart tilbud til fast pris inden for 48 timer.",
+  "ph_msg": "Fortæl os, hvad du har brug for",
+  "ph_topic": "Hvad vil du gerne tale om?",
+  "err_pre": "Forespørgslen blev ikke sendt. Prøv igen, eller skriv til os på",
+  "svc_word": "Ydelse",
+  "case_want": "Vil du have et projekt som",
+  "aria_top": "NOOMO — tilbage til toppen",
+  "aria_menu": "Menu",
+  "aria_why": "Hvorfor NOOMO",
+  "aria_filter": "Filtrér cases efter ydelse",
+  "aria_sub": "Dit webstudie",
+  "aria_contact_opts": "Kontaktmuligheder",
+  "aria_remove": "Fjern valg",
+  "aria_close": "Luk",
+  "aria_back": "Tilbage til cases",
+  "lang_aria": "Sprog",
+  "on_request": "Pris efter aftale",
+  "cta_live": "Besøg live site ↗",
+  "cta_play": "Se på Google Play ↗",
+  "aria_view_details": " — se detaljer",
+  "aria_open_case": "Åbn case: ",
+  "new_tab": " (åbner i en ny fane)",
+  "no_fee": "Intet månedligt gebyr",
+  "sub_fmt": "Dit webstudie: {name}",
+  "tab_form": "Send en forespørgsel",
+  "tab_call": "Bestil et opkald",
+  "submit": "Send forespørgsel",
+  "sending": "Sender…",
+  "call_btn": "Bestil et opkald",
+  "call_msg": "Tak! Vi ringer til dig {day} mellem kl. {from} og {to}.",
+  "like_msg": "Jeg vil gerne have noget i stil med {name}.",
+  "f_day": "Foretrukken dag",
+  "day_ph": "Vælg en dato",
+  "err_day": "Vælg en hverdag (man.–fre.).",
+  "prev_month": "Forrige måned",
+  "next_month": "Næste måned",
+  "cat": {
+    "web": "Virksomhedssites og landingssider",
+    "ecom": "E-handel",
+    "apps": "MVP og apps"
+  },
+  "blk": {
+    "challenge": "Udfordringen",
+    "solution": "Det har vi designet",
+    "thinking": "Designtanker",
+    "impact": "Resultat",
+    "role": "Vores rolle",
+    "note": "AI-understøttet workflow"
+  },
+  "meta": {
+    "Role": "Rolle",
+    "Year": "År",
+    "Scope": "Omfang",
+    "Platform": "Platform",
+    "Status": "Status",
+    "Client": "Kunde",
+    "Industry": "Branche",
+    "Duration": "Varighed",
+    "Team": "Team",
+    "Location": "Lokation",
+    "Type": "Type"
+  },
+  "store": {
+    "Visit live site": "Besøg live site",
+    "Open app on Google Play": "Åbn appen på Google Play",
+    "Open interactive prototype": "Åbn interaktiv prototype"
+  },
+  "sub_names": {
+    "Not included": "Intet abonnement",
+    "Basic": "Start",
+    "Growth": "Stable",
+    "Pro": "Full Web Studio"
+  },
+  "plural": [
+    "projekt",
+    "projekter"
+  ],
+  "ct": {
+    "Email": "E-mail",
+    "Phone": "Telefon"
+  },
+  "svcOpts": {
+    "ecom": "E-handel",
+    "web": "Virksomhedssites og landingssider",
+    "apps": "MVP og app",
+    "audit": "Gratis rådgivning og audit",
+    "unsure": "Ved ikke"
+  },
+  "f": {
+    "name": "Navn",
+    "name_ph": "Dit navn",
+    "name_err": "Skriv dit navn.",
+    "company": "Virksomhed",
+    "company_ph": "Virksomhedens navn",
+    "email": "E-mail",
+    "email_ph": "navn@virksomhed.dk",
+    "email_err": "Skriv en gyldig e-mailadresse.",
+    "phone_opt": "Telefon (valgfrit)",
+    "phone": "Telefon",
+    "phone_err": "Skriv et telefonnummer.",
+    "email_opt": "E-mail (valgfrit)",
+    "email_err2": "Tjek e-mailadressen."
+  },
+  "months": [
+    "Januar",
+    "Februar",
+    "Marts",
+    "April",
+    "Maj",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "December"
+  ],
+  "wd": [
+    "Ma",
+    "Ti",
+    "On",
+    "To",
+    "Fr",
+    "Lø",
+    "Sø"
+  ],
+  "care": {
+    "Basic": [
+      "Op til 10 arbejdstimer om måneden",
+      "Små rettelser og forbedringer",
+      "Justeringer af tekst, billeder og design",
+      "Asynkront via Slack eller e-mail"
+    ],
+    "Growth": [
+      "Op til 25 arbejdstimer om måneden",
+      "Alt i Start",
+      "Løbende opdateringer",
+      "Design- og udviklingsopgaver",
+      "Flere opgaver parallelt"
+    ],
+    "Pro": [
+      "Op til 48 arbejdstimer om måneden",
+      "Alt i Stable",
+      "Arbejde på dine øvrige websites",
+      "Alle typer opgaver",
+      "Prioriteret support"
+    ]
+  },
+  "svc": {
+    "ecom": {
+      "title": "E-handel",
+      "pkgTitle": "Webshop",
+      "desc": "Webshops og dagligvarebutikker på Shopify med oprettelse af produkter og løbende support.",
+      "priceSub": "Ekskl. moms",
+      "timeline": "4–6 uger",
+      "who": "Detailhandlere, dagligvare- og specialbutikker, der vil sælge online eller væk fra en langsom platform. Bedst, når sortimentet er klar, og du har brug for en webshop, dit team selv kan drive i hverdagen.",
+      "pkgItems": [
+        "Opsætning af Shopify-butik og skræddersyet tema",
+        "Op til 50 produkter oprettet",
+        "Betaling (kort, Apple Pay, Google Pay)",
+        "Opsætning af fragt og EU-moms",
+        "Mobile-first design",
+        "Grundlæggende SEO og analytics",
+        "Oplæring af dit team"
+      ],
+      "includes": [
+        "Opsætning af Shopify-butik og skræddersyet tema",
+        "Op til 50 produkter oprettet",
+        "Betaling (kort, Apple Pay, Google Pay)",
+        "Opsætning af fragt og EU-moms",
+        "Mobile-first design",
+        "Grundlæggende SEO",
+        "Analytics",
+        "Oplæring af dit team"
+      ],
+      "steps": [
+        [
+          "Afklaring",
+          "Vi kortlægger sortiment, betaling, fragt og moms."
+        ],
+        [
+          "Design",
+          "Et skræddersyet Shopify-tema, designet mobile-first."
+        ],
+        [
+          "Udvikling",
+          "Opsætning af butik, produkter, betaling og analytics."
+        ],
+        [
+          "Lancering og support",
+          "Oplæring, go-live og valgfrit abonnement på Dit webstudie."
+        ]
+      ],
+      "addons": [
+        "50 ekstra produkter",
+        "Flersproget webshop",
+        "Integrationer (ERP, POS, regnskab)",
+        "Produktfotos / AI-visuals"
+      ]
+    },
+    "web": {
+      "title": "Virksomhedssites og landingssider",
+      "pkgTitle": "Virksomhedssite og landingsside",
+      "desc": "Virksomhedssites, landingssider og kampagnesites, der forklarer, hvad I laver, og skaber leads.",
+      "priceSub": "Ekskl. moms · Landingsside",
+      "altPre": "Virksomhedssite ",
+      "timeline": "2–4 uger",
+      "who": "Servicevirksomheder, B2B-leverandører og marketingteams, der lancerer en kampagne eller et nyt tilbud. Til virksomheder, hvis nuværende site ikke længere forklarer, hvad de laver.",
+      "pkgItems": [
+        "UX-struktur og hjælp til tekster",
+        "Skræddersyet design",
+        "Op til 6 sider (virksomhedssite) eller 1 lang side (landingsside)",
+        "CMS",
+        "Kontaktformularer",
+        "SEO-opsætning",
+        "Opsætning af hosting og deploy"
+      ],
+      "steps": [
+        [
+          "Afklaring",
+          "Mål, målgruppe og de sider, du reelt har brug for."
+        ],
+        [
+          "Struktur og design",
+          "Sitemap, hjælp til tekster og et skræddersyet design."
+        ],
+        [
+          "Udvikling",
+          "CMS, formularer og SEO-opsætning, testet på alle skærme."
+        ],
+        [
+          "Lancering og support",
+          "Hosting, deploy og support efter lancering."
+        ]
+      ],
+      "addons": [
+        "Ekstra side",
+        "Tekstforfatning",
+        "Flere sprog"
+      ]
+    },
+    "apps": {
+      "title": "MVP-apps og startups",
+      "pkgTitle": "MVP-app og startup",
+      "desc": "Klikbare prototyper og lanceringsklare MVP'er til founders, der skal teste, pitche eller lancere.",
+      "priceSub": "Ekskl. moms",
+      "timeline": "Fra 14 dages MVP-sprint",
+      "who": "Founders og innovationsteams, der vil teste en idé med rigtige brugere eller vise investorer et fungerende produkt. Også til virksomheder, der lancerer en ny digital service.",
+      "pkgItems": [
+        "Afklaringsworkshop",
+        "Brugerflows",
+        "Klikbar prototype",
+        "UI-designsystem",
+        "Frontend-udvikling af MVP",
+        "Demo klar til investorer",
+        "Overdragelse eller videreudvikling"
+      ],
+      "steps": [
+        [
+          "Afklaringsworkshop",
+          "Problemet, brugerne og det mindste produkt, der er værd at bygge."
+        ],
+        [
+          "Flows og prototype",
+          "Brugerflows og en klikbar prototype, der kan testes tidligt."
+        ],
+        [
+          "Design og udvikling",
+          "Et UI-designsystem og frontend-udvikling af MVP'en."
+        ],
+        [
+          "Demo og overdragelse",
+          "En demo klar til investorer, derefter overdragelse eller videreudvikling."
+        ]
+      ],
+      "addons": [
+        "Ekstra brugerflow",
+        "Backend / database-opsætning",
+        "Løbende udviklingssprints"
+      ]
+    }
+  },
+  "cases": {
+    "Mintra": {
+      "sub": "Hurtig psykisk aflastning og daglig mental restitution",
+      "desc": "En daglig app på 5–10 minutter til mental restitution: mindre angst, søvnsporing, affirmationer og åndedrætsøvelser, bygget op omkring funktionen Brain Dump."
+    },
+    "Poshuk": {
+      "sub": "Hurtig hjælp på afstand til eftersøgning af savnede i Ukraine",
+      "desc": "Et guidet forløb i 3 trin, der laver klar-til-afsendelse henvendelser og et QR-eftersøgningskort, som alle kan scanne og svare på."
+    },
+    "Gym App": {
+      "sub": "AI-fitnesscoach og platform til personlig træning",
+      "desc": "En iOS-fitnessplatform i mørkt design, bygget fra bunden. AI laver personlige 14-dages træningsplaner ud fra mål og form."
+    },
+    "iFranko": {
+      "sub": "Redesign af en Apple-webshop",
+      "desc": "Et komplet redesign af iFranko-butikken med et mørkt, produktfokuseret system, fast kategorinavigation og produktsider, der starter med billeder og de vigtigste data."
+    },
+    "Swiss Insurance": {
+      "desc": "En hurtig, intuitiv AI-brugerflade, der gør kompleks logik fra ældre systemer og formularer i flere trin til et klart forløb på 2 minutter, uden at gå på kompromis med compliance."
+    },
+    "Interactive Social Game Up": {
+      "desc": "Hurtig onboarding og letforståelige sociale mekanikker, der får spillerne ind i et live spil på få sekunder."
+    },
+    "Community App & Site for African Repatriates": {
+      "head": "Community-app og website for afrikanske hjemvendte",
+      "desc": "En community-platform, der samler dating, venskab og forretningsnetværk i ét økosystem med én profil til alle tre formål."
+    },
+    "Sefer": {
+      "sub": "Musikcommunity til talentspejding og samarbejde",
+      "desc": "Et musikcommunity bygget op omkring en offentlig kunstnerprofil, der fungerer som en rigtig portfolio: numre, credits, stil og tilgængelighed samlet ét sted."
+    },
+    "NxtShop": {
+      "sub": "Skønhedsapp med AR-prøvning",
+      "desc": "En app til køb af skønhedsprodukter med AR-prøvning: brugerne tester makeup på deres eget ansigt i realtid, før de køber."
+    },
+    "DPlab": {
+      "sub": "Redesign af et digitalbureaus website, Vilnius",
+      "desc": "Redesign af websitet for et digitalbureau i Vilnius: design, webudvikling, marketing og SEO."
+    },
+    "Defend & Carry": {
+      "sub": "Webshop for taktisk udstyr og optik",
+      "desc": "En webshop for sportsoptik, taktisk og militært udstyr, jagttøj og briller."
+    },
+    "AGM Global Vision": {
+      "sub": "E-handelsplatform for forsvarsteknologi",
+      "desc": "En e-handelsplatform for en amerikansk leverandør af termisk udstyr, nattesyn og forsvarsteknologi."
+    },
+    "Unifood": {
+      "sub": "Redesign af unifood.dk",
+      "desc": "Et katalogfokuseret redesign for Unifood Import A/S, en dansk fødevaregrossist med over 1.400 produkter. Kunderne finder et produkt med to klik og sender deres afhentningsordre."
+    },
+    "Kortical": {
+      "sub": "Redesign af website",
+      "desc": "Vi redesignede forsiden for AI Agents på desktop og mobil samt mobilmenuen, 404-siden og et fælles designsystem."
+    },
+    "Laurie Handlers": {
+      "sub": "Redesign af website for en foredragsholder og forfatter om intimitet",
+      "desc": "Et mørkt, filmisk redesign af websitet for en international foredragsholder og bestsellerforfatter om intimitet og parforhold."
+    },
+    "Subflow": {
+      "sub": "Abonnementsapp til creators",
+      "desc": "En mobilplatform, hvor creators sælger abonnementer på deres indhold, kurser og communities."
+    },
+    "Georg Jensen": {
+      "sub": "Koncept for en mobil webshop",
+      "desc": "Et frit koncept for en mobil Georg Jensen-webshop, bygget op omkring håndlavet 18 karat guld og certificerede, bæredygtige diamanter."
+    },
+    "Ayvens": {
+      "sub": "Koncept for en side med brugte biler",
+      "desc": "Et koncept for en produktside til Ayvens brugte biler, der viser hele købet i ét roligt scroll."
+    }
+  },
+  "boot_eb": "Indlæser studiet",
+  "hint_scroll": "Scroll for at fortsætte",
+  "hint_hover": "Hold musen over for preview",
+  "hint_click": "Klik for at åbne",
+  "boot_steps": [
+    "Initialiserer grid",
+    "Indlæser brief",
+    "Kortlægger struktur",
+    "Sætter typeskala",
+    "Tegner wireframes",
+    "Retter ind efter grid",
+    "Anvender designsystem",
+    "Kobler interaktioner",
+    "Kører QA",
+    "Sender i produktion"
+  ],
+  "menu": "Menu",
+  "m_welcome": "Velkommen til NOOMO",
+  "m_type": "Type",
+  "m_focus": "Fokus",
+  "m_loc": "Lokation",
+  "m_loc_v": "Aarhus, Danmark (HQ)",
+  "theme_aria": "Mørk tilstand",
+  "sb_title": "Abonnement",
+  "sb_sub": "Design og udvikling efter behov",
+  "sb_ps": "Pr. måned · ekskl. moms · sæt på pause eller opsig når som helst",
+  "sb_tl": "48 t pr. opgave **",
+  "sb_aria": "Abonnementstype",
+  "sb_m1": "Solo",
+  "sb_m2": "Team",
+  "sb_solo": [
+    "Ubegrænsede opgaver og rettelser pr. måned",
+    "1 aktiv opgave ad gangen",
+    "Hver opgave leveres inden for 48 timer",
+    "Asynkron kommunikation i Slack eller e-mail"
+  ],
+  "sb_team": [
+    "Ubegrænsede opgaver og rettelser pr. måned",
+    "Op til 3 aktive opgaver parallelt",
+    "Designer, udvikler og projektleder",
+    "Asynkront + ugentligt møde med projektlederen"
+  ],
+  "sb_n1": "* Næste opgave starter, så snart den aktuelle er leveret.",
+  "sb_n2": "** For de fleste opgaver. Større opgaver deles op i trin på 48 timer.",
+  "sb_msg": "Hej NOOMO, jeg er interesseret i abonnementet {plan}.",
+  "sb_msg_pk": "Hej NOOMO, jeg er interesseret i ydelsen {plan}.",
+  "tiers": {
+    "start": {
+      "name": "Start",
+      "sub": "Landingsside eller lille site",
+      "tl": "2–3 uger",
+      "items": [
+        "Op til 3 sider",
+        "Skræddersyet design",
+        "CMS og kontaktformular",
+        "Grundlæggende SEO"
+      ]
+    },
+    "stable": {
+      "name": "Stable",
+      "sub": "Webshop eller virksomhedssite",
+      "tl": "4–6 uger",
+      "items": [
+        "Shopify-butik eller op til 8 sider",
+        "UX-struktur og skræddersyet design",
+        "Betaling, CMS og integrationer",
+        "SEO, analytics og 30 dages support"
+      ]
+    },
+    "full": {
+      "name": "Full",
+      "sub": "App, MVP eller stor platform",
+      "tl": "Fra 6 uger",
+      "items": [
+        "Afklaringsworkshop og prototype",
+        "UI-designsystem",
+        "Frontend-udvikling og overdragelse",
+        "60 dages support"
+      ]
+    }
+  },
+  "sb_slots": "Opgaver ad gangen",
+  "sb_d1": "Én designer-udvikler arbejder på én opgave ad gangen. Send så mange, du vil; de løses en efter en.",
+  "sb_d2": "Et team arbejder på op til 3 opgaver parallelt, og en projektleder holder styr på køen og prioriteterne.",
+  "start_from": "Startpris",
+  "b2b_h": "Til virksomheder og bureauer",
+  "b2b_p": "Til virksomheder og bureauer på løbende basis: vælg Full Web Studio (2.160 kr./md., op til 48 timer), eller lad os aftale særlige vilkår ved større opgavemængder.",
+  "b2b_items": [
+    "White label for bureauer",
+    "Dedikeret team til dit produkt",
+    "NDA, kontrakt og månedlig fakturering",
+    "Fælles Slack, Jira eller Linear",
+    "Designsystem og overdragelse af kode",
+    "Prioriteret SLA og fast kontaktperson"
+  ],
+  "b2b_pl": "Anbefalet plan",
+  "b2b_price": "Full Web Studio · 2.160 kr./md.",
+  "b2b_ps": "Op til 48 timer · eller særlige vilkår",
+  "b2b_cta": "Drøft et samarbejde",
+  "b2b_msg": "Hej NOOMO, vi er en virksomhed/et bureau og vil gerne drøfte et løbende samarbejde.",
+  "subtiers": {
+    "start": {
+      "name": "Start",
+      "desc": "Til små rettelser og mindre forbedringer af dit site.",
+      "tl": "48 t pr. opgave",
+      "items": [
+        "Ubegrænsede rettelser",
+        "1 opgave ad gangen",
+        "Sæt på pause eller opsig når som helst",
+        "Asynkront via Slack eller e-mail"
+      ]
+    },
+    "stable": {
+      "name": "Stable",
+      "desc": "Løbende opdateringer samt design- og udviklingsopgaver.",
+      "tl": "48 t pr. opgave",
+      "items": [
+        "Ubegrænsede rettelser",
+        "2 opgaver parallelt",
+        "Sæt på pause eller opsig når som helst",
+        "Asynkront via Slack eller e-mail"
+      ]
+    },
+    "full": {
+      "name": "Full Web Studio",
+      "desc": "Dit fulde webstudie: forbedringer af dit site, arbejde på dine øvrige websites og alle typer opgaver.",
+      "tl": "24–48 t pr. opgave",
+      "items": [
+        "Ubegrænsede rettelser",
+        "3 opgaver parallelt",
+        "Sæt på pause eller opsig når som helst",
+        "Asynkront via Slack eller e-mail",
+        "Prioriteret support"
+      ]
+    }
+  },
+  "hero_trust": "Faste priser · Betal i op til 3 rater · Dit eget webstudie fra 740 kr./md.",
+  "sub_line": "Abonnement til alle slags opgaver",
+  "sub_opt": "Valgfrit tilvalg",
+  "care_h": {
+    "Basic": "Op til 10 t / md.",
+    "Growth": "Op til 25 t / md.",
+    "Pro": "Op til 48 t / md."
+  },
+  "studio_q": "Har du allerede et website?",
+  "studio_t": "Få dit eget webstudie fra {price}.",
+  "studio_cta": "Vælg en plan",
+  "studio_msg": "Hej NOOMO, jeg har allerede et website og er interesseret i abonnementet Dit webstudie.",
+  "inst_line": "eller 3 × {price}/md.",
+  "inst_note": "Fast pris. Betal på én gang eller i op til 3 månedlige rater.",
+  "f_pay": "Betaling (valgfrit)",
+  "pay": {
+    "full": "Fuld betaling",
+    "inst": "Rater (op til 3 måneder)"
+  },
+  "cta_services": "Se ydelser",
+  "cta_studio": "Dit eget webstudie fra 740 kr./md.",
+  "svc_note": "Fast pris. Betal på én gang eller i op til 3 månedlige rater.",
+  "sb_hrs": "Op til {h} timer om måneden",
+  "b2b_cta2": "Vælg Full Web Studio",
+  "loc_h": "Vores lokationer",
+  "loc_line": "Hovedkontor i Aarhus, Danmark",
+  "locs": [
+    {
+      "n": "Danmark",
+      "c": "Aarhus",
+      "hq": true
+    }
+  ],
+  "svc_more": "Se detaljer →",
+  "audit_b": [
+    "Gennemgang af UX, hastighed og SEO",
+    "Kort skriftlig audit",
+    "Overslag til fast pris"
+  ]
+}
