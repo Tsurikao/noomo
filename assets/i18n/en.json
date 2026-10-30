@@ -16,15 +16,15 @@
   "pkg": "Subscription",
   "nav_about": "About",
   "nav_contact": "Contact",
-  "nav_book": "Free video report",
+  "nav_book": "Free audit",
   "cursor_more": "See more",
   "hero_eb": "Web agency in Aarhus · Websites and webshops",
   "hero_eb2": "Shopify · Corporate sites · MVP apps",
-  "hero_1": "See where your",
-  "hero_2": "website",
-  "hero_3": "loses customers.",
-  "hero_tag": "We test your site like a real customer and send you a free video report within 24 hours. Then we fix it at a fixed price.",
-  "cta_free": "Get a free video report",
+  "hero_1": "Free audit of",
+  "hero_2": "your website",
+  "hero_3": "or webshop.",
+  "hero_tag": "We go through your site like a real customer and show you on video where you lose customers. Then we improve your site or build a new one at a fixed price.",
+  "cta_free": "Get a free audit",
   "why1_h": "You own everything",
   "why1_t": "Domain, website and accounts are in your name. If you move on, you take it all with you.",
   "why2_h": "Everything connected",
@@ -41,15 +41,15 @@
   "want_like": "I want something like this",
   "live_projects": "Live projects",
   "svc_h": "What we do",
-  "svc_eb": "Three services and a free video report. Fixed price, and you own everything.",
+  "svc_eb": "Three services and a free audit. Fixed price, and you own everything.",
   "excl_vat": "excl. VAT",
   "view_details_arrow": "View details ↗",
   "audit_badge": "Start here · Free",
-  "audit_h": "Free video report on your website",
-  "audit_t": "Send us the link to your website. We go through it the way a customer would, on desktop and mobile, and record it on video with highlights and captions. Within 24 hours you get the video and the 3 things to fix first. No meeting, no commitment.",
+  "audit_h": "Free audit of your website or webshop",
+  "audit_t": "Send us the link. We go through your site like a customer, on desktop and mobile: design, usability, speed and visibility on Google. Within 24 hours you get a short video showing the problems and the 3 things to fix first. No meeting, no commitment.",
   "free": "DKK 0",
   "min30": "Within 24 hours",
-  "audit_cta": "Send my link",
+  "audit_cta": "Get my free audit",
   "pkg_eb": "Prices in DKK excl. VAT. No lock-in, 1 month's notice.",
   "most_popular": "Most popular",
   "sub_title": "Your web studio",
@@ -96,7 +96,7 @@
   "mission": "We make professional digital products accessible to growing businesses: clear, fast and built to sell.",
   "mission_acc": 6,
   "mission2": "No bloated agency process. No templates passed off as custom work. Just a focused team that ships.",
-  "contact_body": "Add your name, email and the link to your website, and we send you a free video report within 24 hours. Want something else? Choose it below.",
+  "contact_body": "Add your name, email and the link to your website or webshop. Within 24 hours you get a free audit on video. Want something else? Choose it below.",
   "ph_msg": "Tell us what you need",
   "ph_topic": "What would you like to talk about?",
   "err_pre": "The request didn't go through. Please try again, or email us at",
@@ -165,7 +165,7 @@
     "ecom": "Webshop",
     "web": "Website",
     "apps": "Upgrade and migration",
-    "audit": "Free video report",
+    "audit": "Free audit",
     "unsure": "Not sure"
   },
   "f": {
@@ -326,12 +326,12 @@
     "apps": {
       "title": "Fix the gaps and move your shop",
       "pkgTitle": "Upgrade and migration",
-      "desc": "We fix what the video report showed, or move your webshop from an old platform to Shopify with products, customers and orders.",
+      "desc": "We fix what the audit showed, or move your webshop from an old platform to Shopify with products, customers and orders.",
       "priceSub": "Excl. VAT",
       "timeline": "From 1 week",
       "who": "Businesses that already have a website or webshop but lose customers because of errors, a slow site or an old platform.",
       "pkgItems": [
-        "Fixes based on your video report",
+        "Fixes based on your audit",
         "Migration of products, customers and orders",
         "MobilePay, shipping and accounting setup",
         "Speed and mobile view",
@@ -341,8 +341,8 @@
       ],
       "steps": [
         [
-          "Video report",
-          "We show what is costing you customers."
+          "Free audit",
+          "We show on video what is costing you customers."
         ],
         [
           "Fixed price",
@@ -528,7 +528,7 @@
     "full": "Full payment",
     "inst": "Installments (up to 3 months)"
   },
-  "cta_services": "Get a free video report",
+  "cta_services": "Get a free audit",
   "cta_studio": "See services and prices",
   "svc_note": "Fixed price. Pay at once or in up to 3 monthly payments.",
   "sb_hrs": "Up to {h} hours per month",
@@ -548,5 +548,5 @@
     "Mobile, speed and visibility on Google",
     "The 3 most important fixes"
   ],
-  "fix_price": "Price after video report"
+  "fix_price": "Price after audit"
 }

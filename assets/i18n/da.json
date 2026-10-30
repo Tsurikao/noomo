@@ -16,15 +16,15 @@
   "pkg": "Abonnement",
   "nav_about": "Om os",
   "nav_contact": "Kontakt",
-  "nav_book": "Gratis videorapport",
+  "nav_book": "Gratis audit",
   "cursor_more": "Se mere",
   "hero_eb": "Webbureau i Aarhus · Hjemmesider og webshops",
   "hero_eb2": "Shopify · Virksomhedssites · MVP-apps",
-  "hero_1": "Se, hvor din",
-  "hero_2": "hjemmeside",
-  "hero_3": "mister kunder.",
-  "hero_tag": "Vi tester din side som en rigtig kunde og sender dig en gratis videorapport inden for 24 timer. Derefter retter vi det til fast pris.",
-  "cta_free": "Få en gratis videorapport",
+  "hero_1": "Gratis audit af",
+  "hero_2": "din hjemmeside",
+  "hero_3": "eller webshop.",
+  "hero_tag": "Vi gennemgår din side som en rigtig kunde og viser dig på video, hvor du mister kunder. Derefter forbedrer vi din side eller bygger en ny til fast pris.",
+  "cta_free": "Få en gratis audit",
   "why1_h": "Du ejer alt",
   "why1_t": "Domæne, hjemmeside og konti står i dit navn. Vil du videre, tager du det hele med.",
   "why2_h": "Alt koblet sammen",
@@ -41,15 +41,15 @@
   "want_like": "Jeg vil have noget lignende",
   "live_projects": "Live projekter",
   "svc_h": "Det laver vi",
-  "svc_eb": "Tre ydelser og en gratis videorapport. Fast pris, og du ejer alt.",
+  "svc_eb": "Tre ydelser og en gratis audit. Fast pris, og du ejer alt.",
   "excl_vat": "ekskl. moms",
   "view_details_arrow": "Se detaljer ↗",
   "audit_badge": "Start her · Gratis",
-  "audit_h": "Gratis videorapport om din hjemmeside",
-  "audit_t": "Send os linket til din hjemmeside. Vi gennemgår den, som en kunde ville gøre, på computer og mobil, og optager det på video med markeringer og danske tekster. Inden for 24 timer får du videoen og de 3 ting, du bør rette først. Intet møde, ingen forpligtelse.",
+  "audit_h": "Gratis audit af din hjemmeside eller webshop",
+  "audit_t": "Send os linket. Vi gennemgår din side som en kunde, på computer og mobil: design, brugervenlighed, hastighed og synlighed på Google. Inden for 24 timer får du en kort video, hvor vi viser problemerne, og de 3 ting, du bør rette først. Intet møde, ingen forpligtelse.",
   "free": "0 kr.",
   "min30": "Inden for 24 timer",
-  "audit_cta": "Send mit link",
+  "audit_cta": "Få min gratis audit",
   "pkg_eb": "Priser i kr. ekskl. moms. Ingen binding, 1 måneds opsigelse.",
   "most_popular": "Mest populær",
   "sub_title": "Dit webstudie",
@@ -96,7 +96,7 @@
   "mission": "Vi gør professionelle digitale produkter tilgængelige for virksomheder i vækst: klare, hurtige og bygget til at sælge.",
   "mission_acc": 6,
   "mission2": "Ingen oppustet bureauproces. Ingen skabeloner solgt som skræddersyet arbejde. Bare et fokuseret team, der leverer.",
-  "contact_body": "Skriv dit navn, din e-mail og linket til din hjemmeside. Så sender vi dig en gratis videorapport inden for 24 timer. Har du et andet ønske, så vælg det nedenfor.",
+  "contact_body": "Skriv dit navn, din e-mail og linket til din hjemmeside eller webshop. Inden for 24 timer får du en gratis audit på video. Har du et andet ønske, så vælg det nedenfor.",
   "ph_msg": "Fortæl os, hvad du har brug for",
   "ph_topic": "Hvad vil du gerne tale om?",
   "err_pre": "Forespørgslen blev ikke sendt. Prøv igen, eller skriv til os på",
@@ -181,7 +181,7 @@
     "ecom": "Webshop",
     "web": "Hjemmeside",
     "apps": "Opgradering og flytning",
-    "audit": "Gratis videorapport",
+    "audit": "Gratis audit",
     "unsure": "Ved ikke"
   },
   "f": {
@@ -342,12 +342,12 @@
     "apps": {
       "title": "Ret hullerne og flyt din shop",
       "pkgTitle": "Opgradering og flytning",
-      "desc": "Vi retter det, videorapporten viste, eller flytter din webshop fra en gammel platform til Shopify med produkter, kunder og ordrer.",
+      "desc": "Vi retter det, auditten viste, eller flytter din webshop fra en gammel platform til Shopify med produkter, kunder og ordrer.",
       "priceSub": "Ekskl. moms",
       "timeline": "Fra 1 uge",
       "who": "Virksomheder, der allerede har en hjemmeside eller webshop, men mister kunder på grund af fejl, en langsom side eller en gammel platform.",
       "pkgItems": [
-        "Rettelser ud fra din videorapport",
+        "Rettelser ud fra din audit",
         "Flytning af produkter, kunder og ordrer",
         "Opsætning af MobilePay, fragt og regnskab",
         "Hastighed og mobilvisning",
@@ -357,8 +357,8 @@
       ],
       "steps": [
         [
-          "Videorapport",
-          "Vi viser, hvad der koster dig kunder."
+          "Gratis audit",
+          "Vi viser på video, hvad der koster dig kunder."
         ],
         [
           "Fast pris",
@@ -611,7 +611,7 @@
     "full": "Fuld betaling",
     "inst": "Rater (op til 3 måneder)"
   },
-  "cta_services": "Få en gratis videorapport",
+  "cta_services": "Få en gratis audit",
   "cta_studio": "Se ydelser og priser",
   "svc_note": "Fast pris. Betal på én gang eller i op til 3 månedlige rater.",
   "sb_hrs": "Op til {h} timer om måneden",
@@ -631,5 +631,5 @@
     "Mobil, hastighed og synlighed på Google",
     "De 3 vigtigste rettelser"
   ],
-  "fix_price": "Pris efter videorapport"
+  "fix_price": "Pris efter audit"
 }
