@@ -82,10 +82,6 @@ window.NOOMO_ASSETS = {
   "sefer-long2.png": "assets/img/projects/sefer-02.webp",
   "nxtshop-cover.png": "assets/img/projects/nxtshop.webp",
   "nxtshop-longread.png": "assets/img/projects/nxtshop-01.webp",
-  "petfeeder-cover.png": "assets/img/projects/pet-feeder.webp",
-  "petfeeder-1.png": "assets/img/projects/pet-feeder-01.webp",
-  "itfit-cover2.jpg": "assets/img/projects/itfit.webp",
-  "itfit-1.jpg": "assets/img/projects/itfit-01.webp",
   "uploads/00-cover@3x-90cd3ccb.png": "assets/img/projects/sousa-tavares.webp",
   "uploads/01 Hero.png": "assets/img/projects/sousa-tavares-01.webp",
   "uploads/02 Meta.png": "assets/img/projects/sousa-tavares-02.webp",
@@ -118,8 +114,6 @@ window.NOOMO_ASSETS = {
   "kortical-1.png": "assets/img/projects/kortical-01.webp",
   "laurie-cover.png": "assets/img/projects/laurie-handlers.webp",
   "laurie-longread.png": "assets/img/projects/laurie-handlers-01.webp",
-  "wizards-cover.png": "assets/img/projects/online-course-wizards.webp",
-  "wizards-longread.png": "assets/img/projects/online-course-wizards-01.webp",
   "subflow-cover.png": "assets/img/projects/subflow.webp",
   "subflow-longread.png": "assets/img/projects/subflow-01.webp",
   "gj-cover-v2.png": "assets/img/projects/georg-jensen.webp",
@@ -156,7 +150,7 @@ const BUDGET_EN = ["Under DKK 7,500", "DKK 7,500–15,000", "DKK 15,000–37,500
 const WEB3FORMS_KEY = window.NOOMO_FORMS.KEY;
 const EMPTY_CALL = { name: '', phone: '', email: '', day: '', slot: '', topic: '', botcheck: false };
 const SLOTS = ['09:00–11:00', '11:00–13:00', '13:00–15:00', '15:00–17:00'];
-const EMPTY_FORM = { name: '', company: '', email: '', phone: '', service: '', carePlan: '', budget: '', message: '', selectedPackage: '', payment: '', botcheck: false };
+const EMPTY_FORM = { name: '', company: '', email: '', website: '', phone: '', service: 'audit', carePlan: '', budget: '', message: '', selectedPackage: '', payment: '', botcheck: false };
 const { I18N, LANGS, LOCALE } = window.NOOMO_I18N;
 const IMG = (n) => (window.NOOMO_ASSETS && window.NOOMO_ASSETS[n]) || n;
 
@@ -369,8 +363,8 @@ class Component extends DCLogic {
     { category: 'web', title: 'Instalettings', url: 'https://instalettings.co', domain: 'instalettings.co', rank: 3, cover: IMG('instalettings-live.png'), desc: 'Short-let property site for design-led homes in London.' },
     { category: 'ecom', title: 'Kochi Dubai', url: 'https://kochidubai.com', domain: 'kochidubai.com', rank: 1, cover: IMG('kochi-live.png'), desc: 'A modern grooming lounge redefining men\'s grooming. Crafted in Dubai for the contemporary gentleman.' }
   ];
-  svcLabel = { ecom: 'E-commerce', web: 'Corporate websites & landing pages', apps: 'MVP & app', audit: 'Free consultation & audit', unsure: 'Not sure' };
-  pkgTitle = { ecom: 'E-commerce Store', web: 'Corporate Website & Landing Page', apps: 'MVP App & Startup' };
+  svcLabel = { ecom: 'Webshop', web: 'Website', apps: 'Upgrade & migration', audit: 'Free video report', unsure: 'Not sure' };
+  pkgTitle = { ecom: 'Webshop', web: 'Website', apps: 'Upgrade & migration' };
   heroRef = React.createRef();
   bg1Ref = React.createRef();
   bg2Ref = React.createRef();
@@ -689,76 +683,6 @@ class Component extends DCLogic {
         tools: ['Figma', 'AR Prototyping', 'Design System', 'HTML/CSS/JS']
       },
       {
-        category: 'apps', kind: 'iOS · Connected Device', cover: IMG('petfeeder-cover.png'), focus: '35% 50%', order: 4, hidden: true,
-        title: 'Smart Pet Feeder App — Remote Control & Interaction',
-        badges: ['iOS', 'AI Integration', 'Startup MVP'],
-        meta: [{ k: 'Role', v: 'Lead UX/UI Design & Web Architecture' }, { k: 'Year', v: '2026' }, { k: 'Scope', v: 'App + web architecture' }, { k: 'Platform', v: 'iOS' }, { k: 'Status', v: 'Shipped' }],
-        challenge: 'Pet owners often worry about feeding and caring for their pets when they are away. Traditional solutions offer limited interaction and control, leaving owners anxious and pets less engaged.',
-        overview: 'The Smart Pet Feeder App lets pet owners feed, monitor, and interact with their pets remotely. Connected to a feeder with a camera and microphone, users can dispense food or water manually or automatically, watch their pets in real time, and talk to them through the app. The solution delivers a fun, intuitive, and reliable experience, keeping pets fed, entertained, and cared for from anywhere.',
-        solutionShown: true,
-        wideShots: true,
-        solution: [
-          { h: 'Remote feeding', t: 'Dispense food or water manually or on a schedule, from anywhere.' },
-          { h: 'Real-time monitoring', t: 'Watch pets live through the feeder\u2019s built-in camera.' },
-          { h: 'Two-way interaction', t: 'Talk to pets through the app\u2019s microphone, turning a feeder into a way to stay connected.' },
-          { h: 'Fun and intuitive controls', t: 'Easy navigation designed for all pet owners, not just technical users.' }
-        ],
-        shots: [
-          { img: IMG('petfeeder-1.png'), label: 'Feeding, monitoring & interaction flows' }
-        ],
-        thinking: [
-          { i: '01', t: 'Designed around owner anxiety — the product\u2019s job is reassurance, not just scheduling.' },
-          { i: '02', t: 'Made live video and voice first-class alongside feeding, so the app is a connection, not a control panel.' },
-          { i: '03', t: 'Balanced reliability with playfulness — controls stay dependable while the experience stays fun.' }
-        ],
-        impact: [{ n: 'Remote', l: 'manual and scheduled feeding from anywhere' }, { n: 'Live', l: 'real-time camera monitoring' }, { n: 'Two-way', l: 'voice interaction with pets through the app' }],
-        roleShown: true,
-        role: [
-          'Served as Lead UX/UI Designer & Web Architect for the product.',
-          'Designed the intuitive interface and remote controls.',
-          'Prototyped real-time feeding, monitoring, and interaction flows.',
-          'Ensured seamless usability across mobile devices.',
-          'Balanced reliability, fun, and engagement in the user experience.'
-        ],
-        note: '',
-        tools: ['Figma', 'App Store Design', 'Design System', 'Prototyping']
-      },
-      {
-        category: 'apps', kind: 'iOS · Fitness & Health', cover: IMG('itfit-cover2.jpg'), focus: '18% 50%', order: 2, hidden: true,
-        title: 'ItFit — Personalized Training, Nutrition & Safety Monitoring',
-        badges: ['iOS', 'Health & Fitness', 'AI Integration'],
-        meta: [{ k: 'Role', v: 'UI/UX Designer' }, { k: 'Year', v: '2026' }, { k: 'Scope', v: 'App design' }, { k: 'Platform', v: 'iOS' }, { k: 'Status', v: 'Shipped' }],
-        challenge: 'Traditional fitness apps often provide generic workout and nutrition plans with limited safety guidance, making training less effective and sometimes unsafe for users.',
-        overview: 'ItFit is a comprehensive fitness app that helps users track workouts, nutrition, and personalized training plans. It generates custom daily workout and meal plans, monitors heart rate to ensure safe exercise, and allows progress tracking and consultations, giving every user an efficient, tailored, and engaging fitness experience.',
-        solutionShown: true,
-        wideShots: true,
-        solution: [
-          { h: 'Personalized plans', t: 'Daily training and meal plans tailored to individual goals.' },
-          { h: 'Progress tracking', t: 'Tracks workouts, nutrition, and overall performance over time.' },
-          { h: 'Heart rate monitoring', t: 'Automatically pauses exercises if safe limits are exceeded.' },
-          { h: 'Consultation & guidance', t: 'Built-in features for safe, efficient, and tailored fitness support.' }
-        ],
-        shots: [
-          { img: IMG('itfit-1.jpg'), label: 'Registration, onboarding & training flows' }
-        ],
-        thinking: [
-          { i: '01', t: 'Made safety a first-class feature — heart rate monitoring gates the workout, not an afterthought stat.' },
-          { i: '02', t: 'Personalized plans from the first session, so users never face a generic, one-size-fits-all program.' },
-          { i: '03', t: 'Kept onboarding and daily flows simple, so tracking and consultation stay effortless to use.' }
-        ],
-        impact: [{ n: 'Personalized', l: 'daily workout and meal plans' }, { n: 'Safe', l: 'heart rate–guided workouts' }, { n: 'All-in-one', l: 'training, nutrition & consultation' }],
-        roleShown: true,
-        role: [
-          'Served as UI/UX Designer for the ItFit app.',
-          'Designed intuitive interfaces for workouts, meal tracking, and consultations.',
-          'Created personalized training and nutrition flows.',
-          'Integrated heart rate monitoring and safety features into the core experience.',
-          'Prototyped and mapped user journeys for a seamless fitness experience.'
-        ],
-        note: '',
-        tools: ['Prototyping', 'Interaction Design', 'Mobile App UI/UX', 'UX Writing', 'Journey Mapping']
-      },
-      {
         category: 'web', kind: 'Web · Carpentry Workshop', cover: IMG('uploads/00-cover@3x-90cd3ccb.png'), focus: '50% 50%', order: -3, seamlessShots: true, wideShots: true,
         visit: { url: 'https://tsurikao.github.io/carpintaria.st/#', label: 'Visit live site ↗' },
         stores: [{ label: 'Visit live site', url: 'https://tsurikao.github.io/carpintaria.st/#' }],
@@ -921,23 +845,6 @@ class Component extends DCLogic {
           { img: IMG('laurie-longread.png'), label: 'Laurie Handlers — case study' }
         ],
         tools: ['Figma', 'Illustrator', 'UI/UX Design']
-      },
-      {
-        category: 'web', kind: 'Web · Branding & Platform', cover: IMG('wizards-cover.png'), hidden: true,
-        title: 'Online Course Wizards — Branding and Website',
-        badges: ['Web', 'Branding', 'E-learning', 'Responsive'],
-        meta: [{ k: 'Role', v: 'UI/UX Design' }, { k: 'Year', v: '2022' }, { k: 'Process', v: 'Logo, branding, wireframes, UI design, interaction, social media templates' }],
-        overview: 'Online Course Wizards is a service for fast-growing small and medium-sized businesses that need to train their employees online. The platform creates courses in many areas for employers who want to raise their team\u2019s skills and qualifications.',
-        challenge: 'The client had no branding and an old long-read website with awkward navigation, no quick application forms and little information on cases and products.',
-        solutionShown: true,
-        wideShots: true,
-        solution: [
-          { h: 'Branding', t: 'We developed the brand with several logo compositions and a guideline for fonts and colours.' },
-          { h: 'Platform', t: 'We then built a prototype and designed the final platform around visitors\u2019 needs, with quick request forms, a full component library and tablet and mobile versions.' }
-        ],
-        shots: [
-          { img: IMG('wizards-longread.png'), label: 'Online Course Wizards — case study', long: true }
-        ]
       },
       {
         category: 'apps', kind: 'iOS · Creator Subscriptions', cover: IMG('subflow-cover.png'), order: 0,
@@ -1174,10 +1081,10 @@ class Component extends DCLogic {
     this.setState({ status: 'sending', errors: {} });
     const payload = {
       access_key: WEB3FORMS_KEY,
-      subject: 'New project request from noomo.dk',
+      subject: f.service === 'audit' ? 'Free video report request from noomo.dk' : 'New project request from noomo.dk',
       from_name: 'NOOMO website',
       replyto: f.email,
-      name: f.name, company: f.company, email: f.email, phone: f.phone,
+      name: f.name, company: f.company, email: f.email, website: f.website, phone: f.phone,
       service: this.svcLabel[f.service] || f.service, care_plan: f.carePlan, payment: f.payment ? PAY_EN[f.payment] : '', budget: f.budget !== '' ? BUDGET_EN[+f.budget] : '', message: f.message,
       selected_package: this.pkgTitle[f.selectedPackage] || f.selectedPackage,
       language: this.state.lang,
@@ -1607,10 +1514,10 @@ class Component extends DCLogic {
     const defs = [
       { id: 'ecom', num: '01', popular: true, ...SV.ecom, price: from(P.ecom), inst: inst(P.ecom, P.instEcom), alt: '', addons: SV.ecom.addons.map((k, i) => [k, [from(P.ecomProducts), from(P.ecomLang), onReq, from(P.ecomVisuals)][i]]) },
       { id: 'web', num: '02', ...SV.web, price: from(P.landing), inst: inst(P.landing, P.instLanding), alt: '', addons: SV.web.addons.map((k, i) => [k, [from(P.webPage), from(P.webCopy), from(P.webLang)][i]]) },
-      { id: 'apps', num: '03', ...SV.apps, price: from(P.mvp), inst: inst(P.mvp, P.instMvp), alt: '', addons: SV.apps.addons.map((k, i) => [k, [from(P.mvpFlow), onReq, from(P.mvpSprint)][i]]) }
+      { id: 'apps', num: '03', ...SV.apps, price: T.fix_price, inst: '', alt: '', addons: SV.apps.addons.map((k) => [k, onReq]) }
     ];
     const L4 = { artH: '220px', titleSize: 'clamp(22px,1.9vw,32px)' }; const layout = { ecom: L4, web: L4, apps: L4 };
-    const services = defs.map((d) => ({ ...layout[d.id], id: d.id, num: d.num, title: d.title, desc: d.desc, price: d.price, inst: d.inst, timeline: d.timeline, aria: d.title + T.aria_view_details,
+    const services = defs.map((d) => ({ ...layout[d.id], id: d.id, num: d.num, title: d.title, desc: d.desc, price: d.price, inst: '', timeline: d.timeline, aria: d.title + T.aria_view_details,
       bullets: (d.pkgItems || []).slice(0, 3), quote: () => this.quote(d.id), isEcom: d.id === 'ecom', isWeb: d.id === 'web', isApp: d.id === 'apps', hovCls: S.demo && d.id === 'ecom' ? 'q-hov' : '', open: () => this.openSvc(d.id) }));
     const leavePkg = () => { if (!S.demo) this.setState({ hoverPkg: null }); };
     const TS = T.subtiers;
@@ -1746,9 +1653,9 @@ class Component extends DCLogic {
       submitLabel: S.status === 'sending' ? T.sending : T.submit, btnOp: S.status === 'sending' ? 0.6 : 1,
       submit: this.submit, resetForm: () => this.setState({ status: 'idle', errors: {}, form: { ...EMPTY_FORM } }),
       onBot: (e) => this.setField('botcheck', e.target.checked), onMessage: (e) => this.setField('message', e.target.value),
-      fields: [mkF('name', T.f.name, 'text', T.f.name_ph, 'name', T.f.name_err), mkF('company', T.f.company, 'text', T.f.company_ph, 'organization', ''),
-        mkF('email', T.f.email, 'email', T.f.email_ph, 'email', T.f.email_err), mkF('phone', T.f.phone_opt, 'tel', '+49 151 2345 6789', 'tel', '')],
-      svcOpts: ['ecom', 'web', 'apps', 'audit', 'unsure'].map((id) => chip(T.svcOpts[id], 'service', id)),
+      fields: [mkF('name', T.f.name, 'text', T.f.name_ph, 'name', T.f.name_err),
+        mkF('email', T.f.email, 'email', T.f.email_ph, 'email', T.f.email_err), mkF('website', T.f.website, 'url', T.f.website_ph, 'url', '')],
+      svcOpts: ['audit', 'web', 'ecom', 'apps'].map((id) => chip(T.svcOpts[id], 'service', id)),
       careOpts: careLabels.map((l) => { const cd = careDefs.find((c) => c.name === l); return chip(T.sub_names[l] + (cd ? ' (' + moShort(cd.n) + ')' : ''), 'carePlan', l); }),
       budgetOpts: budgets.map((l, i) => chip(l, 'budget', String(i))),
       payOpts: ['full', 'inst'].map((id) => chip(T.pay[id], 'payment', id)),

@@ -16,21 +16,21 @@
   "pkg": "Abonnement",
   "nav_about": "Om os",
   "nav_contact": "Kontakt",
-  "nav_book": "Gratis rådgivning",
+  "nav_book": "Gratis videorapport",
   "cursor_more": "Se mere",
-  "hero_eb": "Digitalt studie for B2B · Danmark",
+  "hero_eb": "Webbureau i Aarhus · Hjemmesider og webshops",
   "hero_eb2": "Shopify · Virksomhedssites · MVP-apps",
-  "hero_1": "Webshops.",
-  "hero_2": "Hjemmesider og landingssider.",
-  "hero_3": "Apps.",
-  "hero_tag": "Leveret til tiden, til fast pris.",
-  "cta_free": "Book gratis rådgivning",
-  "why1_h": "Pakker til fast pris",
-  "why1_t": "Du kender den samlede pris, før vi går i gang. Ingen ekstraregninger.",
-  "why2_h": "Dit eget webstudie som abonnement",
-  "why2_t": "Ét fast månedligt beløb til opdateringer og mindre opgaver.",
-  "why3_h": "Betal i rater",
-  "why3_t": "Del projektprisen op i 3 månedlige betalinger.",
+  "hero_1": "Se, hvor din",
+  "hero_2": "hjemmeside",
+  "hero_3": "mister kunder.",
+  "hero_tag": "Vi tester din side som en rigtig kunde og sender dig en gratis videorapport inden for 24 timer. Derefter retter vi det til fast pris.",
+  "cta_free": "Få en gratis videorapport",
+  "why1_h": "Du ejer alt",
+  "why1_t": "Domæne, hjemmeside og konti står i dit navn. Vil du videre, tager du det hele med.",
+  "why2_h": "Alt koblet sammen",
+  "why2_t": "MobilePay, fragt, lager og regnskab arbejder sammen, så ordrer ikke kræver håndarbejde.",
+  "why3_h": "Fast pris før start",
+  "why3_t": "Du kender den samlede pris, før vi går i gang. Betal på én gang eller i 3 rater.",
   "why4_h": "Online på uger, ikke måneder",
   "why4_t": "Klare tidsplaner, så dit nye site hurtigt går live.",
   "work_h": "Udvalgte cases",
@@ -41,16 +41,16 @@
   "want_like": "Jeg vil have noget lignende",
   "live_projects": "Live projekter",
   "svc_h": "Det laver vi",
-  "svc_eb": "Tre ydelser og en gratis audit. Fast omfang, fast pris og support efter lancering.",
+  "svc_eb": "Tre ydelser og en gratis videorapport. Fast pris, og du ejer alt.",
   "excl_vat": "ekskl. moms",
   "view_details_arrow": "Se detaljer ↗",
-  "audit_badge": "Bonus · Gratis",
-  "audit_h": "Gratis rådgivning og website-audit",
-  "audit_t": "30 minutter med en senior designer. Vi gennemgår dit nuværende website eller din webshop og giver dig en kort skriftlig audit: hurtige gevinster inden for UX, hastighed og SEO, et anbefalet næste skridt og et overslag til fast pris.",
+  "audit_badge": "Start her · Gratis",
+  "audit_h": "Gratis videorapport om din hjemmeside",
+  "audit_t": "Send os linket til din hjemmeside. Vi gennemgår den, som en kunde ville gøre, på computer og mobil, og optager det på video med markeringer og danske tekster. Inden for 24 timer får du videoen og de 3 ting, du bør rette først. Intet møde, ingen forpligtelse.",
   "free": "0 kr.",
-  "min30": "30 minutter",
-  "audit_cta": "Få en gratis audit",
-  "pkg_eb": "Priser i kr. ekskl. moms. Alle projekter starter med gratis rådgivning og et tilbud til fast pris.",
+  "min30": "Inden for 24 timer",
+  "audit_cta": "Send mit link",
+  "pkg_eb": "Priser i kr. ekskl. moms. Ingen binding, 1 måneds opsigelse.",
   "most_popular": "Mest populær",
   "sub_title": "Dit webstudie",
   "total": "I alt",
@@ -58,19 +58,19 @@
   "get_quote": "Få et tilbud",
   "view_details": "Se detaljer",
   "sub_q": "Hvad er Dit webstudie?",
-  "sub_t": "Ét månedligt abonnement til alle slags opgaver: opdateringer, nye sider og landingssider, bannere og kampagnegrafik, designændringer, SEO, oprettelse af produkter og prioriteret hjælp. Minimum 3 måneder.",
+  "sub_t": "Ét månedligt abonnement til alle slags opgaver: opdateringer, nye sider og landingssider, bannere og kampagnegrafik, designændringer, SEO, oprettelse af produkter og prioriteret hjælp. Ingen binding: du kan opsige med 1 måneds varsel.",
   "about_h": "Om NOOMO",
   "about_eb": "Studiet",
   "stat1": "Specialister",
   "stat2": "År med digitalt design",
   "stat3": "Fast omfang, fast pris",
   "mission_eb": "Vores mission",
-  "contact_h": "Lad os tale om dit projekt",
+  "contact_h": "Skriv til os",
   "selected": "Valgt",
-  "f_service": "Ydelse",
+  "f_service": "Hvad drejer det sig om?",
   "f_sub": "Abonnement",
   "f_budget": "Budget (kr. ekskl. moms)",
-  "f_message": "Besked",
+  "f_message": "Besked (valgfrit)",
   "sent_eb": "Forespørgsel sendt",
   "sent_msg": "Tak, vi svarer inden for 24 timer.",
   "send_another": "Send en ny forespørgsel",
@@ -86,17 +86,17 @@
   "how": "Sådan foregår det",
   "addons": "Tilvalg",
   "related": "Relaterede cases",
-  "min3": "Minimum 3 måneder",
+  "min3": "Ingen binding · 1 måneds opsigelse",
   "popup_quote": "Få et tilbud på denne ydelse",
   "close_esc": "Luk · Esc",
   "like_eb": "Jeg vil have noget i stil med",
   "send_req": "Send en forespørgsel",
   "back_work": "← Tilbage til cases",
-  "about_body": "NOOMO er et designdrevet digitalt studie med hovedkontor i Aarhus. Vi kombinerer mere end 15 års erfaring med UI/UX og webdesign med et AI-understøttet workflow, så du får design og udvikling i seniorkvalitet, hurtigere og til fast pris. Vi arbejder med detailhandlere, servicevirksomheder og startups i hele Europa.",
+  "about_body": "NOOMO er et designdrevet digitalt studie med hovedkontor i Aarhus. Vi kombinerer 16+ års erfaring med UI/UX og webdesign med et AI-understøttet workflow, så du får design og udvikling i seniorkvalitet, hurtigere og til fast pris. Vi arbejder med detailhandlere, servicevirksomheder og startups i hele Europa.",
   "mission": "Vi gør professionelle digitale produkter tilgængelige for virksomheder i vækst: klare, hurtige og bygget til at sælge.",
   "mission_acc": 6,
   "mission2": "Ingen oppustet bureauproces. Ingen skabeloner solgt som skræddersyet arbejde. Bare et fokuseret team, der leverer.",
-  "contact_body": "Fortæl os, hvad du har brug for. Den første rådgivning er gratis, og du får et klart tilbud til fast pris inden for 48 timer.",
+  "contact_body": "Skriv dit navn, din e-mail og linket til din hjemmeside. Så sender vi dig en gratis videorapport inden for 24 timer. Har du et andet ønske, så vælg det nedenfor.",
   "ph_msg": "Fortæl os, hvad du har brug for",
   "ph_topic": "Hvad vil du gerne tale om?",
   "err_pre": "Forespørgslen blev ikke sendt. Prøv igen, eller skriv til os på",
@@ -122,7 +122,7 @@
   "sub_fmt": "Dit webstudie: {name}",
   "tab_form": "Send en forespørgsel",
   "tab_call": "Bestil et opkald",
-  "submit": "Send forespørgsel",
+  "submit": "Send",
   "sending": "Sender…",
   "call_btn": "Bestil et opkald",
   "call_msg": "Tak! Vi ringer til dig {day} mellem kl. {from} og {to}.",
@@ -178,10 +178,10 @@
     "Phone": "Telefon"
   },
   "svcOpts": {
-    "ecom": "E-handel",
-    "web": "Virksomhedssites og landingssider",
-    "apps": "MVP og app",
-    "audit": "Gratis rådgivning og audit",
+    "ecom": "Webshop",
+    "web": "Hjemmeside",
+    "apps": "Opgradering og flytning",
+    "audit": "Gratis videorapport",
     "unsure": "Ved ikke"
   },
   "f": {
@@ -197,7 +197,9 @@
     "phone": "Telefon",
     "phone_err": "Skriv et telefonnummer.",
     "email_opt": "E-mail (valgfrit)",
-    "email_err2": "Tjek e-mailadressen."
+    "email_err2": "Tjek e-mailadressen.",
+    "website": "Din hjemmeside (valgfrit)",
+    "website_ph": "https://www.dinvirksomhed.dk"
   },
   "months": [
     "Januar",
@@ -246,30 +248,30 @@
   },
   "svc": {
     "ecom": {
-      "title": "E-handel",
+      "title": "Webshop med alt koblet på",
       "pkgTitle": "Webshop",
-      "desc": "Webshops og dagligvarebutikker på Shopify med oprettelse af produkter og løbende support.",
+      "desc": "Webshops på Shopify med MobilePay, fragt og regnskab koblet på, så ordrer, lager og bogføring kører af sig selv.",
       "priceSub": "Ekskl. moms",
       "timeline": "4–6 uger",
-      "who": "Detailhandlere, dagligvare- og specialbutikker, der vil sælge online eller væk fra en langsom platform. Bedst, når sortimentet er klar, og du har brug for en webshop, dit team selv kan drive i hverdagen.",
+      "who": "Mindre butikker og specialbutikker, der vil sælge online, eller som vil have webshop og fysisk butik på samme lager.",
       "pkgItems": [
-        "Opsætning af Shopify-butik og skræddersyet tema",
+        "Shopify-butik med skræddersyet design",
+        "Betaling med MobilePay, kort, Apple Pay og Google Pay",
+        "Fragt med Shipmondo (GLS, PostNord) og moms",
+        "Ordrer sendes automatisk til Dinero eller e-conomic",
         "Op til 50 produkter oprettet",
-        "Betaling (kort, Apple Pay, Google Pay)",
-        "Opsætning af fragt og EU-moms",
-        "Mobile-first design",
-        "Grundlæggende SEO og analytics",
-        "Oplæring af dit team"
+        "Grundlæggende SEO og statistik",
+        "Oplæring, så du selv kan tilføje varer"
       ],
       "includes": [
-        "Opsætning af Shopify-butik og skræddersyet tema",
+        "Shopify-butik med skræddersyet design",
+        "Betaling med MobilePay, kort, Apple Pay og Google Pay",
+        "Fragt med Shipmondo (GLS, PostNord) og moms",
+        "Ordrer sendes automatisk til Dinero eller e-conomic",
+        "Fælles lager for webshop og fysisk butik (Shopify POS)",
         "Op til 50 produkter oprettet",
-        "Betaling (kort, Apple Pay, Google Pay)",
-        "Opsætning af fragt og EU-moms",
-        "Mobile-first design",
-        "Grundlæggende SEO",
-        "Analytics",
-        "Oplæring af dit team"
+        "Grundlæggende SEO og statistik",
+        "Oplæring, så du selv kan tilføje varer"
       ],
       "steps": [
         [
@@ -297,21 +299,21 @@
       ]
     },
     "web": {
-      "title": "Virksomhedssites og landingssider",
-      "pkgTitle": "Virksomhedssite og landingsside",
-      "desc": "Virksomhedssites, landingssider og kampagnesites, der forklarer, hvad I laver, og skaber leads.",
+      "title": "Hjemmeside, der giver henvendelser",
+      "pkgTitle": "Hjemmeside",
+      "desc": "Hjemmesider til servicevirksomheder: klare ydelser og priser, online booking eller kontaktformular og en Google Business-profil.",
       "priceSub": "Ekskl. moms · Landingsside",
       "altPre": "Virksomhedssite ",
       "timeline": "2–4 uger",
-      "who": "Servicevirksomheder, B2B-leverandører og marketingteams, der lancerer en kampagne eller et nyt tilbud. Til virksomheder, hvis nuværende site ikke længere forklarer, hvad de laver.",
+      "who": "Frisører, klinikker, håndværkere, konsulenter og andre servicevirksomheder, hvis nuværende side ikke giver henvendelser.",
       "pkgItems": [
         "UX-struktur og hjælp til tekster",
-        "Skræddersyet design",
-        "Op til 6 sider (virksomhedssite) eller 1 lang side (landingsside)",
-        "CMS",
-        "Kontaktformularer",
-        "SEO-opsætning",
-        "Opsætning af hosting og deploy"
+        "Skræddersyet design, mobile-first",
+        "Op til 6 sider eller 1 lang landingsside",
+        "Online booking eller kontaktformular",
+        "Google Business-profil og SEO-opsætning",
+        "CMS, så du selv kan rette tekster",
+        "Domæne og hosting i dit navn"
       ],
       "steps": [
         [
@@ -338,43 +340,43 @@
       ]
     },
     "apps": {
-      "title": "MVP-apps og startups",
-      "pkgTitle": "MVP-app og startup",
-      "desc": "Klikbare prototyper og lanceringsklare MVP'er til founders, der skal teste, pitche eller lancere.",
+      "title": "Ret hullerne og flyt din shop",
+      "pkgTitle": "Opgradering og flytning",
+      "desc": "Vi retter det, videorapporten viste, eller flytter din webshop fra en gammel platform til Shopify med produkter, kunder og ordrer.",
       "priceSub": "Ekskl. moms",
-      "timeline": "Fra 14 dages MVP-sprint",
-      "who": "Founders og innovationsteams, der vil teste en idé med rigtige brugere eller vise investorer et fungerende produkt. Også til virksomheder, der lancerer en ny digital service.",
+      "timeline": "Fra 1 uge",
+      "who": "Virksomheder, der allerede har en hjemmeside eller webshop, men mister kunder på grund af fejl, en langsom side eller en gammel platform.",
       "pkgItems": [
-        "Afklaringsworkshop",
-        "Brugerflows",
-        "Klikbar prototype",
-        "UI-designsystem",
-        "Frontend-udvikling af MVP",
-        "Demo klar til investorer",
-        "Overdragelse eller videreudvikling"
+        "Rettelser ud fra din videorapport",
+        "Flytning af produkter, kunder og ordrer",
+        "Opsætning af MobilePay, fragt og regnskab",
+        "Hastighed og mobilvisning",
+        "SEO: bevarede links og omdirigeringer",
+        "Test før og efter",
+        "Oplæring i den nye administration"
       ],
       "steps": [
         [
-          "Afklaringsworkshop",
-          "Problemet, brugerne og det mindste produkt, der er værd at bygge."
+          "Videorapport",
+          "Vi viser, hvad der koster dig kunder."
         ],
         [
-          "Flows og prototype",
-          "Brugerflows og en klikbar prototype, der kan testes tidligt."
+          "Fast pris",
+          "Du får en plan og en fast pris for rettelserne."
         ],
         [
-          "Design og udvikling",
-          "Et UI-designsystem og frontend-udvikling af MVP'en."
+          "Rettelser eller flytning",
+          "Vi retter siden eller flytter din shop uden at miste data."
         ],
         [
-          "Demo og overdragelse",
-          "En demo klar til investorer, derefter overdragelse eller videreudvikling."
+          "Test og overdragelse",
+          "Vi tester, viser dig resultatet, og du kan fortsætte med Dit webstudie."
         ]
       ],
       "addons": [
-        "Ekstra brugerflow",
-        "Backend / database-opsætning",
-        "Løbende udviklingssprints"
+        "Ekstra produkter flyttet",
+        "Flere sprog",
+        "Løbende forbedringer"
       ]
     }
   },
@@ -426,7 +428,7 @@
       "desc": "En e-handelsplatform for en amerikansk leverandør af termisk udstyr, nattesyn og forsvarsteknologi."
     },
     "Unifood": {
-      "sub": "Redesign af unifood.dk",
+      "sub": "Koncept · Redesign af unifood.dk",
       "desc": "Et katalogfokuseret redesign for Unifood Import A/S, en dansk fødevaregrossist med over 1.400 produkter. Kunderne finder et produkt med to klik og sender deres afhentningsordre."
     },
     "Kortical": {
@@ -448,6 +450,10 @@
     "Ayvens": {
       "sub": "Koncept for en side med brugte biler",
       "desc": "Et koncept for en produktside til Ayvens brugte biler, der viser hele købet i ét roligt scroll."
+    },
+    "Carpintaria Sousa Tavares": {
+      "sub": "Koncept · Onepage-site til et familieejet snedkerværksted",
+      "desc": "Et onepage-site til et familieejet snedkerværksted i Portugal: håndværket i fokus, klare ydelser og en enkel vej til et tilbud."
     }
   },
   "boot_eb": "Indlæser studiet",
@@ -475,19 +481,19 @@
   "theme_aria": "Mørk tilstand",
   "sb_title": "Abonnement",
   "sb_sub": "Design og udvikling efter behov",
-  "sb_ps": "Pr. måned · ekskl. moms · sæt på pause eller opsig når som helst",
+  "sb_ps": "Pr. måned · ekskl. moms · ingen binding · 1 måneds opsigelse",
   "sb_tl": "48 t pr. opgave **",
   "sb_aria": "Abonnementstype",
   "sb_m1": "Solo",
   "sb_m2": "Team",
   "sb_solo": [
-    "Ubegrænsede opgaver og rettelser pr. måned",
+    "Alle typer opgaver og rettelser inden for dine timer",
     "1 aktiv opgave ad gangen",
     "Hver opgave leveres inden for 48 timer",
     "Asynkron kommunikation i Slack eller e-mail"
   ],
   "sb_team": [
-    "Ubegrænsede opgaver og rettelser pr. måned",
+    "Alle typer opgaver og rettelser inden for dine timer",
     "Op til 3 aktive opgaver parallelt",
     "Designer, udvikler og projektleder",
     "Asynkront + ugentligt møde med projektlederen"
@@ -556,9 +562,9 @@
       "desc": "Til små rettelser og mindre forbedringer af dit site.",
       "tl": "48 t pr. opgave",
       "items": [
-        "Ubegrænsede rettelser",
+        "Alle opgaver og rettelser inden for dine timer",
         "1 opgave ad gangen",
-        "Sæt på pause eller opsig når som helst",
+        "Ingen binding · 1 måneds opsigelse",
         "Asynkront via Slack eller e-mail"
       ]
     },
@@ -567,20 +573,20 @@
       "desc": "Løbende opdateringer samt design- og udviklingsopgaver.",
       "tl": "48 t pr. opgave",
       "items": [
-        "Ubegrænsede rettelser",
+        "Alle opgaver og rettelser inden for dine timer",
         "2 opgaver parallelt",
-        "Sæt på pause eller opsig når som helst",
+        "Ingen binding · 1 måneds opsigelse",
         "Asynkront via Slack eller e-mail"
       ]
     },
     "full": {
       "name": "Full Web Studio",
-      "desc": "Dit fulde webstudie: forbedringer af dit site, arbejde på dine øvrige websites og alle typer opgaver.",
+      "desc": "Alle typer opgaver på alle dine websites.",
       "tl": "24–48 t pr. opgave",
       "items": [
-        "Ubegrænsede rettelser",
+        "Alle opgaver og rettelser inden for dine timer",
         "3 opgaver parallelt",
-        "Sæt på pause eller opsig når som helst",
+        "Ingen binding · 1 måneds opsigelse",
         "Asynkront via Slack eller e-mail",
         "Prioriteret support"
       ]
@@ -605,8 +611,8 @@
     "full": "Fuld betaling",
     "inst": "Rater (op til 3 måneder)"
   },
-  "cta_services": "Se ydelser",
-  "cta_studio": "Dit eget webstudie fra 740 kr./md.",
+  "cta_services": "Få en gratis videorapport",
+  "cta_studio": "Se ydelser og priser",
   "svc_note": "Fast pris. Betal på én gang eller i op til 3 månedlige rater.",
   "sb_hrs": "Op til {h} timer om måneden",
   "b2b_cta2": "Vælg Full Web Studio",
@@ -621,8 +627,9 @@
   ],
   "svc_more": "Se detaljer →",
   "audit_b": [
-    "Gennemgang af UX, hastighed og SEO",
-    "Kort skriftlig audit",
-    "Overslag til fast pris"
-  ]
+    "Design og brugervenlighed (UX)",
+    "Mobil, hastighed og synlighed på Google",
+    "De 3 vigtigste rettelser"
+  ],
+  "fix_price": "Pris efter videorapport"
 }

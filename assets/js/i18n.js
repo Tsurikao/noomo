@@ -8,11 +8,31 @@
    opened from disk). assets/i18n/*.json are the same texts per language for translators;
    if you edit a JSON file, copy the change into this file too. */
 window.NOOMO_I18N = {
-  DEFAULT: 'da',
-  LANGS: [["da","DA","Dansk"],["en","EN","English"],["uk","UA","Українська"]],
-  LOCALE: {"da":"da-DK","en":"en-GB","uk":"uk-UA"},
-  I18N: {
-    da: {
+  "DEFAULT": "da",
+  "LANGS": [
+    [
+      "da",
+      "DA",
+      "Dansk"
+    ],
+    [
+      "en",
+      "EN",
+      "English"
+    ],
+    [
+      "uk",
+      "UA",
+      "Українська"
+    ]
+  ],
+  "LOCALE": {
+    "da": "da-DK",
+    "en": "en-GB",
+    "uk": "uk-UA"
+  },
+  "I18N": {
+    "da": {
       "mc_eb": "Skriv til os",
       "mc_hint": "Åbner med emne og besked udfyldt",
       "mc_app": "Mail-app",
@@ -30,21 +50,21 @@ window.NOOMO_I18N = {
       "pkg": "Abonnement",
       "nav_about": "Om os",
       "nav_contact": "Kontakt",
-      "nav_book": "Gratis rådgivning",
+      "nav_book": "Gratis videorapport",
       "cursor_more": "Se mere",
-      "hero_eb": "Digitalt studie for B2B · Danmark",
+      "hero_eb": "Webbureau i Aarhus · Hjemmesider og webshops",
       "hero_eb2": "Shopify · Virksomhedssites · MVP-apps",
-      "hero_1": "Webshops.",
-      "hero_2": "Hjemmesider og landingssider.",
-      "hero_3": "Apps.",
-      "hero_tag": "Leveret til tiden, til fast pris.",
-      "cta_free": "Book gratis rådgivning",
-      "why1_h": "Pakker til fast pris",
-      "why1_t": "Du kender den samlede pris, før vi går i gang. Ingen ekstraregninger.",
-      "why2_h": "Dit eget webstudie som abonnement",
-      "why2_t": "Ét fast månedligt beløb til opdateringer og mindre opgaver.",
-      "why3_h": "Betal i rater",
-      "why3_t": "Del projektprisen op i 3 månedlige betalinger.",
+      "hero_1": "Se, hvor din",
+      "hero_2": "hjemmeside",
+      "hero_3": "mister kunder.",
+      "hero_tag": "Vi tester din side som en rigtig kunde og sender dig en gratis videorapport inden for 24 timer. Derefter retter vi det til fast pris.",
+      "cta_free": "Få en gratis videorapport",
+      "why1_h": "Du ejer alt",
+      "why1_t": "Domæne, hjemmeside og konti står i dit navn. Vil du videre, tager du det hele med.",
+      "why2_h": "Alt koblet sammen",
+      "why2_t": "MobilePay, fragt, lager og regnskab arbejder sammen, så ordrer ikke kræver håndarbejde.",
+      "why3_h": "Fast pris før start",
+      "why3_t": "Du kender den samlede pris, før vi går i gang. Betal på én gang eller i 3 rater.",
       "why4_h": "Online på uger, ikke måneder",
       "why4_t": "Klare tidsplaner, så dit nye site hurtigt går live.",
       "work_h": "Udvalgte cases",
@@ -55,16 +75,16 @@ window.NOOMO_I18N = {
       "want_like": "Jeg vil have noget lignende",
       "live_projects": "Live projekter",
       "svc_h": "Det laver vi",
-      "svc_eb": "Tre ydelser og en gratis audit. Fast omfang, fast pris og support efter lancering.",
+      "svc_eb": "Tre ydelser og en gratis videorapport. Fast pris, og du ejer alt.",
       "excl_vat": "ekskl. moms",
       "view_details_arrow": "Se detaljer ↗",
-      "audit_badge": "Bonus · Gratis",
-      "audit_h": "Gratis rådgivning og website-audit",
-      "audit_t": "30 minutter med en senior designer. Vi gennemgår dit nuværende website eller din webshop og giver dig en kort skriftlig audit: hurtige gevinster inden for UX, hastighed og SEO, et anbefalet næste skridt og et overslag til fast pris.",
+      "audit_badge": "Start her · Gratis",
+      "audit_h": "Gratis videorapport om din hjemmeside",
+      "audit_t": "Send os linket til din hjemmeside. Vi gennemgår den, som en kunde ville gøre, på computer og mobil, og optager det på video med markeringer og danske tekster. Inden for 24 timer får du videoen og de 3 ting, du bør rette først. Intet møde, ingen forpligtelse.",
       "free": "0 kr.",
-      "min30": "30 minutter",
-      "audit_cta": "Få en gratis audit",
-      "pkg_eb": "Priser i kr. ekskl. moms. Alle projekter starter med gratis rådgivning og et tilbud til fast pris.",
+      "min30": "Inden for 24 timer",
+      "audit_cta": "Send mit link",
+      "pkg_eb": "Priser i kr. ekskl. moms. Ingen binding, 1 måneds opsigelse.",
       "most_popular": "Mest populær",
       "sub_title": "Dit webstudie",
       "total": "I alt",
@@ -72,19 +92,19 @@ window.NOOMO_I18N = {
       "get_quote": "Få et tilbud",
       "view_details": "Se detaljer",
       "sub_q": "Hvad er Dit webstudie?",
-      "sub_t": "Ét månedligt abonnement til alle slags opgaver: opdateringer, nye sider og landingssider, bannere og kampagnegrafik, designændringer, SEO, oprettelse af produkter og prioriteret hjælp. Minimum 3 måneder.",
+      "sub_t": "Ét månedligt abonnement til alle slags opgaver: opdateringer, nye sider og landingssider, bannere og kampagnegrafik, designændringer, SEO, oprettelse af produkter og prioriteret hjælp. Ingen binding: du kan opsige med 1 måneds varsel.",
       "about_h": "Om NOOMO",
       "about_eb": "Studiet",
       "stat1": "Specialister",
       "stat2": "År med digitalt design",
       "stat3": "Fast omfang, fast pris",
       "mission_eb": "Vores mission",
-      "contact_h": "Lad os tale om dit projekt",
+      "contact_h": "Skriv til os",
       "selected": "Valgt",
-      "f_service": "Ydelse",
+      "f_service": "Hvad drejer det sig om?",
       "f_sub": "Abonnement",
       "f_budget": "Budget (kr. ekskl. moms)",
-      "f_message": "Besked",
+      "f_message": "Besked (valgfrit)",
       "sent_eb": "Forespørgsel sendt",
       "sent_msg": "Tak, vi svarer inden for 24 timer.",
       "send_another": "Send en ny forespørgsel",
@@ -100,17 +120,17 @@ window.NOOMO_I18N = {
       "how": "Sådan foregår det",
       "addons": "Tilvalg",
       "related": "Relaterede cases",
-      "min3": "Minimum 3 måneder",
+      "min3": "Ingen binding · 1 måneds opsigelse",
       "popup_quote": "Få et tilbud på denne ydelse",
       "close_esc": "Luk · Esc",
       "like_eb": "Jeg vil have noget i stil med",
       "send_req": "Send en forespørgsel",
       "back_work": "← Tilbage til cases",
-      "about_body": "NOOMO er et designdrevet digitalt studie med hovedkontor i Aarhus. Vi kombinerer mere end 15 års erfaring med UI/UX og webdesign med et AI-understøttet workflow, så du får design og udvikling i seniorkvalitet, hurtigere og til fast pris. Vi arbejder med detailhandlere, servicevirksomheder og startups i hele Europa.",
+      "about_body": "NOOMO er et designdrevet digitalt studie med hovedkontor i Aarhus. Vi kombinerer 16+ års erfaring med UI/UX og webdesign med et AI-understøttet workflow, så du får design og udvikling i seniorkvalitet, hurtigere og til fast pris. Vi arbejder med detailhandlere, servicevirksomheder og startups i hele Europa.",
       "mission": "Vi gør professionelle digitale produkter tilgængelige for virksomheder i vækst: klare, hurtige og bygget til at sælge.",
       "mission_acc": 6,
       "mission2": "Ingen oppustet bureauproces. Ingen skabeloner solgt som skræddersyet arbejde. Bare et fokuseret team, der leverer.",
-      "contact_body": "Fortæl os, hvad du har brug for. Den første rådgivning er gratis, og du får et klart tilbud til fast pris inden for 48 timer.",
+      "contact_body": "Skriv dit navn, din e-mail og linket til din hjemmeside. Så sender vi dig en gratis videorapport inden for 24 timer. Har du et andet ønske, så vælg det nedenfor.",
       "ph_msg": "Fortæl os, hvad du har brug for",
       "ph_topic": "Hvad vil du gerne tale om?",
       "err_pre": "Forespørgslen blev ikke sendt. Prøv igen, eller skriv til os på",
@@ -136,7 +156,7 @@ window.NOOMO_I18N = {
       "sub_fmt": "Dit webstudie: {name}",
       "tab_form": "Send en forespørgsel",
       "tab_call": "Bestil et opkald",
-      "submit": "Send forespørgsel",
+      "submit": "Send",
       "sending": "Sender…",
       "call_btn": "Bestil et opkald",
       "call_msg": "Tak! Vi ringer til dig {day} mellem kl. {from} og {to}.",
@@ -192,10 +212,10 @@ window.NOOMO_I18N = {
         "Phone": "Telefon"
       },
       "svcOpts": {
-        "ecom": "E-handel",
-        "web": "Virksomhedssites og landingssider",
-        "apps": "MVP og app",
-        "audit": "Gratis rådgivning og audit",
+        "ecom": "Webshop",
+        "web": "Hjemmeside",
+        "apps": "Opgradering og flytning",
+        "audit": "Gratis videorapport",
         "unsure": "Ved ikke"
       },
       "f": {
@@ -211,7 +231,9 @@ window.NOOMO_I18N = {
         "phone": "Telefon",
         "phone_err": "Skriv et telefonnummer.",
         "email_opt": "E-mail (valgfrit)",
-        "email_err2": "Tjek e-mailadressen."
+        "email_err2": "Tjek e-mailadressen.",
+        "website": "Din hjemmeside (valgfrit)",
+        "website_ph": "https://www.dinvirksomhed.dk"
       },
       "months": [
         "Januar",
@@ -260,30 +282,30 @@ window.NOOMO_I18N = {
       },
       "svc": {
         "ecom": {
-          "title": "E-handel",
+          "title": "Webshop med alt koblet på",
           "pkgTitle": "Webshop",
-          "desc": "Webshops og dagligvarebutikker på Shopify med oprettelse af produkter og løbende support.",
+          "desc": "Webshops på Shopify med MobilePay, fragt og regnskab koblet på, så ordrer, lager og bogføring kører af sig selv.",
           "priceSub": "Ekskl. moms",
           "timeline": "4–6 uger",
-          "who": "Detailhandlere, dagligvare- og specialbutikker, der vil sælge online eller væk fra en langsom platform. Bedst, når sortimentet er klar, og du har brug for en webshop, dit team selv kan drive i hverdagen.",
+          "who": "Mindre butikker og specialbutikker, der vil sælge online, eller som vil have webshop og fysisk butik på samme lager.",
           "pkgItems": [
-            "Opsætning af Shopify-butik og skræddersyet tema",
+            "Shopify-butik med skræddersyet design",
+            "Betaling med MobilePay, kort, Apple Pay og Google Pay",
+            "Fragt med Shipmondo (GLS, PostNord) og moms",
+            "Ordrer sendes automatisk til Dinero eller e-conomic",
             "Op til 50 produkter oprettet",
-            "Betaling (kort, Apple Pay, Google Pay)",
-            "Opsætning af fragt og EU-moms",
-            "Mobile-first design",
-            "Grundlæggende SEO og analytics",
-            "Oplæring af dit team"
+            "Grundlæggende SEO og statistik",
+            "Oplæring, så du selv kan tilføje varer"
           ],
           "includes": [
-            "Opsætning af Shopify-butik og skræddersyet tema",
+            "Shopify-butik med skræddersyet design",
+            "Betaling med MobilePay, kort, Apple Pay og Google Pay",
+            "Fragt med Shipmondo (GLS, PostNord) og moms",
+            "Ordrer sendes automatisk til Dinero eller e-conomic",
+            "Fælles lager for webshop og fysisk butik (Shopify POS)",
             "Op til 50 produkter oprettet",
-            "Betaling (kort, Apple Pay, Google Pay)",
-            "Opsætning af fragt og EU-moms",
-            "Mobile-first design",
-            "Grundlæggende SEO",
-            "Analytics",
-            "Oplæring af dit team"
+            "Grundlæggende SEO og statistik",
+            "Oplæring, så du selv kan tilføje varer"
           ],
           "steps": [
             [
@@ -311,21 +333,21 @@ window.NOOMO_I18N = {
           ]
         },
         "web": {
-          "title": "Virksomhedssites og landingssider",
-          "pkgTitle": "Virksomhedssite og landingsside",
-          "desc": "Virksomhedssites, landingssider og kampagnesites, der forklarer, hvad I laver, og skaber leads.",
+          "title": "Hjemmeside, der giver henvendelser",
+          "pkgTitle": "Hjemmeside",
+          "desc": "Hjemmesider til servicevirksomheder: klare ydelser og priser, online booking eller kontaktformular og en Google Business-profil.",
           "priceSub": "Ekskl. moms · Landingsside",
           "altPre": "Virksomhedssite ",
           "timeline": "2–4 uger",
-          "who": "Servicevirksomheder, B2B-leverandører og marketingteams, der lancerer en kampagne eller et nyt tilbud. Til virksomheder, hvis nuværende site ikke længere forklarer, hvad de laver.",
+          "who": "Frisører, klinikker, håndværkere, konsulenter og andre servicevirksomheder, hvis nuværende side ikke giver henvendelser.",
           "pkgItems": [
             "UX-struktur og hjælp til tekster",
-            "Skræddersyet design",
-            "Op til 6 sider (virksomhedssite) eller 1 lang side (landingsside)",
-            "CMS",
-            "Kontaktformularer",
-            "SEO-opsætning",
-            "Opsætning af hosting og deploy"
+            "Skræddersyet design, mobile-first",
+            "Op til 6 sider eller 1 lang landingsside",
+            "Online booking eller kontaktformular",
+            "Google Business-profil og SEO-opsætning",
+            "CMS, så du selv kan rette tekster",
+            "Domæne og hosting i dit navn"
           ],
           "steps": [
             [
@@ -352,43 +374,43 @@ window.NOOMO_I18N = {
           ]
         },
         "apps": {
-          "title": "MVP-apps og startups",
-          "pkgTitle": "MVP-app og startup",
-          "desc": "Klikbare prototyper og lanceringsklare MVP'er til founders, der skal teste, pitche eller lancere.",
+          "title": "Ret hullerne og flyt din shop",
+          "pkgTitle": "Opgradering og flytning",
+          "desc": "Vi retter det, videorapporten viste, eller flytter din webshop fra en gammel platform til Shopify med produkter, kunder og ordrer.",
           "priceSub": "Ekskl. moms",
-          "timeline": "Fra 14 dages MVP-sprint",
-          "who": "Founders og innovationsteams, der vil teste en idé med rigtige brugere eller vise investorer et fungerende produkt. Også til virksomheder, der lancerer en ny digital service.",
+          "timeline": "Fra 1 uge",
+          "who": "Virksomheder, der allerede har en hjemmeside eller webshop, men mister kunder på grund af fejl, en langsom side eller en gammel platform.",
           "pkgItems": [
-            "Afklaringsworkshop",
-            "Brugerflows",
-            "Klikbar prototype",
-            "UI-designsystem",
-            "Frontend-udvikling af MVP",
-            "Demo klar til investorer",
-            "Overdragelse eller videreudvikling"
+            "Rettelser ud fra din videorapport",
+            "Flytning af produkter, kunder og ordrer",
+            "Opsætning af MobilePay, fragt og regnskab",
+            "Hastighed og mobilvisning",
+            "SEO: bevarede links og omdirigeringer",
+            "Test før og efter",
+            "Oplæring i den nye administration"
           ],
           "steps": [
             [
-              "Afklaringsworkshop",
-              "Problemet, brugerne og det mindste produkt, der er værd at bygge."
+              "Videorapport",
+              "Vi viser, hvad der koster dig kunder."
             ],
             [
-              "Flows og prototype",
-              "Brugerflows og en klikbar prototype, der kan testes tidligt."
+              "Fast pris",
+              "Du får en plan og en fast pris for rettelserne."
             ],
             [
-              "Design og udvikling",
-              "Et UI-designsystem og frontend-udvikling af MVP'en."
+              "Rettelser eller flytning",
+              "Vi retter siden eller flytter din shop uden at miste data."
             ],
             [
-              "Demo og overdragelse",
-              "En demo klar til investorer, derefter overdragelse eller videreudvikling."
+              "Test og overdragelse",
+              "Vi tester, viser dig resultatet, og du kan fortsætte med Dit webstudie."
             ]
           ],
           "addons": [
-            "Ekstra brugerflow",
-            "Backend / database-opsætning",
-            "Løbende udviklingssprints"
+            "Ekstra produkter flyttet",
+            "Flere sprog",
+            "Løbende forbedringer"
           ]
         }
       },
@@ -440,7 +462,7 @@ window.NOOMO_I18N = {
           "desc": "En e-handelsplatform for en amerikansk leverandør af termisk udstyr, nattesyn og forsvarsteknologi."
         },
         "Unifood": {
-          "sub": "Redesign af unifood.dk",
+          "sub": "Koncept · Redesign af unifood.dk",
           "desc": "Et katalogfokuseret redesign for Unifood Import A/S, en dansk fødevaregrossist med over 1.400 produkter. Kunderne finder et produkt med to klik og sender deres afhentningsordre."
         },
         "Kortical": {
@@ -462,6 +484,10 @@ window.NOOMO_I18N = {
         "Ayvens": {
           "sub": "Koncept for en side med brugte biler",
           "desc": "Et koncept for en produktside til Ayvens brugte biler, der viser hele købet i ét roligt scroll."
+        },
+        "Carpintaria Sousa Tavares": {
+          "sub": "Koncept · Onepage-site til et familieejet snedkerværksted",
+          "desc": "Et onepage-site til et familieejet snedkerværksted i Portugal: håndværket i fokus, klare ydelser og en enkel vej til et tilbud."
         }
       },
       "boot_eb": "Indlæser studiet",
@@ -489,19 +515,19 @@ window.NOOMO_I18N = {
       "theme_aria": "Mørk tilstand",
       "sb_title": "Abonnement",
       "sb_sub": "Design og udvikling efter behov",
-      "sb_ps": "Pr. måned · ekskl. moms · sæt på pause eller opsig når som helst",
+      "sb_ps": "Pr. måned · ekskl. moms · ingen binding · 1 måneds opsigelse",
       "sb_tl": "48 t pr. opgave **",
       "sb_aria": "Abonnementstype",
       "sb_m1": "Solo",
       "sb_m2": "Team",
       "sb_solo": [
-        "Ubegrænsede opgaver og rettelser pr. måned",
+        "Alle typer opgaver og rettelser inden for dine timer",
         "1 aktiv opgave ad gangen",
         "Hver opgave leveres inden for 48 timer",
         "Asynkron kommunikation i Slack eller e-mail"
       ],
       "sb_team": [
-        "Ubegrænsede opgaver og rettelser pr. måned",
+        "Alle typer opgaver og rettelser inden for dine timer",
         "Op til 3 aktive opgaver parallelt",
         "Designer, udvikler og projektleder",
         "Asynkront + ugentligt møde med projektlederen"
@@ -570,9 +596,9 @@ window.NOOMO_I18N = {
           "desc": "Til små rettelser og mindre forbedringer af dit site.",
           "tl": "48 t pr. opgave",
           "items": [
-            "Ubegrænsede rettelser",
+            "Alle opgaver og rettelser inden for dine timer",
             "1 opgave ad gangen",
-            "Sæt på pause eller opsig når som helst",
+            "Ingen binding · 1 måneds opsigelse",
             "Asynkront via Slack eller e-mail"
           ]
         },
@@ -581,20 +607,20 @@ window.NOOMO_I18N = {
           "desc": "Løbende opdateringer samt design- og udviklingsopgaver.",
           "tl": "48 t pr. opgave",
           "items": [
-            "Ubegrænsede rettelser",
+            "Alle opgaver og rettelser inden for dine timer",
             "2 opgaver parallelt",
-            "Sæt på pause eller opsig når som helst",
+            "Ingen binding · 1 måneds opsigelse",
             "Asynkront via Slack eller e-mail"
           ]
         },
         "full": {
           "name": "Full Web Studio",
-          "desc": "Dit fulde webstudie: forbedringer af dit site, arbejde på dine øvrige websites og alle typer opgaver.",
+          "desc": "Alle typer opgaver på alle dine websites.",
           "tl": "24–48 t pr. opgave",
           "items": [
-            "Ubegrænsede rettelser",
+            "Alle opgaver og rettelser inden for dine timer",
             "3 opgaver parallelt",
-            "Sæt på pause eller opsig når som helst",
+            "Ingen binding · 1 måneds opsigelse",
             "Asynkront via Slack eller e-mail",
             "Prioriteret support"
           ]
@@ -619,8 +645,8 @@ window.NOOMO_I18N = {
         "full": "Fuld betaling",
         "inst": "Rater (op til 3 måneder)"
       },
-      "cta_services": "Se ydelser",
-      "cta_studio": "Dit eget webstudie fra 740 kr./md.",
+      "cta_services": "Få en gratis videorapport",
+      "cta_studio": "Se ydelser og priser",
       "svc_note": "Fast pris. Betal på én gang eller i op til 3 månedlige rater.",
       "sb_hrs": "Op til {h} timer om måneden",
       "b2b_cta2": "Vælg Full Web Studio",
@@ -635,12 +661,13 @@ window.NOOMO_I18N = {
       ],
       "svc_more": "Se detaljer →",
       "audit_b": [
-        "Gennemgang af UX, hastighed og SEO",
-        "Kort skriftlig audit",
-        "Overslag til fast pris"
-      ]
+        "Design og brugervenlighed (UX)",
+        "Mobil, hastighed og synlighed på Google",
+        "De 3 vigtigste rettelser"
+      ],
+      "fix_price": "Pris efter videorapport"
     },
-    en: {
+    "en": {
       "mc_eb": "Write to us",
       "mc_hint": "Opens with the subject and message filled in",
       "mc_app": "Mail app",
@@ -658,21 +685,21 @@ window.NOOMO_I18N = {
       "pkg": "Subscription",
       "nav_about": "About",
       "nav_contact": "Contact",
-      "nav_book": "Free consultation",
+      "nav_book": "Free video report",
       "cursor_more": "See more",
-      "hero_eb": "Digital studio for B2B · Denmark",
+      "hero_eb": "Web agency in Aarhus · Websites and webshops",
       "hero_eb2": "Shopify · Corporate sites · MVP apps",
-      "hero_1": "Online stores.",
-      "hero_2": "Websites & landing pages.",
-      "hero_3": "Apps.",
-      "hero_tag": "Shipped on time, on a fixed price.",
-      "cta_free": "Book a free consultation",
-      "why1_h": "Fixed-price packages",
-      "why1_t": "You know the full cost before we start, no extras.",
-      "why2_h": "Your own web studio, by subscription",
-      "why2_t": "One monthly fee for site updates and small tasks.",
-      "why3_h": "Pay in installments",
-      "why3_t": "Split the project cost into 3 monthly payments.",
+      "hero_1": "See where your",
+      "hero_2": "website",
+      "hero_3": "loses customers.",
+      "hero_tag": "We test your site like a real customer and send you a free video report within 24 hours. Then we fix it at a fixed price.",
+      "cta_free": "Get a free video report",
+      "why1_h": "You own everything",
+      "why1_t": "Domain, website and accounts are in your name. If you move on, you take it all with you.",
+      "why2_h": "Everything connected",
+      "why2_t": "MobilePay, shipping, stock and accounting work together, so orders need no manual work.",
+      "why3_h": "Fixed price before we start",
+      "why3_t": "You know the total price before we begin. Pay at once or in 3 instalments.",
       "why4_h": "Launch in weeks, not months",
       "why4_t": "Clear timelines, and your new site goes live fast.",
       "work_h": "Selected work",
@@ -683,16 +710,16 @@ window.NOOMO_I18N = {
       "want_like": "I want something like this",
       "live_projects": "Live projects",
       "svc_h": "What we do",
-      "svc_eb": "Three services and a free audit. Fixed scope, fixed price, support after launch.",
+      "svc_eb": "Three services and a free video report. Fixed price, and you own everything.",
       "excl_vat": "excl. VAT",
       "view_details_arrow": "View details ↗",
-      "audit_badge": "Bonus · Free",
-      "audit_h": "Free consultation & website audit",
-      "audit_t": "A 30-minute session with a senior designer. We review your current website or store and give you a short written audit: UX, speed and SEO quick wins, plus a recommended next step and fixed-price estimate.",
+      "audit_badge": "Start here · Free",
+      "audit_h": "Free video report on your website",
+      "audit_t": "Send us the link to your website. We go through it the way a customer would, on desktop and mobile, and record it on video with highlights and captions. Within 24 hours you get the video and the 3 things to fix first. No meeting, no commitment.",
       "free": "DKK 0",
-      "min30": "30 minutes",
-      "audit_cta": "Get a free audit",
-      "pkg_eb": "Prices in DKK, excl. VAT. Every project starts with a free consultation and a fixed-price proposal.",
+      "min30": "Within 24 hours",
+      "audit_cta": "Send my link",
+      "pkg_eb": "Prices in DKK excl. VAT. No lock-in, 1 month's notice.",
       "most_popular": "Most popular",
       "sub_title": "Your web studio",
       "total": "Total",
@@ -700,19 +727,19 @@ window.NOOMO_I18N = {
       "get_quote": "Get a quote",
       "view_details": "View details",
       "sub_q": "What's Your web studio?",
-      "sub_t": "One monthly subscription for any kind of work: updates, new pages and landing pages, banners and campaign graphics, design changes, SEO, product uploads and priority help. Minimum 3 months.",
+      "sub_t": "One monthly subscription for any kind of work: updates, new pages and landing pages, banners and campaign graphics, design changes, SEO, product uploads and priority help. No lock-in: cancel with 1 month's notice.",
       "about_h": "About NOOMO",
       "about_eb": "The studio",
       "stat1": "Specialists",
       "stat2": "Years in digital design",
       "stat3": "Fixed scope, fixed price",
       "mission_eb": "Our mission",
-      "contact_h": "Let's talk about your project",
+      "contact_h": "Write to us",
       "selected": "Selected",
-      "f_service": "Service",
+      "f_service": "What is it about?",
       "f_sub": "Subscription",
       "f_budget": "Budget range (DKK, excl. VAT)",
-      "f_message": "Message",
+      "f_message": "Message (optional)",
       "sent_eb": "Request sent",
       "sent_msg": "Thanks, we'll reply within 24 hours.",
       "send_another": "Send another request",
@@ -728,17 +755,17 @@ window.NOOMO_I18N = {
       "how": "How it works",
       "addons": "Optional add-ons",
       "related": "Related work",
-      "min3": "Minimum 3 months",
+      "min3": "No lock-in · 1 month's notice",
       "popup_quote": "Get a quote for this service",
       "close_esc": "Close · Esc",
       "like_eb": "I want something like",
       "send_req": "Send a request",
       "back_work": "← Back to work",
-      "about_body": "NOOMO is a design-led digital studio headquartered in Aarhus, Denmark. We combine 15+ years of UI/UX and web design experience with an AI-augmented workflow, so you get senior-quality design and development, delivered faster and at a fixed price. We work with retailers, service companies and startups across Europe.",
+      "about_body": "NOOMO is a design-led digital studio headquartered in Aarhus, Denmark. We combine 16+ years of UI/UX and web design experience with an AI-augmented workflow, so you get senior-quality design and development, delivered faster and at a fixed price. We work with retailers, service companies and startups across Europe.",
       "mission": "We make professional digital products accessible to growing businesses: clear, fast and built to sell.",
       "mission_acc": 6,
       "mission2": "No bloated agency process. No templates passed off as custom work. Just a focused team that ships.",
-      "contact_body": "Tell us what you need. The first consultation is free, and you get a clear proposal with a fixed price within 48 hours.",
+      "contact_body": "Add your name, email and the link to your website, and we send you a free video report within 24 hours. Want something else? Choose it below.",
       "ph_msg": "Tell us what you need",
       "ph_topic": "What would you like to talk about?",
       "err_pre": "The request didn't go through. Please try again, or email us at",
@@ -764,7 +791,7 @@ window.NOOMO_I18N = {
       "sub_fmt": "Your web studio: {name}",
       "tab_form": "Send a request",
       "tab_call": "Request a call",
-      "submit": "Send request",
+      "submit": "Send",
       "sending": "Sending…",
       "call_btn": "Request a call",
       "call_msg": "Thanks! We'll call you on {day} between {from} and {to}.",
@@ -804,10 +831,10 @@ window.NOOMO_I18N = {
         "Phone": "Phone"
       },
       "svcOpts": {
-        "ecom": "E-commerce",
-        "web": "Corporate websites & landing pages",
-        "apps": "MVP & app",
-        "audit": "Free consultation & audit",
+        "ecom": "Webshop",
+        "web": "Website",
+        "apps": "Upgrade and migration",
+        "audit": "Free video report",
         "unsure": "Not sure"
       },
       "f": {
@@ -823,7 +850,9 @@ window.NOOMO_I18N = {
         "phone": "Phone",
         "phone_err": "Please add a phone number.",
         "email_opt": "Email (optional)",
-        "email_err2": "Please check the email address."
+        "email_err2": "Please check the email address.",
+        "website": "Your website (optional)",
+        "website_ph": "https://www.yourcompany.dk"
       },
       "months": [
         "January",
@@ -872,30 +901,30 @@ window.NOOMO_I18N = {
       },
       "svc": {
         "ecom": {
-          "title": "E-commerce",
-          "pkgTitle": "E-commerce Store",
-          "desc": "Online stores and grocery shops on Shopify, with product upload and ongoing support.",
+          "title": "Webshop with everything connected",
+          "pkgTitle": "Webshop",
+          "desc": "Shopify webshops with MobilePay, shipping and accounting connected, so orders, stock and bookkeeping run by themselves.",
           "priceSub": "Excl. VAT",
           "timeline": "4–6 weeks",
-          "who": "Retailers, grocery and specialty shops that want to sell online or move off a slow platform. Best when you have a product range ready and need a store your team can run day to day.",
+          "who": "Small and specialist shops that want to sell online, or want their webshop and physical store on one stock.",
           "pkgItems": [
-            "Shopify store setup and custom theme design",
-            "Up to 50 products uploaded",
-            "Payments (card, Apple Pay, Google Pay)",
-            "Shipping and EU VAT settings",
-            "Mobile-first design",
+            "Shopify store with custom design",
+            "Payments with MobilePay, cards, Apple Pay and Google Pay",
+            "Shipping with Shipmondo (GLS, PostNord) and VAT",
+            "Orders sent automatically to Dinero or e-conomic",
+            "Up to 50 products added",
             "Basic SEO and analytics",
-            "Training session"
+            "Training so you can add products yourself"
           ],
           "includes": [
-            "Shopify store setup and custom theme design",
-            "Up to 50 products uploaded",
-            "Payments (card, Apple Pay, Google Pay)",
-            "Shipping and EU VAT settings",
-            "Mobile-first design",
-            "Basic SEO",
-            "Analytics",
-            "Training session"
+            "Shopify store with custom design",
+            "Payments with MobilePay, cards, Apple Pay and Google Pay",
+            "Shipping with Shipmondo (GLS, PostNord) and VAT",
+            "Orders sent automatically to Dinero or e-conomic",
+            "One stock for webshop and physical store (Shopify POS)",
+            "Up to 50 products added",
+            "Basic SEO and analytics",
+            "Training so you can add products yourself"
           ],
           "steps": [
             [
@@ -923,21 +952,21 @@ window.NOOMO_I18N = {
           ]
         },
         "web": {
-          "title": "Corporate websites & landing pages",
-          "pkgTitle": "Corporate Website & Landing Page",
-          "desc": "Company sites, landing pages and campaign sites that explain what you do and bring in leads.",
+          "title": "A website that brings enquiries",
+          "pkgTitle": "Website",
+          "desc": "Websites for service businesses: clear services and prices, online booking or a contact form, and a Google Business profile.",
           "priceSub": "Excl. VAT · Landing page",
           "altPre": "Corporate site ",
           "timeline": "2–4 weeks",
-          "who": "Service companies, B2B suppliers and marketing teams launching a campaign or a new offer. For businesses whose current site no longer explains what they do.",
+          "who": "Hairdressers, clinics, tradespeople, consultants and other service businesses whose current site brings no enquiries.",
           "pkgItems": [
-            "UX structure and copy guidance",
-            "Custom design",
-            "Up to 6 pages (corporate) or 1 long-scroll page (landing)",
-            "CMS",
-            "Contact forms",
-            "SEO setup",
-            "Hosting setup and deploy"
+            "UX structure and help with copy",
+            "Custom design, mobile-first",
+            "Up to 6 pages or 1 long landing page",
+            "Online booking or contact form",
+            "Google Business profile and SEO setup",
+            "CMS, so you can edit texts yourself",
+            "Domain and hosting in your name"
           ],
           "steps": [
             [
@@ -964,47 +993,55 @@ window.NOOMO_I18N = {
           ]
         },
         "apps": {
-          "title": "MVP apps & startups",
-          "pkgTitle": "MVP App & Startup",
-          "desc": "Clickable prototypes and launch-ready MVPs for founders who need to test, pitch or launch.",
+          "title": "Fix the gaps and move your shop",
+          "pkgTitle": "Upgrade and migration",
+          "desc": "We fix what the video report showed, or move your webshop from an old platform to Shopify with products, customers and orders.",
           "priceSub": "Excl. VAT",
-          "timeline": "From 14-day MVP sprint",
-          "who": "Founders and innovation teams who need to test an idea with real users or show investors a working product. Also for companies adding a new digital service.",
+          "timeline": "From 1 week",
+          "who": "Businesses that already have a website or webshop but lose customers because of errors, a slow site or an old platform.",
           "pkgItems": [
-            "Discovery workshop",
-            "User flows",
-            "Clickable prototype",
-            "UI design system",
-            "Front-end MVP build",
-            "Investor-ready demo",
-            "Handoff or ongoing development"
+            "Fixes based on your video report",
+            "Migration of products, customers and orders",
+            "MobilePay, shipping and accounting setup",
+            "Speed and mobile view",
+            "SEO: kept links and redirects",
+            "Testing before and after",
+            "Training in the new admin"
           ],
           "steps": [
             [
-              "Discovery workshop",
-              "The problem, the users and the smallest product worth building."
+              "Video report",
+              "We show what is costing you customers."
             ],
             [
-              "Flows & prototype",
-              "User flows and a clickable prototype to test early."
+              "Fixed price",
+              "You get a plan and a fixed price for the fixes."
             ],
             [
-              "Design & build",
-              "A UI design system and a front-end MVP build."
+              "Fixes or migration",
+              "We fix the site or move your shop without losing data."
             ],
             [
-              "Demo & handoff",
-              "An investor-ready demo, then handoff or ongoing development."
+              "Testing and handover",
+              "We test, show you the result, and you can continue with Your web studio."
             ]
           ],
           "addons": [
-            "Extra user flow",
-            "Backend / database setup",
-            "Ongoing development sprints"
+            "Extra products migrated",
+            "More languages",
+            "Ongoing improvements"
           ]
         }
       },
-      "cases": {},
+      "cases": {
+        "Unifood": {
+          "sub": "Concept · Redesign of unifood.dk"
+        },
+        "Carpintaria Sousa Tavares": {
+          "sub": "Concept · One-page site for a family carpentry workshop",
+          "desc": "A one-page site for a family carpentry workshop in Portugal: the craft up front, clear services and a simple path to a quote."
+        }
+      },
       "boot_eb": "Loading studio",
       "hint_scroll": "Scroll to continue",
       "hint_hover": "Hover to preview",
@@ -1030,19 +1067,19 @@ window.NOOMO_I18N = {
       "theme_aria": "Dark mode",
       "sb_title": "Subscription",
       "sb_sub": "Design & dev on demand",
-      "sb_ps": "Per month · excl. VAT · pause or cancel anytime",
+      "sb_ps": "Per month · excl. VAT · no lock-in · 1 month's notice",
       "sb_tl": "48 h per task **",
       "sb_aria": "Subscription type",
       "sb_m1": "Solo",
       "sb_m2": "Team",
       "sb_solo": [
-        "Unlimited tasks and edits per month",
+        "Any tasks and edits within your monthly hours",
         "1 active task at a time",
         "Each task delivered in 48 hours",
         "Async communication in Slack or email"
       ],
       "sb_team": [
-        "Unlimited tasks and edits per month",
+        "Any tasks and edits within your monthly hours",
         "Up to 3 active tasks in parallel",
         "Designer, developer and project manager",
         "Async + weekly call with the project manager"
@@ -1111,9 +1148,9 @@ window.NOOMO_I18N = {
           "desc": "For small edits and minor improvements to your site.",
           "tl": "48 h per task",
           "items": [
-            "Unlimited revisions",
+            "Any tasks and edits within your hours",
             "1 task at a time",
-            "Pause or cancel anytime",
+            "No lock-in · 1 month's notice",
             "Async via Slack or email"
           ]
         },
@@ -1122,20 +1159,20 @@ window.NOOMO_I18N = {
           "desc": "Regular updates, design and development tasks.",
           "tl": "48 h per task",
           "items": [
-            "Unlimited revisions",
+            "Any tasks and edits within your hours",
             "2 tasks in parallel",
-            "Pause or cancel anytime",
+            "No lock-in · 1 month's notice",
             "Async via Slack or email"
           ]
         },
         "full": {
           "name": "Full Web Studio",
-          "desc": "Your full web studio: improvements to your site, work on your other websites, any type of task.",
+          "desc": "Any kind of work on all your websites.",
           "tl": "24–48 h per task",
           "items": [
-            "Unlimited revisions",
+            "Any tasks and edits within your hours",
             "3 tasks in parallel",
-            "Pause or cancel anytime",
+            "No lock-in · 1 month's notice",
             "Async via Slack or email",
             "Priority support"
           ]
@@ -1160,8 +1197,8 @@ window.NOOMO_I18N = {
         "full": "Full payment",
         "inst": "Installments (up to 3 months)"
       },
-      "cta_services": "See services",
-      "cta_studio": "Your own web studio from DKK 740/month",
+      "cta_services": "Get a free video report",
+      "cta_studio": "See services and prices",
       "svc_note": "Fixed price. Pay at once or in up to 3 monthly payments.",
       "sb_hrs": "Up to {h} hours per month",
       "b2b_cta2": "Choose Full Web Studio",
@@ -1176,12 +1213,13 @@ window.NOOMO_I18N = {
       ],
       "svc_more": "View details →",
       "audit_b": [
-        "UX, speed and SEO review",
-        "Short written audit",
-        "Fixed-price estimate"
-      ]
+        "Design and usability (UX)",
+        "Mobile, speed and visibility on Google",
+        "The 3 most important fixes"
+      ],
+      "fix_price": "Price after video report"
     },
-    uk: {
+    "uk": {
       "mc_eb": "Напишіть нам",
       "mc_hint": "Відкриється із заповненими темою та текстом",
       "mc_app": "Поштовий застосунок",
@@ -1199,21 +1237,21 @@ window.NOOMO_I18N = {
       "pkg": "Підписка",
       "nav_about": "Про нас",
       "nav_contact": "Контакти",
-      "nav_book": "Безкоштовна консультація",
+      "nav_book": "Безкоштовний відеозвіт",
       "cursor_more": "Детальніше",
-      "hero_eb": "Цифрова студія для B2B · Данія",
+      "hero_eb": "Вебстудія в Орхусі · Сайти та інтернет-магазини",
       "hero_eb2": "Shopify · Корпоративні сайти · MVP-застосунки",
-      "hero_1": "Онлайн-магазини.",
-      "hero_2": "Сайти та лендинги.",
-      "hero_3": "Застосунки.",
-      "hero_tag": "Вчасно та за фіксованою ціною.",
-      "cta_free": "Безкоштовна консультація",
-      "why1_h": "Пакети з фіксованою ціною",
-      "why1_t": "Ви знаєте повну вартість до старту, без жодних доплат.",
-      "why2_h": "Власна вебстудія за підпискою",
-      "why2_t": "Одна щомісячна оплата за оновлення та дрібні задачі.",
-      "why3_h": "Оплата частинами",
-      "why3_t": "Розділіть вартість проєкту на 3 щомісячні платежі.",
+      "hero_1": "Подивіться, де ваш",
+      "hero_2": "сайт",
+      "hero_3": "втрачає клієнтів.",
+      "hero_tag": "Ми перевіряємо ваш сайт як справжній клієнт і надсилаємо безкоштовний відеозвіт протягом 24 годин. Потім виправляємо за фіксованою ціною.",
+      "cta_free": "Отримати безкоштовний відеозвіт",
+      "why1_h": "Усе належить вам",
+      "why1_t": "Домен, сайт і акаунти оформлені на вас. Якщо підете, заберете все із собою.",
+      "why2_h": "Усе пов’язано",
+      "why2_t": "MobilePay, доставка, склад і бухгалтерія працюють разом, тож замовлення не потребують ручної роботи.",
+      "why3_h": "Фіксована ціна до старту",
+      "why3_t": "Ви знаєте повну ціну до початку роботи. Оплата одразу або 3 платежами.",
       "why4_h": "Запуск за тижні, а не місяці",
       "why4_t": "Чіткі терміни, і ваш новий сайт запрацює дуже швидко.",
       "work_h": "Вибрані роботи",
@@ -1224,16 +1262,16 @@ window.NOOMO_I18N = {
       "want_like": "Хочу так само",
       "live_projects": "Живі проєкти",
       "svc_h": "Що ми робимо",
-      "svc_eb": "Три послуги та безкоштовний аудит. Фіксований обсяг, фіксована ціна, підтримка після запуску.",
+      "svc_eb": "Три послуги та безкоштовний відеозвіт. Фіксована ціна, і все належить вам.",
       "excl_vat": "без ПДВ",
       "view_details_arrow": "Детальніше ↗",
-      "audit_badge": "Бонус · Безкоштовно",
-      "audit_h": "Безкоштовна консультація й аудит сайту",
-      "audit_t": "30-хвилинна сесія із senior-дизайнером. Ми переглянемо ваш сайт чи магазин і надамо короткий письмовий аудит: швидкі покращення UX, швидкості та SEO, а також рекомендований наступний крок і оцінку за фіксованою ціною.",
+      "audit_badge": "Почніть тут · Безкоштовно",
+      "audit_h": "Безкоштовний відеозвіт про ваш сайт",
+      "audit_t": "Надішліть нам посилання на свій сайт. Ми пройдемо його як клієнт, на комп’ютері та телефоні, і запишемо на відео з позначками та підписами. Протягом 24 годин ви отримаєте відео і 3 речі, які варто виправити першими. Без зустрічей і зобов’язань.",
       "free": "0 кр.",
-      "min30": "30 хвилин",
-      "audit_cta": "Отримати безкоштовний аудит",
-      "pkg_eb": "Ціни в кронах без ПДВ. Кожен проєкт починається з безкоштовної консультації та пропозиції з фіксованою ціною.",
+      "min30": "Протягом 24 годин",
+      "audit_cta": "Надіслати посилання",
+      "pkg_eb": "Ціни в кронах без ПДВ. Без зобов’язань, попередження за 1 місяць.",
       "most_popular": "Найпопулярніший",
       "sub_title": "Ваша вебстудія",
       "total": "Разом",
@@ -1241,19 +1279,19 @@ window.NOOMO_I18N = {
       "get_quote": "Отримати пропозицію",
       "view_details": "Детальніше",
       "sub_q": "Що таке «Ваша вебстудія»?",
-      "sub_t": "Одна щомісячна підписка на будь-яку роботу: оновлення, нові сторінки й лендинги, банери та графіка для кампаній, зміни дизайну, SEO, додавання товарів і пріоритетна допомога. Мінімум 3 місяці.",
+      "sub_t": "Одна щомісячна підписка на будь-яку роботу: оновлення, нові сторінки й лендинги, банери та графіка для кампаній, зміни дизайну, SEO, додавання товарів і пріоритетна допомога. Без зобов’язань: скасування з попередженням за 1 місяць.",
       "about_h": "Про NOOMO",
       "about_eb": "Студія",
       "stat1": "Фахівців",
       "stat2": "Років у цифровому дизайні",
       "stat3": "Фіксований обсяг, фіксована ціна",
       "mission_eb": "Наша місія",
-      "contact_h": "Обговорімо ваш проєкт",
+      "contact_h": "Напишіть нам",
       "selected": "Обрано",
-      "f_service": "Послуга",
+      "f_service": "Що вас цікавить?",
       "f_sub": "Підписка",
       "f_budget": "Бюджет (кр., без ПДВ)",
-      "f_message": "Повідомлення",
+      "f_message": "Повідомлення (необов’язково)",
       "sent_eb": "Запит надіслано",
       "sent_msg": "Дякуємо! Відповімо протягом 24 годин.",
       "send_another": "Надіслати ще один запит",
@@ -1269,17 +1307,17 @@ window.NOOMO_I18N = {
       "how": "Як ми працюємо",
       "addons": "Додаткові опції",
       "related": "Схожі роботи",
-      "min3": "Мінімум 3 місяці",
+      "min3": "Без зобов’язань · попередження за 1 місяць",
       "popup_quote": "Отримати пропозицію на цю послугу",
       "close_esc": "Закрити · Esc",
       "like_eb": "Хочу щось подібне до",
       "send_req": "Надіслати запит",
       "back_work": "← Назад до робіт",
-      "about_body": "NOOMO — дизайн-орієнтована цифрова студія з головним офісом в Орхусі, Данія. Ми поєднуємо понад 15 років досвіду в UI/UX і вебдизайні з робочим процесом на основі AI, тож ви отримуєте дизайн і розробку рівня senior — швидше й за фіксованою ціною. Працюємо з ритейлерами, сервісними компаніями та стартапами по всій Європі.",
+      "about_body": "NOOMO — дизайн-орієнтована цифрова студія з головним офісом в Орхусі, Данія. Ми поєднуємо 16+ років досвіду в UI/UX і вебдизайні з робочим процесом на основі AI, тож ви отримуєте дизайн і розробку рівня senior — швидше й за фіксованою ціною. Працюємо з ритейлерами, сервісними компаніями та стартапами по всій Європі.",
       "mission": "Ми робимо професійні цифрові продукти доступними для бізнесу, що зростає: зрозумілими, швидкими й створеними, щоб продавати.",
       "mission_acc": 6,
       "mission2": "Без громіздких агентських процесів. Без шаблонів під виглядом індивідуальної роботи. Лише сфокусована команда, яка доводить справу до кінця.",
-      "contact_body": "Розкажіть, що вам потрібно. Перша консультація безкоштовна, а чітку пропозицію з фіксованою ціною ви отримаєте протягом 48 годин.",
+      "contact_body": "Вкажіть ім’я, e-mail і посилання на свій сайт, і протягом 24 годин ми надішлемо безкоштовний відеозвіт. Потрібне щось інше? Оберіть нижче.",
       "ph_msg": "Розкажіть, що вам потрібно",
       "ph_topic": "Про що хочете поговорити?",
       "err_pre": "Запит не надіслано. Спробуйте ще раз або напишіть нам на",
@@ -1305,7 +1343,7 @@ window.NOOMO_I18N = {
       "sub_fmt": "Ваша вебстудія: {name}",
       "tab_form": "Надіслати запит",
       "tab_call": "Замовити дзвінок",
-      "submit": "Надіслати запит",
+      "submit": "Надіслати",
       "sending": "Надсилаємо…",
       "call_btn": "Замовити дзвінок",
       "call_msg": "Дякуємо! Зателефонуємо вам {day} з {from} до {to}.",
@@ -1363,9 +1401,9 @@ window.NOOMO_I18N = {
       },
       "svcOpts": {
         "ecom": "Інтернет-магазин",
-        "web": "Корпоративні сайти та лендинги",
-        "apps": "MVP і застосунок",
-        "audit": "Безкоштовна консультація й аудит",
+        "web": "Сайт",
+        "apps": "Оновлення та перенесення",
+        "audit": "Безкоштовний відеозвіт",
         "unsure": "Ще не знаю"
       },
       "f": {
@@ -1381,7 +1419,9 @@ window.NOOMO_I18N = {
         "phone": "Телефон",
         "phone_err": "Вкажіть, будь ласка, номер телефону.",
         "email_opt": "Email (за бажанням)",
-        "email_err2": "Перевірте, будь ласка, адресу email."
+        "email_err2": "Перевірте, будь ласка, адресу email.",
+        "website": "Ваш сайт (необов’язково)",
+        "website_ph": "https://www.vashakompaniya.dk"
       },
       "months": [
         "Січень",
@@ -1430,30 +1470,30 @@ window.NOOMO_I18N = {
       },
       "svc": {
         "ecom": {
-          "title": "Інтернет-магазини",
+          "title": "Інтернет-магазин, де все підключено",
           "pkgTitle": "Інтернет-магазин",
-          "desc": "Інтернет-магазини та продуктові магазини на Shopify з додаванням товарів і постійною підтримкою.",
+          "desc": "Магазини на Shopify з підключеними MobilePay, доставкою і бухгалтерією, тож замовлення, склад і облік працюють самі.",
           "priceSub": "Без ПДВ",
           "timeline": "4–6 тижнів",
-          "who": "Ритейлери, продуктові та спеціалізовані магазини, які хочуть продавати онлайн або піти з повільної платформи. Найкраще підходить, коли асортимент готовий і потрібен магазин, яким ваша команда зможе керувати щодня.",
+          "who": "Невеликі та спеціалізовані магазини, які хочуть продавати онлайн або мати один склад для сайту й фізичного магазину.",
           "pkgItems": [
-            "Налаштування магазину Shopify та індивідуальний дизайн теми",
-            "До 50 товарів",
-            "Оплата (картка, Apple Pay, Google Pay)",
-            "Налаштування доставки та ПДВ ЄС",
-            "Mobile-first дизайн",
+            "Магазин на Shopify з індивідуальним дизайном",
+            "Оплата через MobilePay, картки, Apple Pay і Google Pay",
+            "Доставка через Shipmondo (GLS, PostNord) і ПДВ",
+            "Замовлення автоматично йдуть у Dinero або e-conomic",
+            "До 50 товарів додано",
             "Базове SEO та аналітика",
-            "Навчальна сесія"
+            "Навчання, щоб ви самі додавали товари"
           ],
           "includes": [
-            "Налаштування магазину Shopify та індивідуальний дизайн теми",
-            "До 50 товарів",
-            "Оплата (картка, Apple Pay, Google Pay)",
-            "Налаштування доставки та ПДВ ЄС",
-            "Mobile-first дизайн",
-            "Базове SEO",
-            "Аналітика",
-            "Навчальна сесія"
+            "Магазин на Shopify з індивідуальним дизайном",
+            "Оплата через MobilePay, картки, Apple Pay і Google Pay",
+            "Доставка через Shipmondo (GLS, PostNord) і ПДВ",
+            "Замовлення автоматично йдуть у Dinero або e-conomic",
+            "Один склад для сайту й фізичного магазину (Shopify POS)",
+            "До 50 товарів додано",
+            "Базове SEO та аналітика",
+            "Навчання, щоб ви самі додавали товари"
           ],
           "steps": [
             [
@@ -1481,21 +1521,21 @@ window.NOOMO_I18N = {
           ]
         },
         "web": {
-          "title": "Корпоративні сайти та лендинги",
-          "pkgTitle": "Корпоративний сайт і лендинг",
-          "desc": "Сайти компаній і лендинги, які пояснюють, чим ви займаєтеся, і приводять ліди.",
+          "title": "Сайт, який приносить заявки",
+          "pkgTitle": "Сайт",
+          "desc": "Сайти для сервісного бізнесу: зрозумілі послуги й ціни, онлайн-запис або форма заявки та профіль Google Business.",
           "priceSub": "Без ПДВ · Лендинг",
           "altPre": "Корпоративний сайт ",
           "timeline": "2–4 тижні",
-          "who": "Сервісні компанії, B2B-постачальники та маркетингові команди, які запускають кампанію чи нову пропозицію. Для бізнесу, чий нинішній сайт уже не пояснює, чим він займається.",
+          "who": "Перукарні, клініки, майстри, консультанти та інші сервісні компанії, чий сайт зараз не приносить заявок.",
           "pkgItems": [
-            "UX-структура та рекомендації щодо текстів",
-            "Індивідуальний дизайн",
-            "До 6 сторінок (корпоративний) або 1 довга сторінка (лендинг)",
-            "CMS",
-            "Контактні форми",
-            "Налаштування SEO",
-            "Налаштування хостингу та публікація"
+            "UX-структура і допомога з текстами",
+            "Індивідуальний дизайн, спершу для мобільних",
+            "До 6 сторінок або 1 довга лендинг-сторінка",
+            "Онлайн-запис або форма заявки",
+            "Профіль Google Business і налаштування SEO",
+            "CMS, щоб ви самі редагували тексти",
+            "Домен і хостинг на ваше ім’я"
           ],
           "steps": [
             [
@@ -1522,43 +1562,43 @@ window.NOOMO_I18N = {
           ]
         },
         "apps": {
-          "title": "MVP-застосунки та стартапи",
-          "pkgTitle": "MVP-застосунок для стартапу",
-          "desc": "Клікабельні прототипи та готові до запуску MVP для засновників, яким треба протестувати, презентувати чи запустити ідею.",
+          "title": "Виправлення та перенесення магазину",
+          "pkgTitle": "Оновлення та перенесення",
+          "desc": "Виправляємо те, що показав відеозвіт, або переносимо ваш магазин зі старої платформи на Shopify разом із товарами, клієнтами й замовленнями.",
           "priceSub": "Без ПДВ",
-          "timeline": "Від 14-денного MVP-спринту",
-          "who": "Засновники та інноваційні команди, яким потрібно перевірити ідею на реальних користувачах або показати інвесторам робочий продукт. Також для компаній, що запускають новий цифровий сервіс.",
+          "timeline": "Від 1 тижня",
+          "who": "Компанії, які вже мають сайт або магазин, але втрачають клієнтів через помилки, повільний сайт чи стару платформу.",
           "pkgItems": [
-            "Discovery-воркшоп",
-            "User flows",
-            "Клікабельний прототип",
-            "UI-дизайн-система",
-            "Front-end розробка MVP",
-            "Демо для інвесторів",
-            "Передача проєкту або подальша розробка"
+            "Виправлення за вашим відеозвітом",
+            "Перенесення товарів, клієнтів і замовлень",
+            "Налаштування MobilePay, доставки й бухгалтерії",
+            "Швидкість і мобільна версія",
+            "SEO: збережені посилання та переадресації",
+            "Тестування до і після",
+            "Навчання роботі з новою адмінкою"
           ],
           "steps": [
             [
-              "Discovery-воркшоп",
-              "Проблема, користувачі та найменший продукт, який варто створити."
+              "Відеозвіт",
+              "Показуємо, що коштує вам клієнтів."
             ],
             [
-              "Флоу і прототип",
-              "User flows і клікабельний прототип для ранніх тестів."
+              "Фіксована ціна",
+              "Ви отримуєте план і фіксовану ціну виправлень."
             ],
             [
-              "Дизайн і розробка",
-              "UI-дизайн-система та front-end MVP."
+              "Виправлення або перенесення",
+              "Виправляємо сайт або переносимо магазин без втрати даних."
             ],
             [
-              "Демо і передача",
-              "Демо для інвесторів, далі передача або подальша розробка."
+              "Тестування і передача",
+              "Тестуємо, показуємо результат, і ви можете продовжити з Вашою вебстудією."
             ]
           ],
           "addons": [
-            "Додатковий user flow",
-            "Налаштування бекенду та бази даних",
-            "Подальші спринти розробки"
+            "Додаткові товари перенесено",
+            "Більше мов",
+            "Постійні покращення"
           ]
         }
       },
@@ -1610,7 +1650,7 @@ window.NOOMO_I18N = {
           "desc": "E-commerce платформа для американського постачальника тепловізорів, приладів нічного бачення та оборонного обладнання."
         },
         "Unifood": {
-          "sub": "Редизайн сайту unifood.dk",
+          "sub": "Концепт · Редизайн сайту unifood.dk",
           "desc": "Редизайн сайту з фокусом на каталог для Unifood Import A/S — данського гуртового імпортера продуктів із понад 1 400 товарами. Клієнт знаходить товар у два кліки й надсилає замовлення на самовивіз."
         },
         "Kortical": {
@@ -1632,6 +1672,10 @@ window.NOOMO_I18N = {
         "Ayvens": {
           "sub": "Концепт сторінки вживаного авто",
           "desc": "Концепт сторінки товару для вживаних авто Ayvens, що вміщує всю покупку в один спокійний скрол."
+        },
+        "Carpintaria Sousa Tavares": {
+          "sub": "Концепт · Односторінковий сайт для сімейної столярної майстерні",
+          "desc": "Односторінковий сайт для сімейної столярної майстерні в Португалії: ремесло на першому плані, зрозумілі послуги і простий шлях до запиту ціни."
         }
       },
       "boot_eb": "Завантаження студії",
@@ -1659,19 +1703,19 @@ window.NOOMO_I18N = {
       "theme_aria": "Темна тема",
       "sb_title": "Підписка",
       "sb_sub": "Дизайн і розробка за запитом",
-      "sb_ps": "На місяць · без ПДВ · пауза чи скасування будь-коли",
+      "sb_ps": "На місяць · без ПДВ · без зобов’язань · попередження за 1 місяць",
       "sb_tl": "48 год на задачу **",
       "sb_aria": "Тип підписки",
       "sb_m1": "Соло",
       "sb_m2": "Команда",
       "sb_solo": [
-        "Безліміт задач і правок на місяць",
+        "Будь-які задачі й правки в межах ваших годин",
         "1 активна задача за раз",
         "Кожна задача — за 48 годин",
         "Асинхронне спілкування в Slack або email"
       ],
       "sb_team": [
-        "Безліміт задач і правок на місяць",
+        "Будь-які задачі й правки в межах ваших годин",
         "До 3 активних задач паралельно",
         "Дизайнер, розробник і проджект-менеджер",
         "Асинхронно + щотижневий дзвінок з менеджером"
@@ -1740,9 +1784,9 @@ window.NOOMO_I18N = {
           "desc": "Для дрібних правок і невеликих доопрацювань сайту.",
           "tl": "48 год на задачу",
           "items": [
-            "Безліміт правок",
+            "Будь-які задачі й правки в межах ваших годин",
             "1 задача за раз",
-            "Пауза чи скасування будь-коли",
+            "Без зобов’язань · 1 місяць попередження",
             "Асинхронно в Slack або email"
           ]
         },
@@ -1751,20 +1795,20 @@ window.NOOMO_I18N = {
           "desc": "Регулярні оновлення, дизайн і задачі з розробки.",
           "tl": "48 год на задачу",
           "items": [
-            "Безліміт правок",
+            "Будь-які задачі й правки в межах ваших годин",
             "2 задачі паралельно",
-            "Пауза чи скасування будь-коли",
+            "Без зобов’язань · 1 місяць попередження",
             "Асинхронно в Slack або email"
           ]
         },
         "full": {
           "name": "Full Web Studio",
-          "desc": "Ваша повноцінна вебстудія: доопрацювання сайту, роботи над іншими вашими сайтами, будь-які види задач.",
+          "desc": "Будь-які задачі на всіх ваших сайтах.",
           "tl": "24–48 год на задачу",
           "items": [
-            "Безліміт правок",
+            "Будь-які задачі й правки в межах ваших годин",
             "3 задачі паралельно",
-            "Пауза чи скасування будь-коли",
+            "Без зобов’язань · 1 місяць попередження",
             "Асинхронно в Slack або email",
             "Пріоритетна підтримка"
           ]
@@ -1789,8 +1833,8 @@ window.NOOMO_I18N = {
         "full": "Повна оплата",
         "inst": "Частинами (до 3 місяців)"
       },
-      "cta_services": "Дивитися послуги",
-      "cta_studio": "Власна вебстудія від 740 кр./міс.",
+      "cta_services": "Отримати безкоштовний відеозвіт",
+      "cta_studio": "Послуги та ціни",
       "svc_note": "Фіксована ціна. Оплата одразу або до 3 щомісячних платежів.",
       "sb_hrs": "До {h} годин на місяць",
       "b2b_cta2": "Обрати Full Web Studio",
@@ -1805,10 +1849,11 @@ window.NOOMO_I18N = {
       ],
       "svc_more": "Детальніше →",
       "audit_b": [
-        "Огляд UX, швидкості та SEO",
-        "Короткий письмовий аудит",
-        "Оцінка за фіксованою ціною"
-      ]
+        "Дизайн і зручність (UX)",
+        "Мобільна версія, швидкість і видимість у Google",
+        "3 найважливіші виправлення"
+      ],
+      "fix_price": "Ціна після відеозвіту"
     }
   }
 };
