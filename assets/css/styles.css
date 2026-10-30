@@ -267,3 +267,4 @@ html[lang="da"] h1[data-hsplit]{font-size:clamp(36px,5.4vw,96px)!important}
 @media (prefers-reduced-motion:reduce){.q-menu,.q-menu .q-mit>span,.q-dd{animation:none!important}.q-rl>span,.q-nav{transition:none!important}}
 
 #dc-root ~ #seo-static{display:none}
+@media (max-width:760px){.q-tabs{flex-wrap:nowrap!important;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-right:calc(-1 * clamp(16px,2.5vw,40px));padding-right:clamp(16px,2.5vw,40px)}.q-tabs::-webkit-scrollbar{display:none}.q-tabs>button{flex:0 0 auto}}
